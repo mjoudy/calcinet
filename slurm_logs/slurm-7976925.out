@@ -1,0 +1,20 @@
+net=n5000_r4 g=8.0 eta=1.9  sweep(ms)=[100000.0, 200000.0, 500000.0, 1000000.0, 2000000.0, 5000000.0, 7500000.0, 10000000.0, 15000000.0, 20000000.0]  seeds=[5]  chunk_ms=5000.0
+[seed 5] loading cached ground truth n5000_r4_seed5_T20000k_ed42837a65.npz (skipping NEST; config verified)
+[seed 5] streaming moments + checkpoints ...
+Traceback (most recent call last):
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/wrapup_run_stream.py", line 247, in <module>
+    main()
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/wrapup_run_stream.py", line 234, in main
+    moments, tau_est, rate = stream_moments(
+                             ^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/experiments/streaming.py", line 267, in stream_moments
+    acc = (TorchMomentAccumulator(N, lag, device=device) if device
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/experiments/streaming.py", line 80, in __init__
+    self.Cxx_raw = torch.zeros(N, N, dtype=torch.float64, device=device)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: uncorrectable ECC error encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
