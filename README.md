@@ -138,6 +138,18 @@ Kept separate on purpose; neither is merged in.
   `cut_spikes`. **It is GPL-3.0**, so code must not be copied from it into this
   MIT-licensed package.
 
+## Development note
+
+The scientific content of this project is the author's own work: the estimation
+method, the solvers, the metrics, the simulations and the experiments.
+
+The repository's software engineering was carried out with
+[Claude Code](https://claude.com/claude-code) in September 2026 — the package
+rename and `src/` restructure, the core/experiments split, packaging and licence
+metadata, the test suite, continuous integration, the runnable example, and this
+documentation. Those commits carry a `Co-Authored-By: Claude Opus 5` trailer, so
+the division of work is visible in `git log` rather than only asserted here.
+
 ## Citation
 
 See [`CITATION.cff`](CITATION.cff). GitHub's "Cite this repository" button reads
