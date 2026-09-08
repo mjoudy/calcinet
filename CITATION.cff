@@ -18,7 +18,7 @@ authors:
     # orcid: "https://orcid.org/0000-0000-0000-0000"
 version: "0.1.0"
 license: MIT
-repository-code: "https://github.com/mjoudy/Calcium---AR"
+repository-code: "https://github.com/mjoudy/calcinet"
 keywords:
   - calcium-imaging
   - connectivity

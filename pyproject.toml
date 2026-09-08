@@ -37,9 +37,9 @@ plot = ["matplotlib>=3.8", "seaborn>=0.13"]
 dev = ["pytest>=8.0"]
 
 [project.urls]
-Homepage = "https://github.com/mjoudy/Calcium---AR"
-Repository = "https://github.com/mjoudy/Calcium---AR"
-Issues = "https://github.com/mjoudy/Calcium---AR/issues"
+Homepage = "https://github.com/mjoudy/calcinet"
+Repository = "https://github.com/mjoudy/calcinet"
+Issues = "https://github.com/mjoudy/calcinet/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
