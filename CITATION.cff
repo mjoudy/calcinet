@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "calcinet"
+abstract: >-
+  A two-stage pipeline for estimating directed, signed neuronal connectivity
+  from calcium imaging data. The first stage recovers a continuous spike proxy
+  from fluorescence traces; the second fits a linear vector-autoregressive model
+  to that proxy to estimate a directed connectivity matrix. The package provides
+  chunked, out-of-core solvers that scale to networks of tens of thousands of
+  neurons on CPU or GPU, together with provenance capture and a run ledger for
+  reproducible experiments.
+authors:
+  - family-names: Joudy
+    given-names: Mohammad
+    affiliation: "Bernstein Center Freiburg, Albert-Ludwigs-Universität Freiburg"
+    # TODO: add ORCID once registered, e.g.
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+version: "0.1.0"
+license: MIT
+repository-code: "https://github.com/mjoudy/Calcium---AR"
+keywords:
+  - calcium-imaging
+  - connectivity
+  - vector-autoregression
+  - granger-causality
+  - deconvolution
+  - neuroscience
+# TODO: add the Zenodo DOI after the first release is archived, e.g.
+# doi: "10.5281/zenodo.XXXXXXX"

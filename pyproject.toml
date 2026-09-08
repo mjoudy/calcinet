@@ -1,12 +1,27 @@
 [build-system]
 requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.backends.legacy:build"
+build-backend = "setuptools.build_meta"
 
 [project]
-name = "calcium-ar"
+name = "calcinet"
 version = "0.1.0"
-description = "Brunel-network simulation, calcium signal generation, and connectivity inference via AR models"
+description = "Linear VAR-based connectivity estimation from calcium imaging"
 requires-python = ">=3.11"
+keywords = [
+    "calcium-imaging",
+    "connectivity",
+    "vector-autoregression",
+    "granger-causality",
+    "deconvolution",
+    "neuroscience",
+]
+license = { text = "MIT" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
 dependencies = [
     "numpy>=1.26",
     "scipy>=1.12",
@@ -19,7 +34,16 @@ dependencies = [
 hpc = ["dask>=2024.1", "dask-jobqueue>=0.9"]
 gpu = ["torch>=2.2"]
 plot = ["matplotlib>=3.8", "seaborn>=0.13"]
+dev = ["pytest>=8.0"]
+
+[project.urls]
+Homepage = "https://github.com/mjoudy/Calcium---AR"
+Repository = "https://github.com/mjoudy/Calcium---AR"
+Issues = "https://github.com/mjoudy/Calcium---AR/issues"
 
 [tool.setuptools.packages.find]
-where = ["."]
-include = ["calcium_ar*"]
+where = ["src"]
+include = ["calcinet*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

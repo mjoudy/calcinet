@@ -55,3 +55,14 @@ _arxiv/scripts-hpc/dask_pipeline/*.txt
 # SLURM job logs (keep the folder, ignore the logs)
 slurm_logs/*
 !slurm_logs/.gitkeep
+
+# Python build artifacts
+build/
+dist/
+*.egg-info/
+
+# Figures and rendered documents: kept locally, not pushed.
+# The .tex sources stay tracked; only the heavy rendered output is ignored.
+*.png
+*.pdf
+figures/
