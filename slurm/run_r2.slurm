@@ -38,10 +38,14 @@ echo "host: $(hostname)   git: $(git rev-parse HEAD)   date: $(date)"
 OUT="$WS/results/fig_data"
 mkdir -p "$OUT"
 
-"$PY" scripts/fig_r2_compute.py --net n1250_r4 --T-ms 500000 \
+"$PY" experiments/ch1_proxy/fig_r2_compute.py --net n1250_r4 --T-ms 500000 \
       --out "$OUT/r2_data_r4.npz"
 
 echo "done: $(date)"
 ls -lh "$OUT/r2_data_r4.npz" 2>/dev/null || echo "(no npz)"
+du -sh "$OUT/r2_data_r4_estimates" 2>/dev/null || echo "(no estimates dir)"
 echo
+# npz for plotting; estimates dir lets fig_r2_rescore.py add/retune a metric
+# locally without re-running this sweep.
 echo "rsync -avhz ${USER}@login1.nemo.uni-freiburg.de:$OUT/r2_data_r4.npz ~/calcium_results/fig_data/"
+echo "rsync -avhz ${USER}@login1.nemo.uni-freiburg.de:$OUT/r2_data_r4_estimates ~/calcium_results/fig_data/"

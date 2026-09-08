@@ -34,7 +34,7 @@ export OMP_NUM_THREADS="${SLURM_CPUS_PER_TASK}"
 
 echo "host: $(hostname)   git: $(git rev-parse HEAD)   date: $(date)"
 
-"$PY" scripts/r4_tune_regime.py --target 14 --sim-time 4000 \
+"$PY" experiments/ch2_connectivity/r4_tune_regime.py --target 14 --sim-time 4000 \
       --n-threads "${SLURM_CPUS_PER_TASK}"
 
 echo "done: $(date)"

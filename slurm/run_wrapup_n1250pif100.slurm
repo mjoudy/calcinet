@@ -1,6 +1,6 @@
 #!/bin/bash
 # PIF ladder, tau_m x100 (20ms -> 2000ms), production pilot. eta=80.0 picked
-# from scripts/pif_tau_probe.py --stage x100 (2026-08-15, properly-stationary
+# from experiments/ch2_connectivity/pif_tau_probe.py --stage x100 (2026-08-15, properly-stationary
 # probe, see the NETS["n1250_pif100"] comment in wrapup_run.py for the full
 # eta/rate/CV table and the CV=6.14 caveat -- MUCH more irregular than the x10
 # pilot, worth remembering when this feeds back into fig_linearity_way2).
@@ -42,7 +42,7 @@ GIT_COMMIT=$(git rev-parse HEAD)
 if [ -n "$(git status --porcelain --untracked-files=no)" ]; then GIT_DIRTY=yes; else GIT_DIRTY=no; fi
 echo "host: $(hostname)   git: $GIT_COMMIT (dirty: $GIT_DIRTY)   date: $(date)"
 
-"$PY" scripts/wrapup_run_stream.py --net n1250_pif100 --sweep 100000 --seeds 1 \
+"$PY" experiments/ch2_connectivity/wrapup_run_stream.py --net n1250_pif100 --sweep 100000 --seeds 1 \
   --save-moments
 
 echo "done: $(date)"

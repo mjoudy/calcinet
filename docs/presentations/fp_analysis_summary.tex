@@ -1,0 +1,91 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{12pt}{4pt}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+{\LARGE \bfseries Tracing Low-Confidence Edges: False Positive Analysis}
+
+\vspace{4pt}
+Our connectivity estimates include false positives -- pairs that look
+connected but probably aren't. Rather than trying to label each edge simply
+``real'' or ``fake,'' I've been looking for signals that shift our
+\emph{confidence} one way or the other. None of these are hard rules: we are
+not certain a real edge is never bidirectional, or that a fake edge always
+is -- there are exceptions on both sides. What follows is a set of
+percentage-based tendencies, not a certainty test.
+
+\section*{1. Timing}
+\includegraphics[width=0.95\textwidth]{../../figures/fig_R8b_signal.png}
+
+A real synapse has a fixed delay ($\sim$1.5\,ms here); a shared-input fake
+should look closer to instantaneous. This compares average connection
+strength across time lags for likely-real vs.\ likely-false edges, on raw
+spikes and on the calcium signal.
+\emph{How to read it:} on spikes, the two curves separate cleanly. Through
+calcium they collapse onto each other -- the calcium sensor blurs time by
+about 3\,ms, coarser than the 1.5\,ms delay, so this signal isn't usable on
+calcium data. A limit of the measurement, not the idea.
+\emph{Computed by:} a lagged coupling estimate at 10 lags (0.1--6\,ms) from
+cached moments, averaged by class at each lag.
+
+\section*{2. Timing, as a plain count}
+\includegraphics[width=0.95\textwidth]{../../figures/fig_R8b_signal_counts.png}
+
+Same data, simpler question: for each pair, at \emph{which} lag is its
+coupling strongest? I counted what fraction of each group peaks at each lag.
+\emph{How to read it:} on spikes, nearly all likely-real edges peak exactly
+at the true delay. Through calcium, both groups peak at the same lags and
+overlap. Easier to read than the averaged curve above; same conclusion.
+
+\section*{3. Directionality}
+\includegraphics[width=0.95\textwidth]{../../figures/fig_R8_violin_n12500.png}
+
+A different candidate signal: a real synapse mostly goes one direction;
+shared input tends to make \emph{both} directions look connected. I'm not
+assuming this is a hard rule -- some real connections genuinely go both
+ways -- but I checked whether it shifts the odds.
+\emph{How to read it:} each violin is the distribution of a directionality
+score (0 = both directions equally strong, 1 = one direction only).
+Likely-real edges sit high; likely-false ones sit noticeably lower -- not a
+clean split, but a real shift.
+\emph{Computed by:} for each pair, $|A[i,j]-A[j,i]| / (|A[i,j]|+|A[j,i]|)$.
+
+\section*{4. Directionality, as a plain percentage}
+\includegraphics[width=0.8\textwidth]{../../figures/fig_R8_counts_n1250_local.png}
+
+Instead of the full distribution, the plain question: is the reverse
+direction \emph{also} flagged as connected? Likely-real edges are
+``bidirectional'' about 10\% of the time; likely-false ones, about 38\%.
+Again -- a shift in odds, not a certainty. Some real edges will still fall
+in that 38\%, and some fakes in the 10\%.
+
+\section*{5. Where the uncertainty comes from}
+\includegraphics[width=0.95\textwidth]{../../figures/fig_way2_motifs_n1250.png}
+
+To understand this better: does a false positive's strength depend on how
+many other neurons feed into both members of a pair -- and does it matter
+whether we can actually \emph{record} those driver neurons?
+\emph{How to read it:} three views of the same false positives -- direct
+shared drivers (left), indirect two-hop shared drivers (middle), driver
+\emph{strength} instead of headcount (right). With a plain headcount, hidden
+drivers matter slightly more. Once weighted by actual driver strength, that
+gap nearly disappears -- the confound tracks total exposure to shared input,
+not whether we happened to record its source.
+
+\section*{Where this leaves us}
+None of these signals cleanly separate real from fake on their own. What
+they give us is a set of odds-shifting features -- timing (spikes only),
+directionality (works throughout, including calcium) -- plus a clearer
+picture of what drives the confound in the first place. Next step: combine
+these into a single per-edge confidence score rather than a hard threshold.
+
+\end{document}

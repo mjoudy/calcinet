@@ -30,10 +30,10 @@ export OMP_NUM_THREADS="${SLURM_CPUS_PER_TASK}"
 echo "host: $(hostname)   git: $(git rev-parse HEAD)   date: $(date)"
 OUT="$WS/results/multilag"
 
-"$PY" scripts/multilag_estimator.py --net n1250_r4 --signal spikes \
+"$PY" experiments/ch2_connectivity/multilag_estimator.py --net n1250_r4 --signal spikes \
     --lags-ms 1.5 3.0 4.5 6.0 --device cpu --out-dir "$OUT"
 
-"$PY" scripts/multilag_estimator.py --net n1250_r4 --signal feed \
+"$PY" experiments/ch2_connectivity/multilag_estimator.py --net n1250_r4 --signal feed \
     --lags-ms 1.5 3.0 4.5 6.0 --device cpu --out-dir "$OUT"
 
 echo "done: $(date)"

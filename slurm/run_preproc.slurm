@@ -27,7 +27,7 @@ export OMP_NUM_THREADS="${SLURM_CPUS_PER_TASK}"
 echo "host: $(hostname)   git: $(git rev-parse HEAD)   date: $(date)"
 OUT="$WS/results/preproc"
 
-"$PY" scripts/fig_preproc_compute.py --net n1250_r4 --cache-dir "$WS/gt_cache" \
+"$PY" experiments/ch1_proxy/fig_preproc_compute.py --net n1250_r4 --cache-dir "$WS/gt_cache" \
       --checkpoint-ms 500000 --device cpu --out-dir "$OUT"
 
 echo "done: $(date)"

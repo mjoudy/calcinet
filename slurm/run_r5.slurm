@@ -45,10 +45,10 @@ PYCHK
 
 # --- phase 1: short-T moments (reads cached spikes, --save-moments) ----------
 echo "=== phase 1: extend checkpoints into the data-scarce regime ==="
-"$PY" scripts/wrapup_run_stream.py --net n1250_r4  --sweep 12500 25000 50000 \
+"$PY" experiments/ch2_connectivity/wrapup_run_stream.py --net n1250_r4  --sweep 12500 25000 50000 \
       --seeds 1 --methods ols --chunk-ms 5000 \
       --cache-dir "$WS/gt_cache" --save-moments
-"$PY" scripts/wrapup_run_stream.py --net n12500_r4 --sweep 125000 250000 500000 \
+"$PY" experiments/ch2_connectivity/wrapup_run_stream.py --net n12500_r4 --sweep 125000 250000 500000 \
       --seeds 1 --methods ols --device cuda --chunk-ms 5000 \
       --cache-dir "$WS/gt_cache" --save-moments
 
@@ -57,8 +57,8 @@ echo "=== phase 1: extend checkpoints into the data-scarce regime ==="
 # own default is the repo dir, which would land elsewhere).
 echo "=== phase 2: R.5 solve + score ==="
 R5OUT="$WS/results/r5"
-"$PY" scripts/fig_r5_compute.py --root "$WS/results" --net n1250r4  --device cpu  --out-dir "$R5OUT"
-"$PY" scripts/fig_r5_compute.py --root "$WS/results" --net n12500r4 --device cuda --out-dir "$R5OUT"
+"$PY" experiments/ch2_connectivity/fig_r5_compute.py --root "$WS/results" --net n1250r4  --device cpu  --out-dir "$R5OUT"
+"$PY" experiments/ch2_connectivity/fig_r5_compute.py --root "$WS/results" --net n12500r4 --device cuda --out-dir "$R5OUT"
 
 echo "done: $(date)"
 echo "--- copy home just these: ---"

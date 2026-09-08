@@ -13,7 +13,7 @@
 #SBATCH --partition=cpu
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=8           # MUST match n_threads in scripts/run_n1250.py
+#SBATCH --cpus-per-task=8           # MUST match n_threads in experiments/ch2_connectivity/run_n1250.py
 #SBATCH --mem=64G
 #SBATCH --time=08:00:00
 #SBATCH --output=slurm_logs/n1250_%j.log
@@ -48,4 +48,4 @@ echo "============================================="
 # Run. Call the env's python by full path — the most reliable method in a batch
 # job (both 'conda activate' and 'conda run' failed to use the env here).
 # --------------------------------------------------------------------------- #
-"$PY" scripts/run_n1250.py
+"$PY" experiments/ch2_connectivity/run_n1250.py

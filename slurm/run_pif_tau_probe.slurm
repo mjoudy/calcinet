@@ -37,6 +37,6 @@ GIT_COMMIT=$(git rev-parse HEAD)
 if [ -n "$(git status --porcelain --untracked-files=no)" ]; then GIT_DIRTY=yes; else GIT_DIRTY=no; fi
 echo "host: $(hostname)   git: $GIT_COMMIT (dirty: $GIT_DIRTY)   stage: $STAGE   date: $(date)"
 
-"$PY" scripts/pif_tau_probe.py --stage "$STAGE"
+"$PY" experiments/ch2_connectivity/pif_tau_probe.py --stage "$STAGE"
 
 echo "done: $(date)"

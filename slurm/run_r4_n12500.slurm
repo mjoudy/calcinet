@@ -10,7 +10,7 @@
 #
 # 5 SEEDS (was 1): error bars for fig_R4. Seed 1's checkpoints are already
 # cached (this job originally just added the 3 short ones for free -- see the
-# "cache reuse" note in scripts/wrapup_run_stream.py), but seeds 2-5 are NEW
+# "cache reuse" note in experiments/ch2_connectivity/wrapup_run_stream.py), but seeds 2-5 are NEW
 # and each needs a full fresh 5M-ms NEST simulation -- there's no shortcut for
 # those. This is the expensive one: extrapolating from observed costs at
 # smaller N (N=1250:16min, N=2500:32min, N=5000:66min, roughly linear in N),
@@ -62,17 +62,17 @@ PYCHK
 # Re-measures exactly the config the sweep is about to run (4 s sim, seconds of
 # work). Expect ~13.9 Hz, CV ~1.06, sync ~0.007.
 echo "=== regime preflight: N=12500, g=8, J x1.5, eta=2.60 ==="
-"$PY" scripts/r4_tune_regime.py --sizes 12500 --g 8 --j-scale 1.5 \
+"$PY" experiments/ch2_connectivity/r4_tune_regime.py --sizes 12500 --g 8 --j-scale 1.5 \
       --etas 2.6 --target 14 --n-threads "${SLURM_CPUS_PER_TASK}" || true
 
-"$PY" scripts/wrapup_run_stream.py --net n12500_r4 \
+"$PY" experiments/ch2_connectivity/wrapup_run_stream.py --net n12500_r4 \
       --sweep 100000 200000 500000 1000000 2000000 5000000 --seeds 1 2 3 4 5 \
       --methods ols --device cuda --chunk-ms 5000 \
       --cache-dir "$WS/gt_cache" --save-moments
 
 # score on the cluster; only the small metrics.csv files travel home
 for Tk in 100 200 500 1000 2000 5000; do
-    "$PY" scripts/analyze_run.py --data "$WS/results/wrapup_n12500r4_T${Tk}k" \
+    "$PY" -m calcinet.connectivity.analyze_run --data "$WS/results/wrapup_n12500r4_T${Tk}k" \
         || echo "analyze T${Tk}k failed (continuing)"
 done
 

@@ -28,7 +28,7 @@ OUT="$WS/results/r8b"
 
 for SIG in spikes feed; do
     echo "=== signal: $SIG ==="
-    "$PY" scripts/r8b_multilag.py --net n1250_r4 --cache-dir "$WS/gt_cache" \
+    "$PY" experiments/ch2_connectivity/r8b_multilag.py --net n1250_r4 --cache-dir "$WS/gt_cache" \
           --checkpoint-ms 500000 --chunk-ms 20000 --signal "$SIG" \
           --device cpu --out-dir "$OUT"
 done

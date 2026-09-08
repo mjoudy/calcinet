@@ -37,7 +37,7 @@ assert torch.cuda.is_available(), "no CUDA torch — set GPU_PY to a CUDA env."
 PYCHK
 
 R8BOUT="$WS/results/r8b"
-"$PY" scripts/r8b_multilag.py --net n12500_r4 --cache-dir "$WS/gt_cache" \
+"$PY" experiments/ch2_connectivity/r8b_multilag.py --net n12500_r4 --cache-dir "$WS/gt_cache" \
       --checkpoint-ms 5000000 --chunk-ms 5000 --device cuda --out-dir "$R8BOUT"
 
 echo "done: $(date)"

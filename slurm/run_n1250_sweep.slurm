@@ -16,7 +16,7 @@
 #SBATCH --partition=cpu
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=8           # MUST match n_threads in scripts/run_n1250_sweep.py
+#SBATCH --cpus-per-task=8           # MUST match n_threads in experiments/ch2_connectivity/run_n1250_sweep.py
 #SBATCH --mem=64G
 #SBATCH --time=02:00:00
 #SBATCH --array=0-9                 # 10 settings (indices 0..9)
@@ -46,4 +46,4 @@ echo "cpus:    ${SLURM_CPUS_PER_TASK}"
 echo "workdir: $WS"
 echo "============================================="
 
-"$PY" scripts/run_n1250_sweep.py
+"$PY" experiments/ch2_connectivity/run_n1250_sweep.py

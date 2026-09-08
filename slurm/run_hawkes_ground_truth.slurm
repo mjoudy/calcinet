@@ -6,8 +6,8 @@
 # deconvolution step (confirmed >4GB and still climbing after 38s / ~10% of
 # the run on an 11GB laptop -- killed rather than risk it) runs where there is
 # headroom, not on someone's laptop next to other work:
-#   1. scripts/hawkes_ground_truth.py   -- simulate spike events (~1 min, light)
-#   2. scripts/hawkes_to_moments.py     -- calcium -> deconvolution -> Cxx/Cyx
+#   1. src/calcinet/simulation/hawkes_ground_truth.py   -- simulate spike events (~1 min, light)
+#   2. src/calcinet/io/hawkes_to_moments.py     -- calcium -> deconvolution -> Cxx/Cyx
 #      (same pipeline as LIF/PIF; this is the part that needs the cluster)
 #
 # Needs an adj_true.npy for the n1250_r4 network. The local copy at
@@ -32,7 +32,7 @@
 # Then, from your LOCAL machine:
 #   rsync -avhz fr_mj200@login1.nemo.uni-freiburg.de:'/work/classic/fr_mj200-calcium_ar/results/hawkes_moments/n1250_calcium_recal/' \
 #     ~/calcium_results/hawkes_moments/n1250_calcium_recal/
-#   python scripts/fig_linearity_way2.py
+#   python experiments/ch2_connectivity/fig_linearity_way2.py
 #
 # RECALIBRATED 2026-08-15: the first version (rate0=10Hz default, margin=0.3)
 # came back with AUC=0.54 (barely above chance) -- the analytic zero-noise
@@ -96,12 +96,12 @@ echo "using adj_true.npy: $ADJ"
 # 0.195), plateauing around there (0.08 gave no further gain). Confound
 # suppression at 100% observed held up at the new setting (-0.2pp, still flat,
 # matches OU's -0.1pp) -- so this is a real improvement, not a different
-# trade-off. See scripts/hawkes_ground_truth.py's build_G for the margin math.
-"$PY" scripts/hawkes_ground_truth.py \
+# trade-off. See src/calcinet/simulation/hawkes_ground_truth.py's build_G for the margin math.
+"$PY" -m calcinet.simulation.hawkes_ground_truth \
   --adj "$ADJ" --out "$WS/hawkes_events/n1250_recal" --sim-time 100000 \
   --rate0 26.73 --margin 0.15 --seed 1
 
-"$PY" scripts/hawkes_to_moments.py \
+"$PY" -m calcinet.io.hawkes_to_moments \
   --events-dir "$WS/hawkes_events/n1250_recal" \
   --out "$WS/results/hawkes_moments/n1250_calcium_recal" \
   --seed 1 --known-tau
@@ -109,7 +109,7 @@ echo "using adj_true.npy: $ADJ"
   # directly -- valid here since this is synthetic data with a KNOWN true
   # calcium decay. RANSAC kept landing far from the true value unpredictably
   # across runs (-330ms, +148ms, +54ms, -1286ms), silently corrupting
-  # deconvolution each time. See calcium_ar/experiments/streaming.py's
+  # deconvolution each time. See src/calcinet/io/streaming.py's
   # known_tau parameter.
   # chunk-ms left at the script default (10s, matches wrapup_run_stream.py's
   # own default) -- an earlier run here passed --chunk-ms 2000 as an extra RAM

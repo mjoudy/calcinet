@@ -37,7 +37,7 @@ echo "host: $(hostname)   git: $(git rev-parse HEAD)   date: $(date)"
 run () {   # $1 = preset, $2.. = recording lengths (ms)
     local net="$1"; shift
     echo "=== $net : $*   ($(date)) ==="
-    "$PY" scripts/wrapup_run_stream.py --net "$net" --sweep "$@" --seeds 1 \
+    "$PY" experiments/ch2_connectivity/wrapup_run_stream.py --net "$net" --sweep "$@" --seeds 1 \
           --methods ols --chunk-ms 5000 \
           --cache-dir "$WS/gt_cache" --save-moments
 }
@@ -48,7 +48,7 @@ run n2500_r4  200000  400000  1000000
 run n5000_r4  400000  800000  2000000
 
 for d in "$WS"/results/wrapup_n{1250,2500,5000}r4_T*k; do
-    [ -d "$d" ] && "$PY" scripts/analyze_run.py --data "$d" \
+    [ -d "$d" ] && "$PY" -m calcinet.connectivity.analyze_run --data "$d" \
         || echo "analyze $d failed (continuing)"
 done
 

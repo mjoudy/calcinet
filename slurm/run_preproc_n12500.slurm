@@ -53,7 +53,7 @@ mkdir -p "$CACHE"
 
 if ! ls "$CACHE"/n12500_r4_seed1_*.npz >/dev/null 2>&1; then
     echo "=== no cached n12500_r4 spikes found — simulating first (long) ==="
-    "$PY" scripts/wrapup_run_stream.py --net n12500_r4 \
+    "$PY" experiments/ch2_connectivity/wrapup_run_stream.py --net n12500_r4 \
           --sweep 5000000 --seeds 1 --methods ols --device cuda \
           --chunk-ms 5000 --cache-dir "$CACHE"
 else
@@ -62,7 +62,7 @@ else
 fi
 
 OUT="$WS/results/preproc"
-"$PY" scripts/fig_preproc_compute.py --net n12500_r4 --cache-dir "$CACHE" \
+"$PY" experiments/ch1_proxy/fig_preproc_compute.py --net n12500_r4 --cache-dir "$CACHE" \
       --checkpoint-ms 5000000 --device cuda --out-dir "$OUT"
 
 echo "done: $(date)"

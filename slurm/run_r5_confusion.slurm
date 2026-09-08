@@ -4,7 +4,7 @@
 # lengths, and builds the 3x3 confusion. Short — only 3 methods x 3 T/N.
 #
 # N=1250 does NOT need this job: run it locally with
-#   python scripts/fig_r5_confusion.py --root <moments> --net n1250r4 \
+#   python experiments/ch2_connectivity/fig_r5_confusion.py --root <moments> --net n1250r4 \
 #       --csv results/r5/r5_n1250r4.csv --device cpu
 #
 # Submit:  cd $(ws_find calcium_ar)/Calcium---AR
@@ -39,10 +39,10 @@ PYCHK
 
 R5OUT="$WS/results/r5"
 # N=1250 too (cpu path, fast) so both npz are produced in one job
-"$PY" scripts/fig_r5_confusion.py --root "$WS/results" --net n1250r4 \
+"$PY" experiments/ch2_connectivity/fig_r5_confusion.py --root "$WS/results" --net n1250r4 \
       --csv "$R5OUT/r5_n1250r4.csv" --methods ols lasso lassodale \
       --device cpu --out-dir "$R5OUT"
-"$PY" scripts/fig_r5_confusion.py --root "$WS/results" --net n12500r4 \
+"$PY" experiments/ch2_connectivity/fig_r5_confusion.py --root "$WS/results" --net n12500r4 \
       --csv "$R5OUT/r5_n12500r4.csv" --methods ols lasso lassodale \
       --device cuda --out-dir "$R5OUT"
 

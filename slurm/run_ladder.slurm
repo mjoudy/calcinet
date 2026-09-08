@@ -27,4 +27,4 @@ GIT_COMMIT=$(git rev-parse HEAD)
 if [ -n "$(git status --porcelain --untracked-files=no)" ]; then GIT_DIRTY=yes; else GIT_DIRTY=no; fi
 echo "host: $(hostname)   git: $GIT_COMMIT (dirty: $GIT_DIRTY)   date: $(date)"
 
-"$PY" scripts/run_ladder.py
+"$PY" experiments/ch2_connectivity/run_ladder.py

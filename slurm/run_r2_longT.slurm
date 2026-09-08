@@ -29,7 +29,7 @@ export CALCIUM_AR_WORKDIR="$WS"
 
 echo "host: $(hostname)  git: $(git rev-parse HEAD)  date: $(date)"
 
-"$PY" scripts/fig_r2_longT.py --net n1250_r4 --interval-ms 33 \
+"$PY" experiments/ch1_proxy/fig_r2_longT.py --net n1250_r4 --interval-ms 33 \
       --Ts 100000 500000 1000000 2000000 5000000 \
       --out "$WS/results/fig_R2_longT"
 

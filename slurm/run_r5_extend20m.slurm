@@ -44,9 +44,9 @@ export OMP_NUM_THREADS="${SLURM_CPUS_PER_TASK}"
 echo "host: $(hostname)   git: $(git rev-parse HEAD)   date: $(date)   PY=$PY"
 
 R5OUT="$WS/results/r5"
-"$PY" scripts/fig_r5_compute.py --root "$WS/results" --net n1250r4  --device cpu  --out-dir "$R5OUT"
+"$PY" experiments/ch2_connectivity/fig_r5_compute.py --root "$WS/results" --net n1250r4  --device cpu  --out-dir "$R5OUT"
 if ls "$WS"/results/wrapup_n12500r4_T*k/seed1/Cxx.npy >/dev/null 2>&1; then
-    "$PY" scripts/fig_r5_compute.py --root "$WS/results" --net n12500r4 --device cuda --out-dir "$R5OUT"
+    "$PY" experiments/ch2_connectivity/fig_r5_compute.py --root "$WS/results" --net n12500r4 --device cuda --out-dir "$R5OUT"
 else
     echo "[skip] no N=12500 seed1 moments found yet -- run the pilot job first"
 fi

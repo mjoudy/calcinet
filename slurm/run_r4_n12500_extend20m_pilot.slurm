@@ -52,7 +52,7 @@ print("torch", torch.__version__, "cuda_available", torch.cuda.is_available())
 assert torch.cuda.is_available(), "No CUDA torch — set GPU_PY to a CUDA env."
 PYCHK
 
-"$PY" scripts/wrapup_run_stream.py --net n12500_r4 \
+"$PY" experiments/ch2_connectivity/wrapup_run_stream.py --net n12500_r4 \
       --sweep 100000 200000 500000 1000000 2000000 5000000 7500000 10000000 \
                15000000 20000000 \
       --seeds 1 \

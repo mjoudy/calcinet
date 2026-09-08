@@ -15,7 +15,7 @@
 #SBATCH --partition=cpu
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=8           # MUST match n_threads in scripts/run_n1250_group3.py
+#SBATCH --cpus-per-task=8           # MUST match n_threads in experiments/ch2_connectivity/run_n1250_group3.py
 #SBATCH --mem=96G                   # Dale re-solve loads the full feed (a few large arrays)
 #SBATCH --time=02:00:00
 #SBATCH --array=0-1                 # 2 strengths (indices 0..1)
@@ -45,4 +45,4 @@ echo "cpus:    ${SLURM_CPUS_PER_TASK}"
 echo "workdir: $WS"
 echo "============================================="
 
-"$PY" scripts/run_n1250_group3.py
+"$PY" experiments/ch2_connectivity/run_n1250_group3.py

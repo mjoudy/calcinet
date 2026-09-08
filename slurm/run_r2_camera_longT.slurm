@@ -35,7 +35,7 @@ echo "host: $(hostname)  git: $(git rev-parse HEAD)  date: $(date)"
 OUT="$WS/results/fig_data/r2_camera_longT.npz"
 mkdir -p "$(dirname "$OUT")"
 
-"$PY" scripts/fig_r2_compute.py --net n1250_r4 --T-ms 1000000 \
+"$PY" experiments/ch1_proxy/fig_r2_compute.py --net n1250_r4 --T-ms 1000000 \
       --kinds spikes deconv_rate raw_rate \
       --frames 10 20 33 50 \
       --out "$OUT"

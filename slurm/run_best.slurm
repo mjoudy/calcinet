@@ -30,9 +30,9 @@ export CALCIUM_AR_WORKDIR="$WS"
 echo "host: $(hostname)   git: $(git rev-parse HEAD)   date: $(date)"
 OUT="$WS/results/best"
 
-"$PY" scripts/fig_best_compute.py --data "$WS/results/wrapup_n12500lr_T5000k/seed1" \
+"$PY" experiments/ch2_connectivity/fig_best_compute.py --data "$WS/results/wrapup_n12500lr_T5000k/seed1" \
       --tag n12500lr --out-dir "$OUT"
-"$PY" scripts/fig_best_compute.py --data "$WS/results/wrapup_n1250r4_T500k/seed1" \
+"$PY" experiments/ch2_connectivity/fig_best_compute.py --data "$WS/results/wrapup_n1250r4_T500k/seed1" \
       --tag n1250r4 --out-dir "$OUT" --full-error
 
 echo "done: $(date)"

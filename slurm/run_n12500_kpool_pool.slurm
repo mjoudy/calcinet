@@ -27,7 +27,7 @@ DIR="$WS/results/wrapup_n12500r4_T12000k"
 echo "pooling chunks under: $DIR"
 ls -d "$DIR"/seed2* 2>/dev/null || { echo "FATAL: no seed20x dirs found yet"; exit 1; }
 
-"$PY" scripts/pool_chunks_and_solve.py --dir "$DIR" --out "$DIR"_pooled
+"$PY" -m calcinet.io.pool_chunks_and_solve --dir "$DIR" --out "$DIR"_pooled
 
 echo "done: $(date)"
 echo "--- copy home just this: ---"

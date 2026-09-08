@@ -28,8 +28,8 @@ export OMP_NUM_THREADS="${SLURM_CPUS_PER_TASK}"
 echo "host: $(hostname)   git: $(git rev-parse HEAD)   date: $(date)"
 R8OUT="$WS/results/r8"
 
-"$PY" scripts/fig_r8_compute.py --net n1250r4  --out-dir "$R8OUT"
-"$PY" scripts/fig_r8_compute.py --net n12500r4 --out-dir "$R8OUT"
+"$PY" experiments/ch2_connectivity/fig_r8_compute.py --net n1250r4  --out-dir "$R8OUT"
+"$PY" experiments/ch2_connectivity/fig_r8_compute.py --net n12500r4 --out-dir "$R8OUT"
 
 echo "done: $(date)"
 ls -lh "$R8OUT"/*.npz 2>/dev/null || echo "(no npz)"

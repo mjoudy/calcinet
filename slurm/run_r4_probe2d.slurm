@@ -40,7 +40,7 @@ OUT="$WS/results/regime2d"
 
 for JS in 1.0 1.5 2.0; do
     echo; echo "############ J scale x${JS} ############"
-    "$PY" scripts/r4_probe_2d.py --sizes 1250 --j-scale "$JS" \
+    "$PY" experiments/ch2_connectivity/r4_probe_2d.py --sizes 1250 --j-scale "$JS" \
           --sim-time 4000 --n-threads "${SLURM_CPUS_PER_TASK}" \
           --target-rate 14 --target-cv 1.0 --out-dir "$OUT"
 done

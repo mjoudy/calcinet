@@ -52,7 +52,7 @@ PYCHK
 # a bad regime can be caught early.
 echo "=== regime preflight: canonical Brunel at N=12500 ==="
 mkdir -p "$WS/results/network_state"
-"$PY" scripts/regime_probe.py --scale n12500 --only brunel_AI_fig8B \
+"$PY" experiments/ch2_connectivity/regime_probe.py --scale n12500 --only brunel_AI_fig8B \
       --sim-time 5000 --n-threads "${SLURM_CPUS_PER_TASK}" \
       --fig "$WS/results/network_state/n12500_AI.png" || true
 
@@ -62,14 +62,14 @@ mkdir -p "$WS/results/network_state"
 # solved and SAVED as it is reached. 1 seed (seeds deferred to a revision).
 # --cache-dir : save the simulated network (skip NEST on future runs)
 # --save-moments : save Cxx/Cyx per checkpoint so new estimators solve in seconds
-"$PY" scripts/wrapup_run_stream.py --net n12500 \
+"$PY" experiments/ch2_connectivity/wrapup_run_stream.py --net n12500 \
       --sweep 1000000 2000000 5000000 --seeds 1 \
       --methods ols ridge --device cuda --chunk-ms 5000 \
       --cache-dir "$WS/gt_cache" --save-moments
 
 # Score ON THE CLUSTER — only the small metrics.csv needs to travel home.
 for Tk in 1000 2000 5000; do
-    "$PY" scripts/analyze_run.py --data "$WS/results/wrapup_n12500_T${Tk}k" \
+    "$PY" -m calcinet.connectivity.analyze_run --data "$WS/results/wrapup_n12500_T${Tk}k" \
         || echo "analyze T${Tk}k failed (continuing)"
 done
 echo "done: $(date)"

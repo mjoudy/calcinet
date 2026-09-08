@@ -47,4 +47,4 @@ echo "cpus:    ${SLURM_CPUS_PER_TASK}"
 echo "workdir: $WS"
 echo "============================================="
 
-"$PY" scripts/run_n1250_experiments.py
+"$PY" experiments/ch2_connectivity/run_n1250_experiments.py

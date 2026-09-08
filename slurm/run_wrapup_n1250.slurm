@@ -10,7 +10,7 @@
 #          sbatch slurm/run_wrapup_n1250.slurm
 #
 # Then build the figures (cheap, from the saved matrices):
-#          "$PY" scripts/wrapup_figures.py --data "$WS/results/wrapup_n1250"
+#          "$PY" experiments/ch2_connectivity/wrapup_figures.py --data "$WS/results/wrapup_n1250"
 
 #SBATCH --job-name=ca_wrapup_n1250
 #SBATCH --partition=cpu
@@ -35,8 +35,8 @@ if [ -n "$(git status --porcelain --untracked-files=no)" ]; then GIT_DIRTY=yes; 
 echo "host: $(hostname)   git: $GIT_COMMIT (dirty: $GIT_DIRTY)   date: $(date)"
 
 # 5 seeds -> results/wrapup_n1250/seed{1..5}/ under the workspace
-"$PY" scripts/wrapup_run.py --net n1250 --seeds 1 2 3 4 5
+"$PY" experiments/shared/wrapup_run.py --net n1250 --seeds 1 2 3 4 5
 
 # Figures render straight from the saved matrices (light; keep the CPU job simple)
-"$PY" scripts/wrapup_figures.py --data "$WS/results/wrapup_n1250" --decision-method endale
+"$PY" experiments/ch2_connectivity/wrapup_figures.py --data "$WS/results/wrapup_n1250" --decision-method endale
 echo "done: $(date)"

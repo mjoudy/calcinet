@@ -86,7 +86,7 @@ positive") and trace out two standard curves:
 
 AUC (area under curve) summarizes the whole sweep in one number instead of
 picking one threshold. `roc_auc` and `pr_ap` (average precision = the area
-under the PR curve) are both already computed by `scripts/analyze_run.py`
+under the PR curve) are both already computed by `src/calcinet/connectivity/analyze_run.py`
 (`score()`) for every run in this project — `pr_ap` was sitting unused in the
 metrics CSVs until 2026-08-14, when it was added to `fig_R4`/`fig_R5` as a
 plotted row.

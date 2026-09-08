@@ -32,12 +32,12 @@ if [ -n "$(git status --porcelain --untracked-files=no)" ]; then GIT_DIRTY=yes; 
 echo "host: $(hostname)   git: $GIT_COMMIT (dirty: $GIT_DIRTY)   date: $(date)"
 
 # 3 seeds x {500k,1M,2M} ms -> results/wrapup_n1250ai_T{500,1000,2000}k/
-"$PY" scripts/wrapup_run_stream.py --net n1250ai \
+"$PY" experiments/ch2_connectivity/wrapup_run_stream.py --net n1250ai \
       --sweep 500000 1000000 2000000 --seeds 1 2 3 --chunk-ms 10000
 
 # figures per recording length
 for Tk in 500 1000 2000; do
-    "$PY" scripts/wrapup_figures.py --data "$WS/results/wrapup_n1250ai_T${Tk}k" \
+    "$PY" experiments/ch2_connectivity/wrapup_figures.py --data "$WS/results/wrapup_n1250ai_T${Tk}k" \
           --decision-method endale || echo "figure T${Tk}k failed (continuing)"
 done
 echo "done: $(date)"

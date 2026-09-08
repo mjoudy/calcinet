@@ -45,7 +45,7 @@ assert torch.cuda.is_available(), "no CUDA torch — set GPU_PY to a CUDA env."
 PYCHK
 
 R7OUT="$WS/results/r7"
-"$PY" scripts/fig_r7_compute.py --root "$WS/results" --net n12500r4 \
+"$PY" experiments/ch2_connectivity/fig_r7_compute.py --root "$WS/results" --net n12500r4 \
       --fractions 1.0 0.5 0.25 0.1 --base-tn 800 --shared-frac 0.5 \
       --device cuda --out-dir "$R7OUT"
 

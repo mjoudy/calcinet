@@ -43,7 +43,7 @@ import torch
 print("torch", torch.__version__, "cuda", torch.cuda.is_available())
 PYCHK
 
-"$PY" scripts/wrapup_run_stream.py --net n2500_r4 \
+"$PY" experiments/ch2_connectivity/wrapup_run_stream.py --net n2500_r4 \
       --sweep 100000 200000 500000 1000000 2000000 5000000 7500000 10000000 \
                15000000 20000000 \
       --seeds 1 2 3 4 5 \
@@ -51,7 +51,7 @@ PYCHK
       --cache-dir "$WS/gt_cache" --save-moments
 
 for Tk in 100 200 500 1000 2000 5000 7500 10000 15000 20000; do
-    "$PY" scripts/analyze_run.py --data "$WS/results/wrapup_n2500r4_T${Tk}k" \
+    "$PY" -m calcinet.connectivity.analyze_run --data "$WS/results/wrapup_n2500r4_T${Tk}k" \
         || echo "analyze T${Tk}k failed (continuing)"
 done
 

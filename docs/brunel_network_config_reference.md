@@ -24,7 +24,7 @@
 >
 > ### VERIFIED 2026-07-23 — rate and irregularity are NOT in conflict
 > 2-D probe over (g, eta) at N=1250, three J scales, 144 configs
-> (`scripts/r4_probe_2d.py`, raw numbers in `results/regime2d/*.csv`,
+> (`experiments/ch2_connectivity/r4_probe_2d.py`, raw numbers in `results/regime2d/*.csv`,
 > figures `figures/fig_regime2d_j*.pdf` and `fig_regime2d_ridge.pdf`).
 >
 > Walking along the **14 Hz iso-rate line** (eta re-fitted at each g):
@@ -47,7 +47,7 @@
 >
 > ### VERIFIED 2026-07-23 — the R.4 scaling ladder (one regime, four sizes)
 > g=8, V_reset=10, J fluctuation-scaled (J*sqrt(C_E) = 1.5*0.1*sqrt(1000) = 4.743),
-> eta tuned per size to ~14 Hz (`scripts/r4_tune_regime.py --g 8 --j-scale 1.5`).
+> eta tuned per size to ~14 Hz (`experiments/ch2_connectivity/r4_tune_regime.py --g 8 --j-scale 1.5`).
 > 4 s sims, 1 s warm-up, seed 1:
 >
 > | N | C_E | J | eta | rate | CV | sync |
@@ -59,7 +59,7 @@
 >
 > Rate matched to +/-3%, CV 0.98-1.06, synchrony <=0.010 across a 10x size range —
 > so in the R.4 sweep **N is the only variable**. Presets `n{1250,2500,5000,12500}_r4`
-> in `scripts/wrapup_run.py`. Note eta must RISE with N to hold the rate under
+> in `experiments/shared/wrapup_run.py`. Note eta must RISE with N to hold the rate under
 > fluctuation-scaling (1.30 -> 2.60), and g=8 is a deliberate departure from
 > Brunel's g=6 — the canonical point stays in the `n12500` preset.
 >
@@ -94,13 +94,13 @@
 > preserving) and no choice preserves every property, so smaller nets are
 > *variants*, not canonical.
 >
-> ### Presets (scripts/wrapup_run.py)
+> ### Presets (experiments/shared/wrapup_run.py)
 > * `n12500` — canonical Fig 8B AI (g=6, eta=4, V_r=10)
 > * `n12500_lowrate` — same but eta=1.5 (~14 Hz, cortical rate)
 > * `n12500ai` — deprecated early variant (J=0.23, g=8, eta=1, V_r=0)
 >
 > Check any config cheaply with:
-> `python scripts/regime_probe.py --scale n12500 --only brunel_AI_fig8B --sim-time 5000 --fig out.png`
+> `python experiments/ch2_connectivity/regime_probe.py --scale n12500 --only brunel_AI_fig8B --sim-time 5000 --fig out.png`
 
 
 ## The Canonical Brunel 2000 AI State
@@ -257,13 +257,13 @@ Do **not** use J=8.0 with the current corrected code for N=1250.
 
 ```bash
 # Quick local test (N=100, ~30 seconds)
-python scripts/sanity_check.py --ne 80 --ni 20
+python -m calcinet.simulation.sanity_check --ne 80 --ni 20
 
 # HPC target sanity check (N=1250, ~2 minutes)
-python scripts/sanity_check.py --ne 1000 --ni 250 --sim-time 10000
+python -m calcinet.simulation.sanity_check --ne 1000 --ni 250 --sim-time 10000
 
 # Production-length run (N=1250, long)
-python scripts/sanity_check.py --ne 1000 --ni 250 --sim-time 1000000 --threads 8
+python -m calcinet.simulation.sanity_check --ne 1000 --ni 250 --sim-time 1000000 --threads 8
 ```
 
 Outputs saved to `scripts/sanity_n{N}_output/`:

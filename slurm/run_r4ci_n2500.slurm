@@ -47,19 +47,19 @@ PYCHK
 
 # --- preflight: verify eta=1.30 still gives ~14Hz under fixed C_E=100 -------- #
 echo "=== regime preflight: N=2500, fixed C_E=100 (eps=0.05), g=8, eta=1.30 ==="
-"$PY" scripts/r4_tune_regime.py --sizes 2500 --g 8 --j-scale 1.5 --fixed-ce 100 \
+"$PY" experiments/ch2_connectivity/r4_tune_regime.py --sizes 2500 --g 8 --j-scale 1.5 --fixed-ce 100 \
       --etas 1.1 1.2 1.3 1.4 1.5 --target 14 \
       --n-threads "${SLURM_CPUS_PER_TASK}" || true
 echo "^^^ if the eta=1.30 row isn't close to 14Hz, STOP and re-tune before"
 echo "    trusting the run below (edit n2500_ci's eta in wrapup_run.py)."
 
-"$PY" scripts/wrapup_run_stream.py --net n2500_ci \
+"$PY" experiments/ch2_connectivity/wrapup_run_stream.py --net n2500_ci \
       --sweep 100000 200000 500000 1000000 2000000 5000000 --seeds 1 2 3 4 5 \
       --methods ols --device cuda --chunk-ms 5000 \
       --cache-dir "$WS/gt_cache" --save-moments
 
 for Tk in 100 200 500 1000 2000 5000; do
-    "$PY" scripts/analyze_run.py --data "$WS/results/wrapup_n2500ci_T${Tk}k" \
+    "$PY" -m calcinet.connectivity.analyze_run --data "$WS/results/wrapup_n2500ci_T${Tk}k" \
         || echo "analyze T${Tk}k failed (continuing)"
 done
 

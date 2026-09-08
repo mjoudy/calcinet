@@ -49,7 +49,7 @@ for d in "${DIRS[@]}"; do
         skipped=$((skipped+1)); continue
     fi
     echo "=== $(basename "$d")  ($nA estimate matrices) ==="
-    if "$PY" scripts/analyze_run.py --data "$d"; then
+    if "$PY" -m calcinet.connectivity.analyze_run --data "$d"; then
         scored=$((scored+1))
     else
         echo "  FAILED on $(basename "$d") (continuing)"; skipped=$((skipped+1))

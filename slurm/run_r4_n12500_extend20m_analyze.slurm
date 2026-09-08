@@ -32,7 +32,7 @@ for Tk in 100 200 500 1000 2000 5000 7500 10000 15000 20000; do
     d="$WS/results/wrapup_n12500r4_T${Tk}k"
     n=$(ls -d "$d"/seed*/ 2>/dev/null | wc -l)
     echo "=== T=${Tk}k : $n seed dirs found ==="
-    "$PY" scripts/analyze_run.py --data "$d" || echo "  analyze T${Tk}k failed (continuing)"
+    "$PY" -m calcinet.connectivity.analyze_run --data "$d" || echo "  analyze T${Tk}k failed (continuing)"
 done
 
 echo "done: $(date)"

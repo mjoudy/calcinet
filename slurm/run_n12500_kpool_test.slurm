@@ -5,10 +5,10 @@
 #
 # Mechanism: each array task builds the IDENTICAL connectivity (loaded from
 # an existing seed1 adj_true.npy -- adjacency_override in BrunelNetwork, see
-# calcium_ar/simulation/brunel_network.py) but simulates its own T/K ms with
+# calcinet/simulation/brunel_network.py) but simulates its own T/K ms with
 # its own noise seed (200 + array index). Each task saves its own normalized
 # Cxx.npy/Cyx.npy (--save-moments). Once all K finish, pool with
-# scripts/pool_chunks_and_solve.py (equal-length chunks -> plain average of
+# src/calcinet/io/pool_chunks_and_solve.py (equal-length chunks -> plain average of
 # the saved Cxx/Cyx is exact) and solve OLS once.
 #
 # K=7, chunk=12,000,000 ms/node -> ~84,000,000 ms equivalent recording
@@ -53,7 +53,7 @@ PYCHK
 
 [ -f "$ADJ" ] || { echo "FATAL: reference adjacency not found at $ADJ"; exit 1; }
 
-"$PY" scripts/wrapup_run_stream.py --net n12500_r4 \
+"$PY" experiments/ch2_connectivity/wrapup_run_stream.py --net n12500_r4 \
       --adjacency-file "$ADJ" \
       --sweep 12000000 \
       --seeds "$NOISE_SEED" \
