@@ -5,14 +5,16 @@
 # fig_R4's curves are directly comparable end to end, and drop the old
 # single-seed 400k probe (now excluded by fig_r4_plot.py's GRID_MS filter).
 #
-# 5 SEEDS, full fresh resimulation (extending max_T is NOT incremental --
+# SEED 5 ONLY (--seeds 5), full fresh resimulation -- a narrowed re-run of the
+# 5-seed job after seed 5 died on a faulty GPU node. Extending max_T is NOT
+# incremental --
 # checkpointing within one run is free, but a longer run can't reuse a
 # shorter one's cache). Observed: 32 min/seed at 5M ms (2026-08-06) -> ~128
 # min/seed at 20M ms (roughly linear in T) -> 5 seeds ~= 10.7h of compute.
 # Budget below has a safety margin on top of that extrapolation.
 #
 # Submit:  cd $(ws_find calcium_ar)/Calcium---AR
-#          sbatch slurm/run_r4_n2500_extend20m.slurm
+#          sbatch slurm/run_r4_n2500_seed5only.slurm
 
 #SBATCH --job-name=ca_r4_n2500x20m
 #SBATCH --partition=l40s

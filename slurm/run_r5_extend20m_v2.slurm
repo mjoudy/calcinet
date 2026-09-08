@@ -19,7 +19,7 @@
 # not hours.
 #
 # Submit:  cd $(ws_find calcium_ar)/Calcium---AR
-#          sbatch slurm/run_r5_extend20m.slurm
+#          sbatch slurm/run_r5_extend20m_v2.slurm
 
 #SBATCH --job-name=ca_r5_extend20m
 #SBATCH --partition=l40s
