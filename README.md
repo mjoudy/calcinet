@@ -141,13 +141,10 @@ Kept separate on purpose; neither is merged in.
 ## Declaration on the use of AI tools
 
 During the preparation of this work the author used Anthropic's Claude, via
-Claude Code, as a coding assistant. Its use was not confined to packaging and
-documentation: substantial parts of the implementation — estimation methods,
-simulation and analysis scripts, experiments and tests — were written with this
-assistance. The research questions, the scientific decisions and the
-interpretation of the results are the author's own. All generated code and text
-were reviewed and verified by the author, who takes full responsibility for the
-content of this repository.
+Claude Code, as a coding assistant. The research questions, the scientific
+decisions and the interpretation of the results are the author's own. All
+generated code and text were reviewed and verified by the author, who takes
+full responsibility for the content of this repository.
 
 Commits produced with this assistance carry a `Co-Authored-By` trailer, so its
 extent can be inspected directly in the repository history.
