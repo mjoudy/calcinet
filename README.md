@@ -1,5 +1,7 @@
 # calcinet
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22666410.svg)](https://doi.org/10.5281/zenodo.22666410)
+
 **Linear VAR-based connectivity estimation from calcium imaging.**
 
 `calcinet` recovers directed, signed connectivity between neurons from calcium
@@ -154,8 +156,13 @@ extent can be inspected directly in the repository history.
 `calcinet` was developed as part of doctoral research at the Bernstein Center
 Freiburg, Albert-Ludwigs-Universität Freiburg.
 
-See [`CITATION.cff`](CITATION.cff). GitHub's "Cite this repository" button reads
-it directly.
+Archived on Zenodo. Cite the concept DOI, which always resolves to the latest
+release:
+
+> Joudy, M. *calcinet*. https://doi.org/10.5281/zenodo.22666410
+
+See [`CITATION.cff`](CITATION.cff) for the machine-readable form — GitHub's
+"Cite this repository" button reads it directly.
 
 ## Licence
 

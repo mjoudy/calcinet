@@ -25,5 +25,5 @@ keywords:
   - granger-causality
   - deconvolution
   - neuroscience
-# TODO: add the Zenodo DOI after the first release is archived, e.g.
-# doi: "10.5281/zenodo.XXXXXXX"
+# Concept DOI: always resolves to the most recent release.
+doi: "10.5281/zenodo.22666410"
