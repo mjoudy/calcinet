@@ -116,4 +116,39 @@ Short by design — add new entries below as they come up, don't expand old ones
   well-observed regimes; outside that, a calibrated candidate-ranker rather than ground truth,
   with the ceiling's actual cause isolated instead of just observed."*
 
+---
+
+## 6. Hidden neurons (R.7) — what the two figures show
+
+- Both `fig_R7_n1250` and `fig_R7_n12500` sweep observed fraction (100/50/25/10%)
+  at MATCHED samples-per-observed-neuron (T/|S|=800), so the drop is hidden-
+  input confounding specifically, not just less data.
+- Signal survives well above chance even at 10% observed: ROC-AUC ~0.62,
+  correlation 0.24–0.36 (both sizes) — degrades, doesn't collapse to noise.
+- **Inhibitory recall's size-dependence is the sharp finding, and the
+  direction is counterintuitive:** N=1250 crashes 0.997→0.26 at 90% hidden;
+  N=12500 barely moves (0.998→0.87). Likely absolute count, not the ratio:
+  at f=0.1, N=1250 has only ~25 observed inhibitory neurons left vs
+  N=12500's ~250 — same "absolute count matters" theme as the Dale-sign-
+  reliability finding in R.5.
+- **Correlation's size-ranking flips depending on where you look:** at this
+  matched T/N=800, N=12500's correlation (0.70) is actually HIGHER than
+  N=1250's (0.56) — opposite of excitatory recall/precision, which rank
+  N=1250 > N=12500 at every single fraction, no exceptions. Cross-checked
+  against the R.4/R.5 cache at T/N=800 (matches to 3 decimals, not a
+  plotting fluke) — correlation is a variance problem (no fixed N-ranking),
+  excitatory recall/precision are a bias/confounding problem (fixed ranking).
+- `fig_R7_mechanism`: among non-connected pairs, mean inferred |weight|
+  rises with how many presynaptic neurons they share (over the FULL
+  network) — direct evidence the false positives are shared-input
+  artifacts, not random noise. Not perfectly monotonic at low overlap
+  (both sizes); the rise at the high-overlap end is the clean, well-sampled
+  part of the story.
+- **One-liner if asked "so is this method still useful when you obviously
+  can't record everything?"**: *"Yes — it degrades gracefully rather than
+  breaking: at 10% observed it's still clearly better than chance on every
+  metric, inhibition stays usable even under heavy hiding, and the errors
+  it does make are traceable to a specific, known cause (shared input)
+  rather than being unexplained noise."*
+
 <!-- Add new hints below this line, one section per topic. -->
