@@ -138,19 +138,24 @@ Kept separate on purpose; neither is merged in.
   `cut_spikes`. **It is GPL-3.0**, so code must not be copied from it into this
   MIT-licensed package.
 
-## Development note
+## Declaration on the use of AI tools
 
-The scientific content of this project is the author's own work: the estimation
-method, the solvers, the metrics, the simulations and the experiments.
+During the preparation of this work the author used Anthropic's Claude, via
+Claude Code, as a coding assistant. Its use was not confined to packaging and
+documentation: substantial parts of the implementation — estimation methods,
+simulation and analysis scripts, experiments and tests — were written with this
+assistance. The research questions, the scientific decisions and the
+interpretation of the results are the author's own. All generated code and text
+were reviewed and verified by the author, who takes full responsibility for the
+content of this repository.
 
-The repository's software engineering was carried out with
-[Claude Code](https://claude.com/claude-code) in September 2026 — the package
-rename and `src/` restructure, the core/experiments split, packaging and licence
-metadata, the test suite, continuous integration, the runnable example, and this
-documentation. Those commits carry a `Co-Authored-By: Claude Opus 5` trailer, so
-the division of work is visible in `git log` rather than only asserted here.
+Commits produced with this assistance carry a `Co-Authored-By` trailer, so its
+extent can be inspected directly in the repository history.
 
 ## Citation
+
+`calcinet` was developed as part of doctoral research at the Bernstein Center
+Freiburg, Albert-Ludwigs-Universität Freiburg.
 
 See [`CITATION.cff`](CITATION.cff). GitHub's "Cite this repository" button reads
 it directly.
