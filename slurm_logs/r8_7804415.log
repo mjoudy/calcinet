@@ -1,0 +1,56 @@
+host: n4606   git: 019c4494380f698383c67d302f803228a24c7bb0   date: Sat Aug 15 13:34:25 CEST 2026
+reading /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T20000k/seed1
+
+asym among predicted edges (mean / median):
+  E_true   n=    93148  mean=0.799  med=0.899
+  E_false  n=    29252  mean=0.151  med=0.073
+  E_false_FF n=    25867  mean=0.076  med=0.063
+  E_false_FT n=     3385  mean=0.725  med=1.000
+  I_true   n=    29797  mean=0.939  med=1.000
+  I_false  n=     3927  mean=0.172  med=0.084
+  I_false_FF n=     3345  mean=0.080  med=0.068
+  I_false_FT n=      582  mean=0.699  med=0.611
+
+bidirectional vs one-directional among predicted edges (counts):
+  E_true   n=    93148  bidirectional=     9534  frac=0.102
+  E_false  n=    29252  bidirectional=    21560  frac=0.737
+  E_false_FF n=    25867  bidirectional=    18176  frac=0.703
+  E_false_FT n=     3385  bidirectional=     3384  frac=1.000
+  I_true   n=    29797  bidirectional=     4536  frac=0.152
+  I_false  n=     3927  bidirectional=     2365  frac=0.602
+  I_false_FF n=     3345  bidirectional=     2014  frac=0.602
+  I_false_FT n=      582  bidirectional=      351  frac=0.603
+
+baseline (no filter): E_prec=0.761 E_rec=0.783
+wrote /work/classic/fr_mj200-calcium_ar/results/r8/r8_wrapup_n1250r4_T20000k.npz and .csv
+reading /work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T10000k/seed1
+
+asym among predicted edges (mean / median):
+  E_true   n=   795100  mean=0.677  med=0.702
+  E_false  n=   512536  mean=0.235  med=0.160
+  E_false_FF n=   453418  mean=0.194  med=0.140
+  E_false_FT n=    59118  mean=0.551  med=0.349
+  I_true   n=   380411  mean=0.940  med=1.000
+  I_false  n=   311330  mean=0.261  med=0.166
+  I_false_FF n=   276732  mean=0.195  med=0.141
+  I_false_FT n=    34598  mean=0.790  med=0.776
+
+bidirectional vs one-directional among predicted edges (counts):
+  E_true   n=   795100  bidirectional=    96356  frac=0.121
+  E_false  n=   512536  bidirectional=   267635  frac=0.522
+  E_false_FF n=   453418  bidirectional=   208669  frac=0.460
+  E_false_FT n=    59118  bidirectional=    58966  frac=0.997
+  I_true   n=   380411  bidirectional=    59314  frac=0.156
+  I_false  n=   311330  bidirectional=   129205  frac=0.415
+  I_false_FF n=   276732  bidirectional=   117330  frac=0.424
+  I_false_FT n=    34598  bidirectional=    11875  frac=0.343
+
+baseline (no filter): E_prec=0.608 E_rec=0.522
+wrote /work/classic/fr_mj200-calcium_ar/results/r8/r8_wrapup_n12500r4_T10000k.npz and .csv
+done: Sat Aug 15 13:34:35 CEST 2026
+-rw-r--r-- 1 fr_mj200 fr_fr 9.9M Aug 15 13:34 /work/classic/fr_mj200-calcium_ar/results/r8/r8_wrapup_n12500r4_T10000k.npz
+-rw-r--r-- 1 fr_mj200 fr_fr 3.1M Jul 29 14:59 /work/classic/fr_mj200-calcium_ar/results/r8/r8_wrapup_n12500r4_T5000k.npz
+-rw-r--r-- 1 fr_mj200 fr_fr 1.5M Aug 15 13:34 /work/classic/fr_mj200-calcium_ar/results/r8/r8_wrapup_n1250r4_T20000k.npz
+-rw-r--r-- 1 fr_mj200 fr_fr 616K Jul 29 14:59 /work/classic/fr_mj200-calcium_ar/results/r8/r8_wrapup_n1250r4_T500k.npz
+
+rsync -avhz fr_mj200@login1.nemo.uni-freiburg.de:/work/classic/fr_mj200-calcium_ar/results/r8/ ~/calcium_results/r8/

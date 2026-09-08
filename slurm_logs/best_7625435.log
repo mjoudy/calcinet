@@ -1,0 +1,10 @@
+host: n4112   git: a44382aabb75a0b10bd38a6235b83b4e662a67e6   date: Wed Jul 29 19:59:02 CEST 2026
+N=12500  sub-block 100 (60 exc + 40 inh)
+wrote /work/classic/fr_mj200-calcium_ar/results/best/best_n12500lr.npz
+N=1250  sub-block 100 (60 exc + 40 inh)
+wrote /work/classic/fr_mj200-calcium_ar/results/best/best_n1250r4.npz
+done: Wed Jul 29 19:59:04 CEST 2026
+-rw-r--r-- 1 fr_mj200 fr_fr 3.1M Jul 29 19:59 /work/classic/fr_mj200-calcium_ar/results/best/best_n12500lr.npz
+-rw-r--r-- 1 fr_mj200 fr_fr 3.1M Jul 29 19:59 /work/classic/fr_mj200-calcium_ar/results/best/best_n1250r4.npz
+
+rsync -avhz fr_mj200@login1.nemo.uni-freiburg.de:/work/classic/fr_mj200-calcium_ar/results/best/ ~/calcium_results/best/

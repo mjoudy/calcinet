@@ -1,0 +1,51 @@
+================== run info ==================
+host:    n3223
+date:    Thu Jul  2 22:50:51 CEST 2026
+git:     9b39b05ee0f584076e653cd3a26c61091dd681b6 (dirty: no)
+sweep:   prep   task: 3
+cpus:    8
+workdir: /work/classic/fr_mj200-calcium_ar
+=============================================
+[INFO] [2026.7.2 22:50:53 /home/conda/feedstock_root/build_artifacts/nest-simulator_1744013459969/work/nestkernel/vp_manager.cpp:74 @ VPManager::initialize()] : OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+For details, see the Guide to parallel computing in the NEST Documentation.
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.8.0
+ Built: Apr  7 2025 08:14:12
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Jul 02 22:50:53 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 02 22:50:53 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 02 22:50:53 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 02 22:50:53 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 10000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 02 22:50:54 SimulationManager::run [Info]: 
+    Simulation finished.
+[exp] python: /work/classic/fr_mj200-calcium_ar/env/bin/python  SWEEP=prep TASK=3
+[exp] prep 3: seed=1 tau=100.0 T=10000.0 -> /work/classic/fr_mj200-calcium_ar/data/N1250/arxiv/s1_tau100_T10000
+[SimulatedDataset] Simulating Brunel network → s1_tau100_T10000
+Simulation finished in 0.8s
+[SimulatedDataset] Generating calcium signal …
+[SimulatedDataset] Saved  N=1250  T=100000  → /work/classic/fr_mj200-calcium_ar/data/N1250/arxiv/s1_tau100_T10000
+[exp] prep 3 DONE

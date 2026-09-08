@@ -1,0 +1,52 @@
+================== run info ==================
+host:    n3219
+date:    Fri Jun 26 00:08:49 CEST 2026
+git:     88966b98f618702493fc6b73da9268353030d579 (dirty: no)
+cpus:    8
+workdir: /work/classic/fr_mj200-calcium_ar
+=============================================
+[INFO] [2026.6.26 0:8:52 /home/conda/feedstock_root/build_artifacts/nest-simulator_1744013459969/work/nestkernel/vp_manager.cpp:74 @ VPManager::initialize()] : OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+For details, see the Guide to parallel computing in the NEST Documentation.
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.8.0
+ Built: Apr  7 2025 08:14:12
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Jun 26 00:08:52 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jun 26 00:08:52 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jun 26 00:08:52 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jun 26 00:08:52 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 50000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jun 26 00:08:57 SimulationManager::run [Info]: 
+    Simulation finished.
+[run_n1250] python : /work/classic/fr_mj200-calcium_ar/env/bin/python
+[run_n1250] nest 3.8.0 | numpy 2.1.2
+[run_n1250] workdir = /work/classic/fr_mj200-calcium_ar
+[SimulatedDataset] Simulating Brunel network → N1250
+Simulation finished in 4.8s
+[SimulatedDataset] Generating calcium signal …
+[SimulatedDataset] Saved  N=1250  T=500000  → /work/classic/fr_mj200-calcium_ar/data/N1250
+[n1250_fista] done in 178.4s  pearson=0.000  auc=0.500
+[run_n1250] DONE  pearson=0.0000  commit=88966b98  -> /work/classic/fr_mj200-calcium_ar/results/n1250/n1250_fista_20260626_000852_5909d0

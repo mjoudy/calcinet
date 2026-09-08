@@ -1,0 +1,18 @@
+host: g3609   git: 1e15340a39a018951f066d295ab23e98cebc90d8   date: Thu Aug  6 13:16:16 CEST 2026   PY=/work/classic/fr_mj200-calcium_ar/env-gpu/bin/python
+torch 2.6.0+cu124 cuda_available True
+gpu: NVIDIA L40S
+=== found cached n12500_r4 spikes, skipping simulation ===
+-rw-r--r-- 1 fr_mj200 fr_fr 5.5G Jul 24 08:58 /work/classic/fr_mj200-calcium_ar/gt_cache/n12500_r4_seed1_T5000k_d8208bdeee.npz
+-rw-r--r-- 1 fr_mj200 fr_fr 1.1G Jul 25 00:26 /work/classic/fr_mj200-calcium_ar/gt_cache/n12500_r4_seed1_T500k_6ab1cc0820.npz
+n12500_r4_seed1_T500k_6ab1cc0820.npz  N=12500  T=5000k ms
+=== raw ===
+  corr=0.421  AUC_E=0.637  E_rec=0.106  I_rec=0.913
+=== feed ===
+  corr=0.566  AUC_E=0.723  E_rec=0.185  I_rec=1.000
+
+wrote /work/classic/fr_mj200-calcium_ar/results/preproc/preproc_n12500_r4.npz
+done: Thu Aug  6 15:46:42 CEST 2026
+-rw-r--r-- 1 fr_mj200 fr_fr 2.3M Aug  6 15:46 /work/classic/fr_mj200-calcium_ar/results/preproc/preproc_n12500_r4.npz
+-rw-r--r-- 1 fr_mj200 fr_fr 1.8M Jul 29 20:10 /work/classic/fr_mj200-calcium_ar/results/preproc/preproc_n1250_r4.npz
+
+rsync -avhz ${USER}@login1.nemo.uni-freiburg.de:/work/classic/fr_mj200-calcium_ar/results/preproc/ ~/calcium_results/preproc/

@@ -1,0 +1,196 @@
+host: n4102   git: 8318da10d8cbdfef31088874a12be3ef0ae3c69e (dirty: no)   stage: x10000   date: Sun Aug 16 15:30:00 CEST 2026
+8 eta points x sim_time=4000000ms  (rough serial estimate: ~1600s wall, extrapolated from today's x100 probe -- treat as order-of-magnitude only)
+
+tau_m=200000ms (10000x base)  target rate~14.0Hz  J=0.474  g=8.0  V_reset=10.0  sim_time=4000000ms
+
+[INFO] [2026.8.16 15:30:2 /home/conda/feedstock_root/build_artifacts/nest-simulator_1744013459969/work/nestkernel/vp_manager.cpp:74 @ VPManager::initialize()] : OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+For details, see the Guide to parallel computing in the NEST Documentation.
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.8.0
+ Built: Apr  7 2025 08:14:12
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Aug 16 15:30:03 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Aug 16 15:30:03 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Aug 16 15:30:03 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Aug 16 15:30:03 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 4e+06
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Aug 16 15:33:23 SimulationManager::run [Info]: 
+    Simulation finished.
+     eta |   rate    CV   sync silent
+--------------------------------------------
+Simulation finished in 200.6s
+  800.00 |    1.7 20.97  0.001   0.00
+
+Aug 16 15:33:26 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Aug 16 15:33:27 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Aug 16 15:33:27 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Aug 16 15:33:27 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 4e+06
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Aug 16 15:36:53 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 206.4s
+ 1500.00 |    2.8 30.37  0.001   0.00
+
+Aug 16 15:36:57 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Aug 16 15:36:57 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Aug 16 15:36:57 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Aug 16 15:36:57 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 4e+06
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Aug 16 15:40:32 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 214.9s
+ 2500.00 |    5.3 30.82  0.002   0.01
+
+Aug 16 15:40:37 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Aug 16 15:40:37 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Aug 16 15:40:37 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Aug 16 15:40:37 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 4e+06
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Aug 16 15:44:35 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 238.0s
+ 4000.00 |    7.3 44.45  0.003   0.00
+
+Aug 16 15:44:42 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Aug 16 15:44:42 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Aug 16 15:44:42 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Aug 16 15:44:42 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 4e+06
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Aug 16 15:48:54 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 251.4s
+ 6000.00 |   12.6 47.37  0.004   0.00
+
+Aug 16 15:49:04 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Aug 16 15:49:04 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Aug 16 15:49:04 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Aug 16 15:49:04 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 4e+06
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Aug 16 15:53:31 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 266.8s
+ 9000.00 |   18.7 53.30  0.004   0.00
+
+Aug 16 15:53:47 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Aug 16 15:53:47 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Aug 16 15:53:47 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Aug 16 15:53:47 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 4e+06
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Aug 16 15:58:37 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 290.6s
+13000.00 |   23.6 30.38  0.006   0.15
+
+Aug 16 15:58:56 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Aug 16 15:58:56 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Aug 16 15:58:56 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Aug 16 15:58:56 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 4e+06
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Aug 16 16:04:10 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 314.0s
+18000.00 |   31.3 87.61  0.007   0.00
+
+-> tau_m=200000ms: closest eta=6000.00  rate=12.6Hz  CV=47.37  sync=0.004
+If the closest grid point is at either end of the --etas grid, the true optimum is outside it -- rerun with a shifted grid before trusting this pick.
+done: Sun Aug 16 16:04:35 CEST 2026

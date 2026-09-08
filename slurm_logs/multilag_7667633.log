@@ -1,0 +1,42 @@
+host: n3418   git: aaec184f3972ae6e16aba2cf0d588df06069589c   date: Tue Aug  4 22:59:34 CEST 2026
+net=n1250_r4 N=1250 dt=0.1 predictor lags(ms)=[1.5, 3.0, 4.5, 6.0]  signal=spikes
+requesting moments at lags(ms)=[0.0, 1.5, 3.0, 4.5, 6.0] -> samples=[0, 15, 30, 45, 60]
+loaded n1250_r4_seed1_T500k_216b8d17a5.npz  using T=500k ms of 500k available
+streamed; mean rate 15.1 Hz
+
+--- false-positive comparison (signal=spikes, L[0]=1.5ms, joint predictors=[1.5, 3.0, 4.5, 6.0]) ---
+  single-lag     n_tp= 118381 n_fp=  10404 E-precision=0.758  FP mean|A|=0.00186 med=0.001787  TP mean|A|=0.004843
+  joint multi-lag n_tp= 118465 n_fp=  11107 E-precision=0.759  FP mean|A|=0.001847 med=0.001776  TP mean|A|=0.004864
+
+--- shared-driver exposure: is the fix specifically about shared input? ---
+  ALL single-lag false positives     n=  10404  mean driver_count=12.69  median=13.0
+    -> FIXED by joint estimator      n=    309  mean driver_count=13.67  median=14.0
+    -> PERSISTED under joint estimator n=  10095  mean driver_count=12.66  median=13.0
+  newly-gained true positives (sanity check) n=     86  mean driver_count=9.17  median=9.0
+
+  fixed/persisted mean driver_count ratio: 1.08x (>1 means the fix IS concentrated on high-shared-input false positives)
+
+wrote /work/classic/fr_mj200-calcium_ar/results/multilag/multilag_n1250_r4_spikes.npz
+net=n1250_r4 N=1250 dt=0.1 predictor lags(ms)=[1.5, 3.0, 4.5, 6.0]  signal=feed
+requesting moments at lags(ms)=[0.0, 1.5, 3.0, 4.5, 6.0] -> samples=[0, 15, 30, 45, 60]
+loaded n1250_r4_seed1_T500k_216b8d17a5.npz  using T=500k ms of 500k available
+streamed; mean rate 15.1 Hz
+
+--- false-positive comparison (signal=feed, L[0]=1.5ms, joint predictors=[1.5, 3.0, 4.5, 6.0]) ---
+  single-lag     n_tp=  73929 n_fp=  43673 E-precision=0.474  FP mean|A|=0.006881 med=0.006456  TP mean|A|=0.008972
+  joint multi-lag n_tp=  92699 n_fp=  29517 E-precision=0.594  FP mean|A|=0.00597 med=0.005643  TP mean|A|=0.008419
+
+--- shared-driver exposure: is the fix specifically about shared input? ---
+  ALL single-lag false positives     n=  43673  mean driver_count=13.88  median=14.0
+    -> FIXED by joint estimator      n=  16975  mean driver_count=13.86  median=14.0
+    -> PERSISTED under joint estimator n=  26698  mean driver_count=13.88  median=14.0
+  newly-gained true positives (sanity check) n=  18890  mean driver_count=10.36  median=10.0
+
+  fixed/persisted mean driver_count ratio: 1.00x (>1 means the fix IS concentrated on high-shared-input false positives)
+
+wrote /work/classic/fr_mj200-calcium_ar/results/multilag/multilag_n1250_r4_feed.npz
+done: Tue Aug  4 23:09:53 CEST 2026
+-rw-r--r-- 1 fr_mj200 fr_fr 5.5K Aug  4 23:09 /work/classic/fr_mj200-calcium_ar/results/multilag/multilag_n1250_r4_feed.npz
+-rw-r--r-- 1 fr_mj200 fr_fr 5.5K Aug  4 23:02 /work/classic/fr_mj200-calcium_ar/results/multilag/multilag_n1250_r4_spikes.npz
+
+rsync -avhz fr_mj200@login1.nemo.uni-freiburg.de:/work/classic/fr_mj200-calcium_ar/results/multilag/ ~/calcium_results/multilag/

@@ -1,0 +1,12 @@
+host: n4509   git: a44382aabb75a0b10bd38a6235b83b4e662a67e6   date: Wed Jul 29 19:59:03 CEST 2026
+n1250_r4_seed1_T50k_c23e792469.npz  N=1250  T=500k ms
+=== raw ===
+  corr=0.421  AUC_E=0.660  E_rec=0.130  I_rec=0.908
+=== feed ===
+  corr=0.436  AUC_E=0.780  E_rec=0.300  I_rec=0.955
+
+wrote /work/classic/fr_mj200-calcium_ar/results/preproc/preproc_n1250_r4.npz
+done: Wed Jul 29 20:10:31 CEST 2026
+-rw-r--r-- 1 fr_mj200 fr_fr 1.8M Jul 29 20:10 /work/classic/fr_mj200-calcium_ar/results/preproc/preproc_n1250_r4.npz
+
+rsync -avhz fr_mj200@login1.nemo.uni-freiburg.de:/work/classic/fr_mj200-calcium_ar/results/preproc/ ~/calcium_results/preproc/

@@ -1,0 +1,8 @@
+host: n4121   git: 9eaef64b38af00aec43e109e0bbc8debe7d55ab8   date: Thu Jul 30 11:48:44 CEST 2026
+=== signal: spikes ===
+Traceback (most recent call last):
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/r8b_multilag.py", line 158, in <module>
+    main()
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/r8b_multilag.py", line 56, in main
+    import torch
+ModuleNotFoundError: No module named 'torch'

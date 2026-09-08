@@ -1,0 +1,111 @@
+host: g3609   git: 83f15c7d6eaff54325c6b6732a444035313f159a   date: Fri Jul 24 08:15:48 CEST 2026   PY=/work/classic/fr_mj200-calcium_ar/env-gpu/bin/python
+torch 2.6.0+cu124 cuda_available True
+gpu: NVIDIA L40S
+=== regime preflight: N=12500, g=8, J x1.5, eta=2.60 ===
+[INFO] [2026.7.24 8:15:56 /home/conda/feedstock_root/build_artifacts/nest-simulator_1744013459969/work/nestkernel/vp_manager.cpp:74 @ VPManager::initialize()] : OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+For details, see the Guide to parallel computing in the NEST Documentation.
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.8.0
+ Built: Apr  7 2025 08:14:12
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Jul 24 08:15:56 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 24 08:15:56 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 24 08:15:56 NodeManager::prepare_nodes [Info]: 
+    Preparing 12532 nodes for simulation.
+
+Jul 24 08:15:56 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 12532
+    Simulation time (ms): 4000
+    Number of OpenMP threads: 16
+    Not using MPI
+
+Jul 24 08:15:59 SimulationManager::run [Info]: 
+    Simulation finished.
+target rate ~14.0 Hz   g=8  V_reset=10  J*sqrt(C_E)=3.162 (x1.5)
+
+     N   C_E      J   eta |   rate    CV   sync silent
+------------------------------------------------------------
+Simulation finished in 2.9s
+ 12500  1000  0.150  2.60 |   13.9  1.06  0.007   0.00
+  -> N=12500: eta=2.60  rate=13.9 Hz  CV=1.06  sync=0.007  J=0.150
+
+=== R.4 configs ===
+  N= 12500: NE=10000  J=0.150  eta=2.60   (rate 13.9 Hz, CV 1.06, sync 0.007)
+net=n12500_r4 g=8.0 eta=2.6  sweep(ms)=[1000000.0, 2000000.0, 5000000.0]  seeds=[1]  chunk_ms=5000.0
+[seed 1] simulating 5000000 ms (densify=False) ...
+[INFO] [2026.7.24 8:16:2 /home/conda/feedstock_root/build_artifacts/nest-simulator_1744013459969/work/nestkernel/vp_manager.cpp:74 @ VPManager::initialize()] : OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+For details, see the Guide to parallel computing in the NEST Documentation.
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.8.0
+ Built: Apr  7 2025 08:14:12
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Jul 24 08:16:02 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 24 08:16:02 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 24 08:16:02 NodeManager::prepare_nodes [Info]: 
+    Preparing 12532 nodes for simulation.
+
+Jul 24 08:16:02 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 12532
+    Simulation time (ms): 5e+06
+    Number of OpenMP threads: 16
+    Not using MPI
+
+Jul 24 08:57:03 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 2460.6s
+[seed 1] cached ground truth -> n12500_r4_seed1_T5000k_d8208bdeee.npz
+[seed 1] streaming moments + checkpoints ...
+[seed 1] T=1000000ms SAVED -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T1000k/seed1  |ols|max=1.93e-02
+[seed 1] T=2000000ms SAVED -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T2000k/seed1  |ols|max=1.87e-02
+[seed 1] T=5000000ms SAVED -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T5000k/seed1  |ols|max=1.86e-02
+[seed 1] mean rate 13.8 Hz  (all checkpoints saved)
+
+sweep complete
+[seed1] ols       AUC=0.745 AUC_E=0.795 AUC_I=1.000 E_rec=0.274 I_rec=1.000 corr=0.697
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T1000k/metrics.csv  (1 rows)
+[seed1] ols       AUC=0.803 AUC_E=0.850 AUC_I=1.000 E_rec=0.362 I_rec=1.000 corr=0.775
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T2000k/metrics.csv  (1 rows)
+[seed1] ols       AUC=0.865 AUC_E=0.901 AUC_I=1.000 E_rec=0.466 I_rec=1.000 corr=0.835
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T5000k/metrics.csv  (1 rows)
+done: Fri Jul 24 10:47:45 CEST 2026
+--- copy home just these: ---
+-rw-r--r-- 1 fr_mj200 fr_fr 358 Jul 24 10:46 /work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T1000k/metrics.csv
+-rw-r--r-- 1 fr_mj200 fr_fr 341 Jul 24 10:47 /work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T2000k/metrics.csv
+-rw-r--r-- 1 fr_mj200 fr_fr 341 Jul 24 10:47 /work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T5000k/metrics.csv

@@ -1,0 +1,53 @@
+================== run info ==================
+host:    n3403
+date:    Fri Jun 26 21:42:49 CEST 2026
+git:     306bed543a2fc53fecbb396d0921895e1db0b315 (dirty: no)
+task:    2
+cpus:    8
+workdir: /work/classic/fr_mj200-calcium_ar
+=============================================
+[sweep] python : /work/classic/fr_mj200-calcium_ar/env/bin/python
+[sweep] task 2: lasso_3e-5  solver=sklearn_lasso lam=3e-05 lam_l2=0.0
+[SimulatedDataset] Loaded  N=1250  T=500000  ← /work/classic/fr_mj200-calcium_ar/data/N1250
+Traceback (most recent call last):
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/run_n1250_sweep.py", line 92, in <module>
+    result = run_single(make_config(name, solver, lam, lam_l2))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/experiments/runner.py", line 245, in run_single
+    adj_inferred = _call_solver(
+                   ^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/experiments/runner.py", line 124, in _call_solver
+    return fn(**common, lam=config.lam, chunk_size=config.chunk_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/solvers/__init__.py", line 32, in solve_sklearn_lasso
+    return solve(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/solvers/sklearn_lasso.py", line 74, in solve
+    model.fit(x_prev, x_now)
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/sklearn/multioutput.py", line 278, in fit
+    self.estimators_ = Parallel(n_jobs=self.n_jobs)(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/sklearn/utils/parallel.py", line 74, in __call__
+    return super().__call__(iterable_with_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/joblib/parallel.py", line 2007, in __call__
+    return output if self.return_generator else list(output)
+                                                ^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/joblib/parallel.py", line 1650, in _get_outputs
+    yield from self._retrieve()
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/joblib/parallel.py", line 1754, in _retrieve
+    self._raise_error_fast()
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/joblib/parallel.py", line 1789, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/joblib/parallel.py", line 745, in get_result
+    return self._return_or_raise()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/joblib/parallel.py", line 763, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker.
+
+The exit codes of the workers are {SIGKILL(-9)}
+[2026-06-26T21:46:09.423] error: Detected 1 oom_kill event in StepId=7434265.batch. Some of the step tasks have been OOM Killed.

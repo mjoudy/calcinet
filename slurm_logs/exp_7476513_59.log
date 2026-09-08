@@ -1,0 +1,88 @@
+================== run info ==================
+host:    n4123
+date:    Thu Jul  2 22:50:56 CEST 2026
+git:     9b39b05ee0f584076e653cd3a26c61091dd681b6 (dirty: no)
+sweep:   lag   task: 59
+cpus:    8
+workdir: /work/classic/fr_mj200-calcium_ar
+=============================================
+[INFO] [2026.7.2 22:50:58 /home/conda/feedstock_root/build_artifacts/nest-simulator_1744013459969/work/nestkernel/vp_manager.cpp:74 @ VPManager::initialize()] : OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+For details, see the Guide to parallel computing in the NEST Documentation.
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.8.0
+ Built: Apr  7 2025 08:14:12
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Jul 02 22:50:59 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 02 22:50:59 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 02 22:50:59 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 02 22:50:59 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 50000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 02 22:51:01 SimulationManager::run [Info]: 
+    Simulation finished.
+[exp] python: /work/classic/fr_mj200-calcium_ar/env/bin/python  SWEEP=lag TASK=59
+[exp] lag: lag_ms=200.0 seed=5
+[SimulatedDataset] Simulating Brunel network → s5_tau100_T50000
+Simulation finished in 2.8s
+[SimulatedDataset] Generating calcium signal …
+Traceback (most recent call last):
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/run_n1250_experiments.py", line 206, in <module>
+    run_sweep_point(sweep, value, seed)
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/run_n1250_experiments.py", line 150, in run_sweep_point
+    result = run_single(cfg)                 # EN: saves feed + adj_inferred + per-task ledger
+             ^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/experiments/runner.py", line 196, in run_single
+    ds = SimulatedDataset.load_or_generate(config, config.data_path)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/data/dataset.py", line 215, in load_or_generate
+    return cls.generate(config, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/data/dataset.py", line 176, in generate
+    ds._write(spikes, calcium, adj_true, config.__dict__)
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/data/dataset.py", line 283, in _write
+    _save_zarr(calcium, self.path / self._CALCIUM_DIR)
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/data/dataset.py", line 61, in _save_zarr
+    z[:] = arr
+    ~^^^
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/zarr/core.py", line 1449, in __setitem__
+    self.set_basic_selection(pure_selection, value, fields=fields)
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/zarr/core.py", line 1545, in set_basic_selection
+    return self._set_basic_selection_nd(selection, value, fields=fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/zarr/core.py", line 1935, in _set_basic_selection_nd
+    self._set_selection(indexer, value, fields=fields)
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/zarr/core.py", line 1988, in _set_selection
+    self._chunk_setitem(chunk_coords, chunk_selection, chunk_value, fields=fields)
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/zarr/core.py", line 2261, in _chunk_setitem
+    self._chunk_setitem_nosync(chunk_coords, chunk_selection, value, fields=fields)
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/zarr/core.py", line 2271, in _chunk_setitem_nosync
+    self.chunk_store[ckey] = self._encode_chunk(cdata)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/zarr/storage.py", line 1156, in __setitem__
+    retry_call(os.replace, (temp_path, file_path), exceptions=(PermissionError,))
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/zarr/util.py", line 693, in retry_call
+    return callabl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/work/classic/fr_mj200-calcium_ar/data/N1250/arxiv/s5_tau100_T50000/calcium.zarr/0.36.f1ca214d81d2469dac9e20845995cd1e.partial' -> '/work/classic/fr_mj200-calcium_ar/data/N1250/arxiv/s5_tau100_T50000/calcium.zarr/0.36'

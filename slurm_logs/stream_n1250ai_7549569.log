@@ -1,0 +1,109 @@
+host: n4117   git: ffd4743c6fd916f4f553c7ad0a7c3dd64597ac39 (dirty: no)   date: Fri Jul 17 10:45:59 CEST 2026
+net=n1250ai g=8.0 eta=1.0  sweep(ms)=[500000.0, 1000000.0, 2000000.0]  seeds=[1, 2, 3]  chunk_ms=10000.0
+[seed 1] simulating 2000000 ms (densify=False) ...
+[INFO] [2026.7.17 10:46:2 /home/conda/feedstock_root/build_artifacts/nest-simulator_1744013459969/work/nestkernel/vp_manager.cpp:74 @ VPManager::initialize()] : OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+For details, see the Guide to parallel computing in the NEST Documentation.
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.8.0
+ Built: Apr  7 2025 08:14:12
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Jul 17 10:46:02 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 17 10:46:02 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 17 10:46:02 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 17 10:46:02 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 2e+06
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 17 10:47:41 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 99.0s
+[seed 1] streaming moments + checkpoints ...
+[seed 1] mean rate 8.0 Hz
+[seed 1] T=500000ms done -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T500k/seed1  nz(lasso)=35926
+[seed 1] T=1000000ms done -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T1000k/seed1  nz(lasso)=31983
+[seed 1] T=2000000ms done -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T2000k/seed1  nz(lasso)=30352
+[seed 2] simulating 2000000 ms (densify=False) ...
+
+Jul 17 11:16:41 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 17 11:16:41 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 17 11:16:41 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 17 11:16:41 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 2e+06
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 17 11:18:21 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 100.3s
+[seed 2] streaming moments + checkpoints ...
+[seed 2] mean rate 8.1 Hz
+[seed 2] T=500000ms done -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T500k/seed2  nz(lasso)=36661
+[seed 2] T=1000000ms done -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T1000k/seed2  nz(lasso)=33630
+[seed 2] T=2000000ms done -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T2000k/seed2  nz(lasso)=31675
+[seed 3] simulating 2000000 ms (densify=False) ...
+
+Jul 17 11:47:19 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 17 11:47:19 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 17 11:47:19 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 17 11:47:19 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 2e+06
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 17 11:48:58 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 99.1s
+[seed 3] streaming moments + checkpoints ...
+[seed 3] mean rate 7.9 Hz
+[seed 3] T=500000ms done -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T500k/seed3  nz(lasso)=31224
+[seed 3] T=1000000ms done -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T1000k/seed3  nz(lasso)=28469
+[seed 3] T=2000000ms done -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T2000k/seed3  nz(lasso)=26876
+
+sweep complete
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T500k/method_panel.png
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T500k/decision_endale.png
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T500k/excitatory_endale.png
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T1000k/method_panel.png
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T1000k/decision_endale.png
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T1000k/excitatory_endale.png
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T2000k/method_panel.png
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T2000k/decision_endale.png
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250ai_T2000k/excitatory_endale.png
+done: Fri Jul 17 12:19:00 CEST 2026

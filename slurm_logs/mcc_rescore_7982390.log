@@ -1,0 +1,98 @@
+host: n4126   git: 6ef4e988   date: Fri Sep  4 12:43:44 CEST 2026
+=== wrapup_n1250r4_T10000k  (5 estimate matrices) ===
+[seed1] ols       AUC=0.979 E_rec=0.780 I_rec=1.000 corr=0.774 MCC3=0.787 MCC_E=0.750 MCC_I=0.937
+[seed2] ols       AUC=0.980 E_rec=0.787 I_rec=1.000 corr=0.777 MCC3=0.793 MCC_E=0.756 MCC_I=0.942
+[seed3] ols       AUC=0.978 E_rec=0.779 I_rec=1.000 corr=0.770 MCC3=0.786 MCC_E=0.750 MCC_I=0.933
+[seed4] ols       AUC=0.980 E_rec=0.787 I_rec=1.000 corr=0.778 MCC3=0.793 MCC_E=0.757 MCC_I=0.938
+[seed5] ols       AUC=0.975 E_rec=0.758 I_rec=1.000 corr=0.770 MCC3=0.769 MCC_E=0.730 MCC_I=0.923
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T10000k/metrics.csv  (5 rows)
+=== wrapup_n1250r4_T1000k  (5 estimate matrices) ===
+[seed1] ols       AUC=0.962 E_rec=0.719 I_rec=1.000 corr=0.744 MCC3=0.735 MCC_E=0.691 MCC_I=0.911
+[seed2] ols       AUC=0.965 E_rec=0.727 I_rec=1.000 corr=0.748 MCC3=0.742 MCC_E=0.699 MCC_I=0.913
+[seed3] ols       AUC=0.962 E_rec=0.718 I_rec=1.000 corr=0.739 MCC3=0.734 MCC_E=0.690 MCC_I=0.908
+[seed4] ols       AUC=0.964 E_rec=0.727 I_rec=1.000 corr=0.749 MCC3=0.742 MCC_E=0.700 MCC_I=0.911
+[seed5] ols       AUC=0.965 E_rec=0.728 I_rec=1.000 corr=0.751 MCC3=0.743 MCC_E=0.701 MCC_I=0.910
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T1000k/metrics.csv  (5 rows)
+=== wrapup_n1250r4_T100k  (5 estimate matrices) ===
+[seed1] ols       AUC=0.824 E_rec=0.417 I_rec=0.999 corr=0.562 MCC3=0.481 MCC_E=0.405 MCC_I=0.743
+[seed2] ols       AUC=0.828 E_rec=0.422 I_rec=0.999 corr=0.565 MCC3=0.485 MCC_E=0.411 MCC_I=0.743
+[seed3] ols       AUC=0.822 E_rec=0.413 I_rec=0.999 corr=0.553 MCC3=0.478 MCC_E=0.402 MCC_I=0.741
+[seed4] ols       AUC=0.828 E_rec=0.424 I_rec=0.999 corr=0.567 MCC3=0.486 MCC_E=0.413 MCC_I=0.744
+[seed5] ols       AUC=0.828 E_rec=0.421 I_rec=0.999 corr=0.568 MCC3=0.485 MCC_E=0.411 MCC_I=0.741
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T100k/metrics.csv  (5 rows)
+=== wrapup_n1250r4_T12k  (1 estimate matrices) ===
+[seed1] ols       AUC=0.640 E_rec=0.183 I_rec=0.535 corr=0.277 MCC3=0.189 MCC_E=0.145 MCC_I=0.360
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T12k/metrics.csv  (1 rows)
+=== wrapup_n1250r4_T15000k  (5 estimate matrices) ===
+[seed1] ols       AUC=0.979 E_rec=0.782 I_rec=1.000 corr=0.775 MCC3=0.789 MCC_E=0.752 MCC_I=0.938
+[seed2] ols       AUC=0.981 E_rec=0.790 I_rec=1.000 corr=0.779 MCC3=0.795 MCC_E=0.759 MCC_I=0.943
+[seed3] ols       AUC=0.979 E_rec=0.781 I_rec=1.000 corr=0.771 MCC3=0.787 MCC_E=0.751 MCC_I=0.934
+[seed4] ols       AUC=0.980 E_rec=0.789 I_rec=1.000 corr=0.780 MCC3=0.795 MCC_E=0.759 MCC_I=0.939
+[seed5] ols       AUC=0.969 E_rec=0.730 I_rec=1.000 corr=0.760 MCC3=0.744 MCC_E=0.705 MCC_I=0.902
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T15000k/metrics.csv  (5 rows)
+=== wrapup_n1250r4_T20000k  (5 estimate matrices) ===
+[seed1] ols       AUC=0.980 E_rec=0.783 I_rec=1.000 corr=0.775 MCC3=0.790 MCC_E=0.753 MCC_I=0.939
+[seed2] ols       AUC=0.981 E_rec=0.792 I_rec=1.000 corr=0.779 MCC3=0.797 MCC_E=0.760 MCC_I=0.943
+[seed3] ols       AUC=0.979 E_rec=0.782 I_rec=1.000 corr=0.771 MCC3=0.789 MCC_E=0.753 MCC_I=0.934
+[seed4] ols       AUC=0.981 E_rec=0.791 I_rec=1.000 corr=0.780 MCC3=0.796 MCC_E=0.761 MCC_I=0.940
+[seed5] ols       AUC=0.963 E_rec=0.707 I_rec=1.000 corr=0.753 MCC3=0.725 MCC_E=0.685 MCC_I=0.885
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T20000k/metrics.csv  (5 rows)
+=== wrapup_n1250r4_T2000k  (5 estimate matrices) ===
+[seed1] ols       AUC=0.972 E_rec=0.751 I_rec=1.000 corr=0.760 MCC3=0.763 MCC_E=0.722 MCC_I=0.927
+[seed2] ols       AUC=0.973 E_rec=0.759 I_rec=1.000 corr=0.763 MCC3=0.769 MCC_E=0.729 MCC_I=0.930
+[seed3] ols       AUC=0.971 E_rec=0.750 I_rec=1.000 corr=0.755 MCC3=0.761 MCC_E=0.721 MCC_I=0.923
+[seed4] ols       AUC=0.973 E_rec=0.759 I_rec=1.000 corr=0.765 MCC3=0.769 MCC_E=0.730 MCC_I=0.928
+[seed5] ols       AUC=0.974 E_rec=0.760 I_rec=1.000 corr=0.767 MCC3=0.770 MCC_E=0.731 MCC_I=0.926
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T2000k/metrics.csv  (5 rows)
+=== wrapup_n1250r4_T200k  (5 estimate matrices) ===
+[seed1] ols       AUC=0.888 E_rec=0.535 I_rec=1.000 corr=0.645 MCC3=0.580 MCC_E=0.521 MCC_I=0.801
+[seed2] ols       AUC=0.891 E_rec=0.542 I_rec=1.000 corr=0.648 MCC3=0.585 MCC_E=0.527 MCC_I=0.803
+[seed3] ols       AUC=0.886 E_rec=0.533 I_rec=1.000 corr=0.638 MCC3=0.578 MCC_E=0.518 MCC_I=0.801
+[seed4] ols       AUC=0.891 E_rec=0.543 I_rec=1.000 corr=0.650 MCC3=0.587 MCC_E=0.529 MCC_I=0.804
+[seed5] ols       AUC=0.892 E_rec=0.544 I_rec=1.000 corr=0.652 MCC3=0.587 MCC_E=0.529 MCC_I=0.804
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T200k/metrics.csv  (5 rows)
+=== wrapup_n1250r4_T25k  (1 estimate matrices) ===
+[seed1] ols       AUC=0.688 E_rec=0.224 I_rec=0.808 corr=0.351 MCC3=0.280 MCC_E=0.198 MCC_I=0.549
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T25k/metrics.csv  (1 rows)
+=== wrapup_n1250r4_T5000k  (5 estimate matrices) ===
+[seed1] ols       AUC=0.976 E_rec=0.766 I_rec=1.000 corr=0.768 MCC3=0.775 MCC_E=0.736 MCC_I=0.934
+[seed2] ols       AUC=0.977 E_rec=0.773 I_rec=1.000 corr=0.771 MCC3=0.781 MCC_E=0.742 MCC_I=0.938
+[seed3] ols       AUC=0.975 E_rec=0.765 I_rec=1.000 corr=0.763 MCC3=0.774 MCC_E=0.736 MCC_I=0.930
+[seed4] ols       AUC=0.977 E_rec=0.773 I_rec=1.000 corr=0.772 MCC3=0.781 MCC_E=0.742 MCC_I=0.935
+[seed5] ols       AUC=0.978 E_rec=0.773 I_rec=1.000 corr=0.775 MCC3=0.781 MCC_E=0.743 MCC_I=0.934
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T5000k/metrics.csv  (5 rows)
+=== wrapup_n1250r4_T500k  (5 estimate matrices) ===
+[seed1] ols       AUC=0.943 E_rec=0.661 I_rec=1.000 corr=0.715 MCC3=0.686 MCC_E=0.637 MCC_I=0.876
+[seed2] ols       AUC=0.945 E_rec=0.669 I_rec=1.000 corr=0.718 MCC3=0.693 MCC_E=0.645 MCC_I=0.878
+[seed3] ols       AUC=0.942 E_rec=0.659 I_rec=1.000 corr=0.709 MCC3=0.685 MCC_E=0.636 MCC_I=0.874
+[seed4] ols       AUC=0.945 E_rec=0.670 I_rec=1.000 corr=0.721 MCC3=0.694 MCC_E=0.647 MCC_I=0.876
+[seed5] ols       AUC=0.946 E_rec=0.670 I_rec=1.000 corr=0.722 MCC3=0.693 MCC_E=0.646 MCC_I=0.877
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T500k/metrics.csv  (5 rows)
+=== wrapup_n1250r4_T50k  (1 estimate matrices) ===
+[seed1] ols       AUC=0.754 E_rec=0.304 I_rec=0.981 corr=0.456 MCC3=0.383 MCC_E=0.289 MCC_I=0.685
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T50k/metrics.csv  (1 rows)
+=== wrapup_n1250r4_T7500k  (5 estimate matrices) ===
+[seed1] ols       AUC=0.978 E_rec=0.777 I_rec=1.000 corr=0.773 MCC3=0.785 MCC_E=0.747 MCC_I=0.937
+[seed2] ols       AUC=0.980 E_rec=0.786 I_rec=1.000 corr=0.776 MCC3=0.792 MCC_E=0.755 MCC_I=0.941
+[seed3] ols       AUC=0.978 E_rec=0.777 I_rec=1.000 corr=0.768 MCC3=0.784 MCC_E=0.747 MCC_I=0.933
+[seed4] ols       AUC=0.979 E_rec=0.785 I_rec=1.000 corr=0.777 MCC3=0.791 MCC_E=0.755 MCC_I=0.938
+[seed5] ols       AUC=0.978 E_rec=0.771 I_rec=1.000 corr=0.774 MCC3=0.780 MCC_E=0.741 MCC_I=0.934
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T7500k/metrics.csv  (5 rows)
+=== wrapup_n2500r4_T10000k  (5 estimate matrices) ===
+[seed1] ols       AUC=0.963 E_rec=0.715 I_rec=1.000 corr=0.829 MCC3=0.732 MCC_E=0.693 MCC_I=0.885
+[seed2] ols       AUC=0.962 E_rec=0.709 I_rec=1.000 corr=0.827 MCC3=0.727 MCC_E=0.689 MCC_I=0.878
+[seed3] ols       AUC=0.964 E_rec=0.713 I_rec=1.000 corr=0.830 MCC3=0.730 MCC_E=0.693 MCC_I=0.880
+[2026-09-04T12:45:31.808] error: *** JOB 7982390 ON n4126 CANCELLED AT 2026-09-04T12:45:31 DUE to SIGNAL Terminated ***

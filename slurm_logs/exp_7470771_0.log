@@ -1,0 +1,17 @@
+================== run info ==================
+host:    n3107
+date:    Thu Jul  2 00:01:32 CEST 2026
+git:     54b6442d9f7ad7e4cc4ad75722e3844dc8bee747 (dirty: no)
+sweep:   lam   task: 0
+cpus:    8
+workdir: /work/classic/fr_mj200-calcium_ar
+=============================================
+[exp] python: /work/classic/fr_mj200-calcium_ar/env/bin/python  SWEEP=lam TASK=0
+[exp] lam: lam=1e-05 seed=1
+[SimulatedDataset] Loaded  N=1250  T=500000  ← /work/classic/fr_mj200-calcium_ar/data/N1250/s1_tau100_T50000
+[n1250_lam_1e-05_s1] done in 80.8s  pearson=0.618  auc=0.876
+[SimulatedDataset] Loaded  N=1250  T=500000  ← /work/classic/fr_mj200-calcium_ar/data/N1250/s1_tau100_T50000
+  EN                 pearson=0.618 auc=0.876 type_acc=0.957 ei=2.32
+  EN+Dale            pearson=0.760 auc=0.911 type_acc=1.000 ei=2.95
+  EN+Dale+balance    pearson=0.842 auc=0.873 type_acc=1.000 ei=8.61
+[exp] DONE lam lam=1e-05 seed=1 -> /work/classic/fr_mj200-calcium_ar/results/n1250_sweeps/lam/lam_1e-05_s1/stages.csv

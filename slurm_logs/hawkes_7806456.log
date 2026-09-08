@@ -1,0 +1,20 @@
+host: n4105   git: 8318da10d8cbdfef31088874a12be3ef0ae3c69e (dirty: no)   date: Sun Aug 16 15:30:00 CEST 2026
+using adj_true.npy: /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T10000k/seed1/adj_true.npy
+N=1250 (E=1000, I=250)  tau_syn=10.0ms  y0=26.73Hz  sim_time=100000.0ms  seed=1
+max|eig(G_raw)|=44.4756  coupling_scale=0.01911  max|eig(G_scaled)|=0.8500  (must be < 1)
+simulating (exact thinning) ...
+  ... 500000 events, t=27641/100000 ms, 934623 candidates, 19.7s elapsed
+  ... 1000000 events, t=55246/100000 ms, 1867526 candidates, 39.4s elapsed
+  ... 1500000 events, t=82807/100000 ms, 2798539 candidates, 59.2s elapsed
+done: 1811110 events (3379589 candidates, 71.7s wall)  mean rate=14.49 Hz
+rate check (Pernice Eq. 10 vs simulated, Fig. 2C-style):
+  E: theory=14.16 Hz  sim=14.46 Hz
+  I: theory=14.34 Hz  sim=14.62 Hz
+wrote /work/classic/fr_mj200-calcium_ar/hawkes_events/n1250_recal/idx.npy times_ms.npy adj_true.npy meta.npy
+loaded 1811110 events, N=1250, sim_time=100000ms  (from /work/classic/fr_mj200-calcium_ar/hawkes_events/n1250_recal)
+streaming calcium -> deconvolution -> moments (same pipeline as LIF/PIF) ...
+moments built. mean rate 14.49 Hz, estimated calcium tau -1286.6ms (mean over 1250 neurons)
+WARNING: estimated tau (-1286.6ms) is far from the true generative tau (100.0ms) -- the deconvolution step likely broke (e.g. --chunk-ms too small for the one-time tau fit to have enough data). Treat Cxx/Cyx/downstream A as UNRELIABLE until rerun with a larger --chunk-ms.
+wrote /work/classic/fr_mj200-calcium_ar/results/hawkes_moments/n1250_calcium_recal/Cxx.npy Cyx.npy adj_true.npy
+sanity check (top-10% |A_ols|): precision=0.182  mean|A| true edges=0.003252  mean|A| non-edges=0.002537
+done: Sun Aug 16 15:32:58 CEST 2026

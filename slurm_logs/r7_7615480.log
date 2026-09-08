@@ -1,0 +1,15 @@
+host: g3609   git: b0fc39e0583db718064f6ed2b3f8fb0ed23aa232   date: Tue Jul 28 22:17:05 CEST 2026   PY=/work/classic/fr_mj200-calcium_ar/env-gpu/bin/python
+torch 2.6.0+cu124 cuda True
+N=12500  NE=10000  NI=2500  checkpoints T(ms)=[np.int64(125000), np.int64(250000), np.int64(500000), np.int64(1000000), np.int64(2000000), np.int64(5000000)]
+  f= 1.0  |S|= 12500  T=1000k  T/|S|=   800  corr=0.697  E_rec=0.274  E_prec=0.381
+  f= 0.5  |S|=  6250  T=500k  T/|S|=   800  corr=0.581  E_rec=0.192  E_prec=0.288
+  [shared panel @ f=0.5] bins 0..168, non-edge pairs binned
+  f=0.25  |S|=  3125  T=250k  T/|S|=   800  corr=0.466  E_rec=0.141  E_prec=0.223
+  f= 0.1  |S|=  1250  T=125k  T/|S|=  1000  corr=0.358  E_rec=0.109  E_prec=0.177
+
+wrote /work/classic/fr_mj200-calcium_ar/results/r7/r7_n12500r4.npz and .csv
+done: Tue Jul 28 22:18:18 CEST 2026
+-rw-r--r-- 1 fr_mj200 fr_fr  990 Jul 28 22:18 /work/classic/fr_mj200-calcium_ar/results/r7/r7_n12500r4.csv
+-rw-r--r-- 1 fr_mj200 fr_fr 7.7K Jul 28 22:18 /work/classic/fr_mj200-calcium_ar/results/r7/r7_n12500r4.npz
+
+rsync -avhz fr_mj200@login1.nemo.uni-freiburg.de:/work/classic/fr_mj200-calcium_ar/results/r7/ ~/calcium_results/r7/

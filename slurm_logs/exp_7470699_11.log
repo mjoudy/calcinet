@@ -1,0 +1,51 @@
+================== run info ==================
+host:    n4109
+date:    Wed Jul  1 23:55:44 CEST 2026
+git:     54b6442d9f7ad7e4cc4ad75722e3844dc8bee747 (dirty: no)
+sweep:   prep   task: 11
+cpus:    8
+workdir: /work/classic/fr_mj200-calcium_ar
+=============================================
+[INFO] [2026.7.1 23:55:45 /home/conda/feedstock_root/build_artifacts/nest-simulator_1744013459969/work/nestkernel/vp_manager.cpp:74 @ VPManager::initialize()] : OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+For details, see the Guide to parallel computing in the NEST Documentation.
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.8.0
+ Built: Apr  7 2025 08:14:12
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Jul 01 23:55:45 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 01 23:55:45 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 01 23:55:45 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 01 23:55:45 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 50000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 01 23:55:48 SimulationManager::run [Info]: 
+    Simulation finished.
+[exp] python: /work/classic/fr_mj200-calcium_ar/env/bin/python  SWEEP=prep TASK=11
+[exp] prep 11: seed=2 tau=1.0 T=50000.0 -> /work/classic/fr_mj200-calcium_ar/data/N1250/s2_tau1_T50000
+[SimulatedDataset] Simulating Brunel network → s2_tau1_T50000
+Simulation finished in 3.2s
+[SimulatedDataset] Generating calcium signal …
+[SimulatedDataset] Saved  N=1250  T=500000  → /work/classic/fr_mj200-calcium_ar/data/N1250/s2_tau1_T50000
+[exp] prep 11 DONE

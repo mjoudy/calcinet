@@ -1,0 +1,48 @@
+host: n4212   git: 7e524faf7312e6688d23120e8752ca6208d25c71   date: Thu Aug 27 19:23:11 CEST 2026
+simulating n1250_r4 for 500000 ms ...
+[INFO] [2026.8.27 19:23:14 /home/conda/feedstock_root/build_artifacts/nest-simulator_1744013459969/work/nestkernel/vp_manager.cpp:74 @ VPManager::initialize()] : OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+For details, see the Guide to parallel computing in the NEST Documentation.
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.8.0
+ Built: Apr  7 2025 08:14:12
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Aug 27 19:23:14 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Aug 27 19:23:14 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Aug 27 19:23:14 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Aug 27 19:23:14 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 500000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Aug 27 19:23:47 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 33.7s
+  spikes       param=0.5    x=0.5  (dt/tau=0.5)  AUC=0.802  corr=0.680
+  spikes       param=1      x=1  (dt/tau=1)  AUC=0.930  corr=0.715
+  spikes       param=2      x=2  (dt/tau=2)  AUC=0.914  corr=0.706
+  spikes       param=5      x=5  (dt/tau=5)  AUC=0.849  corr=0.826
+  spikes       param=10     x=10  (dt/tau=10)  AUC=0.739  corr=0.762
+  spikes       param=20     x=20  (dt/tau=20)  AUC=0.652  corr=0.613
+  spikes       param=50     x=50  (dt/tau=50)  AUC=0.550  corr=0.304
+/var/spool/slurm/slurmd/job7885768/slurm_script: line 42: 3069522 Killed                  "$PY" scripts/fig_r2_compute.py --net n1250_r4 --T-ms 500000 --out "$OUT/r2_data_r4.npz"
+[2026-08-27T19:25:11.589] error: Detected 1 oom_kill event in StepId=7885768.batch. Some of the step tasks have been OOM Killed.

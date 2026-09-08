@@ -1,0 +1,26 @@
+host: n4112   git: f5dc87e12d5c637fa1e3c8c24d50b6954557de1e   date: Wed Jul 29 14:59:02 CEST 2026
+reading /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250r4_T500k/seed1
+
+asym among predicted edges (mean / median):
+  E_true   n=    78621  mean=0.756  med=0.857
+  E_false  n=    38749  mean=0.350  med=0.266
+  I_true   n=    29798  mean=0.928  med=1.000
+  I_false  n=     8953  mean=0.431  med=0.363
+
+baseline (no filter): E_prec=0.670 E_rec=0.661
+wrote /work/classic/fr_mj200-calcium_ar/results/r8/r8_wrapup_n1250r4_T500k.npz and .csv
+reading /work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T5000k/seed1
+
+asym among predicted edges (mean / median):
+  E_true   n=   710246  mean=0.676  med=0.714
+  E_false  n=   551531  mean=0.331  med=0.238
+  I_true   n=   380411  mean=0.935  med=1.000
+  I_false  n=   357107  mean=0.374  med=0.281
+
+baseline (no filter): E_prec=0.563 E_rec=0.466
+wrote /work/classic/fr_mj200-calcium_ar/results/r8/r8_wrapup_n12500r4_T5000k.npz and .csv
+done: Wed Jul 29 14:59:09 CEST 2026
+-rw-r--r-- 1 fr_mj200 fr_fr 3.1M Jul 29 14:59 /work/classic/fr_mj200-calcium_ar/results/r8/r8_wrapup_n12500r4_T5000k.npz
+-rw-r--r-- 1 fr_mj200 fr_fr 616K Jul 29 14:59 /work/classic/fr_mj200-calcium_ar/results/r8/r8_wrapup_n1250r4_T500k.npz
+
+rsync -avhz fr_mj200@login1.nemo.uni-freiburg.de:/work/classic/fr_mj200-calcium_ar/results/r8/ ~/calcium_results/r8/

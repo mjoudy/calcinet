@@ -1,0 +1,103 @@
+host: n4504   git: 634881e9e405e139fcd3207c342e93a993eebe08   date: Thu Aug 27 20:07:01 CEST 2026
+simulating n1250_r4 for 500000 ms ...
+[INFO] [2026.8.27 20:7:4 /home/conda/feedstock_root/build_artifacts/nest-simulator_1744013459969/work/nestkernel/vp_manager.cpp:74 @ VPManager::initialize()] : OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+For details, see the Guide to parallel computing in the NEST Documentation.
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.8.0
+ Built: Apr  7 2025 08:14:12
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Aug 27 20:07:04 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Aug 27 20:07:04 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Aug 27 20:07:04 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Aug 27 20:07:04 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 500000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Aug 27 20:07:33 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 29.3s
+  spikes       param=0.5    x=0.5  (dt/tau=0.5)  AUC=0.802  corr=0.680
+  spikes       param=1      x=1  (dt/tau=1)  AUC=0.930  corr=0.715
+  spikes       param=2      x=2  (dt/tau=2)  AUC=0.914  corr=0.706
+  spikes       param=5      x=5  (dt/tau=5)  AUC=0.849  corr=0.826
+  spikes       param=10     x=10  (dt/tau=10)  AUC=0.739  corr=0.762
+  spikes       param=20     x=20  (dt/tau=20)  AUC=0.652  corr=0.613
+  spikes       param=50     x=50  (dt/tau=50)  AUC=0.550  corr=0.304
+  deconv_tau   param=0.5    x=0.5  (dt/tau=66)  AUC=0.499  corr=0.007
+  deconv_tau   param=1      x=1  (dt/tau=33)  AUC=0.499  corr=0.013
+  deconv_tau   param=2      x=2  (dt/tau=16.5)  AUC=0.501  corr=0.023
+  deconv_tau   param=5      x=5  (dt/tau=6.6)  AUC=0.505  corr=0.051
+  deconv_tau   param=10     x=10  (dt/tau=3.3)  AUC=0.521  corr=0.127
+  deconv_tau   param=20     x=20  (dt/tau=1.65)  AUC=0.551  corr=0.248
+  deconv_tau   param=50     x=50  (dt/tau=0.66)  AUC=0.571  corr=0.348
+  deconv_tau   param=100    x=100  (dt/tau=0.33)  AUC=0.575  corr=0.381
+  deconv_tau   param=200    x=200  (dt/tau=0.165)  AUC=0.575  corr=0.394
+  deconv_tau   param=400    x=400  (dt/tau=0.0825)  AUC=0.575  corr=0.400
+  deconv_tau   param=800    x=800  (dt/tau=0.04125)  AUC=0.575  corr=0.403
+  deconv_tau   param=1600   x=1600  (dt/tau=0.02063)  AUC=0.576  corr=0.408
+  raw_tau      param=0.5    x=0.5  (dt/tau=66)  AUC=0.498  corr=0.009
+  raw_tau      param=1      x=1  (dt/tau=33)  AUC=0.499  corr=0.017
+  raw_tau      param=2      x=2  (dt/tau=16.5)  AUC=0.502  corr=0.031
+  raw_tau      param=5      x=5  (dt/tau=6.6)  AUC=0.506  corr=0.065
+  raw_tau      param=10     x=10  (dt/tau=3.3)  AUC=0.524  corr=0.154
+  raw_tau      param=20     x=20  (dt/tau=1.65)  AUC=0.556  corr=0.293
+  raw_tau      param=50     x=50  (dt/tau=0.66)  AUC=0.570  corr=0.391
+  raw_tau      param=100    x=100  (dt/tau=0.33)  AUC=0.565  corr=0.387
+  raw_tau      param=200    x=200  (dt/tau=0.165)  AUC=0.556  corr=0.347
+  raw_tau      param=400    x=400  (dt/tau=0.0825)  AUC=0.548  corr=0.307
+  raw_tau      param=800    x=800  (dt/tau=0.04125)  AUC=0.544  corr=0.284
+  raw_tau      param=1600   x=1600  (dt/tau=0.02063)  AUC=0.542  corr=0.272
+  deconv_rate  param=0.1    x=0.1  (dt/tau=0.001)  AUC=0.943  corr=0.713
+  deconv_rate  param=0.5    x=0.5  (dt/tau=0.005)  AUC=0.918  corr=0.670
+  deconv_rate  param=1      x=1  (dt/tau=0.01)  AUC=0.881  corr=0.626
+  deconv_rate  param=2      x=2  (dt/tau=0.02)  AUC=0.909  corr=0.740
+  deconv_rate  param=5      x=5  (dt/tau=0.05)  AUC=0.849  corr=0.842
+  deconv_rate  param=10     x=10  (dt/tau=0.1)  AUC=0.697  corr=0.722
+  deconv_rate  param=20     x=20  (dt/tau=0.2)  AUC=0.620  corr=0.555
+  deconv_rate  param=33     x=33  (dt/tau=0.33)  AUC=0.575  corr=0.381
+  deconv_rate  param=50     x=50  (dt/tau=0.5)  AUC=0.541  corr=0.241
+  deconv_rate  param=100    x=100  (dt/tau=1)  AUC=0.507  corr=0.075
+  deconv_rate  param=200    x=200  (dt/tau=2)  AUC=0.505  corr=0.009
+  deconv_rate  param=500    x=500  (dt/tau=5)  AUC=0.501  corr=0.003
+Traceback (most recent call last):
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/fig_r2_compute.py", line 285, in <module>
+    main()
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/fig_r2_compute.py", line 273, in main
+    x_native, x_ratio, auc, corr = run(
+                                   ^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/fig_r2_compute.py", line 181, in run
+    Cxx, Cyx = accumulate(
+               ^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/fig_r2_compute.py", line 145, in accumulate
+    for fc in feed_iter:
+              ^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/fig_r2_compute.py", line 136, in iter_calcium
+    sm = smooth_signal(F, window_length=win, deriv=0, delta=eff_dt)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/preprocessing/signal_utils.py", line 17, in smooth_signal
+    return sig.savgol_filter(
+           ^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/scipy/signal/_savitzky_golay.py", line 345, in savgol_filter
+    raise ValueError("If mode is 'interp', window_length must be less "
+ValueError: If mode is 'interp', window_length must be less than or equal to the size of x.

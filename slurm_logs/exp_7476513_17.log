@@ -1,0 +1,11 @@
+================== run info ==================
+host:    n3428
+date:    Thu Jul  2 22:50:51 CEST 2026
+git:     9b39b05ee0f584076e653cd3a26c61091dd681b6 (dirty: no)
+sweep:   lag   task: 17
+cpus:    8
+workdir: /work/classic/fr_mj200-calcium_ar
+=============================================
+[exp] python: /work/classic/fr_mj200-calcium_ar/env/bin/python  SWEEP=lag TASK=17
+dataset missing: /work/classic/fr_mj200-calcium_ar/data/N1250/arxiv/s3_tau100_T50000
+-> run SWEEP=prep first.

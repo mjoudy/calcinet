@@ -1,0 +1,19 @@
+================== run info ==================
+host:    n3210
+date:    Fri Jun 26 22:26:16 CEST 2026
+git:     18bea11101658227c8f676037a7489b1a9a3df81 (dirty: no)
+task:    0
+cpus:    8
+workdir: /work/classic/fr_mj200-calcium_ar
+=============================================
+[group3] python : /work/classic/fr_mj200-calcium_ar/env/bin/python
+[group3] task 0: en_1e-4  lam=0.0001 lam_l2=0.001
+[SimulatedDataset] Loaded  N=1250  T=500000  ← /work/classic/fr_mj200-calcium_ar/data/N1250
+[n1250_group3_en_1e-4] done in 117.8s  pearson=0.691  auc=0.880
+[SimulatedDataset] Loaded  N=1250  T=500000  ← /work/classic/fr_mj200-calcium_ar/data/N1250
+
+[group3] en_1e-4 (lam=0.0001) — stage scores:
+  EN                 pearson=0.691 auc=0.880 type_acc=0.976 ei=2.62
+  EN+Dale            pearson=0.795 auc=0.912 type_acc=1.000 ei=3.12
+  EN+Dale+balance    pearson=0.896 auc=0.891 type_acc=1.000 ei=10.91
+[group3] DONE en_1e-4 -> /work/classic/fr_mj200-calcium_ar/results/n1250_group3/group3_en_1e-4.csv

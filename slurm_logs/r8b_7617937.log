@@ -1,0 +1,13 @@
+host: g3526   git: febba0c32dd89d1a3fa85916eb67f4a131bd0360   date: Wed Jul 29 15:52:38 CEST 2026   PY=/work/classic/fr_mj200-calcium_ar/env-gpu/bin/python
+torch 2.6.0+cu124 cuda True
+net=n12500_r4 N=12500 dt=0.1 lag_est=20 (2.0ms)
+lags(samples)=[0, 5, 10, 15, 20, 25, 30, 40, 60]  positive=[5, 10, 15, 20, 25, 30, 40, 60]
+loaded n12500_r4_seed1_T500k_6ab1cc0820.npz
+streamed; mean rate 1.4 Hz
+  true E       median peak-lag=2.00ms  median asym=0.815  n=281235
+  E false-pos  median peak-lag=2.00ms  median asym=0.672  n=741845
+wrote /work/classic/fr_mj200-calcium_ar/results/r8b/r8b_n12500_r4.npz
+done: Wed Jul 29 18:03:33 CEST 2026
+-rw-r--r-- 1 fr_mj200 fr_fr 27M Jul 29 18:03 /work/classic/fr_mj200-calcium_ar/results/r8b/r8b_n12500_r4.npz
+
+rsync -avhz fr_mj200@login1.nemo.uni-freiburg.de:/work/classic/fr_mj200-calcium_ar/results/r8b/ ~/calcium_results/r8b/

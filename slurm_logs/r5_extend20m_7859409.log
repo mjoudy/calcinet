@@ -1,0 +1,943 @@
+host: g3609   git: 6df44cb01f1dadc41b4ba7c4ad111e6010ae7fda   date: Tue Aug 25 04:32:47 CEST 2026   PY=/work/classic/fr_mj200-calcium_ar/env-gpu/bin/python
+
+=== wrapup_n1250r4_T12k  N=1250  T/N=96  lam_max=1.228e-03 ===
+  ols        lam=  --    corr=0.277  AUC_E=0.681  E_rec=0.183
+  ridge      lam=1.23e-06  corr=0.277  AUC_E=0.681  E_rec=0.183
+  lasso      lam=1.23e-06  corr=0.278  AUC_E=0.681  E_rec=0.183
+  en         lam=1.23e-06  corr=0.277  AUC_E=0.681  E_rec=0.183
+  lassodale  lam=1.23e-06  corr=0.257  AUC_E=0.667  E_rec=0.212
+  endale     lam=1.23e-06  corr=0.257  AUC_E=0.667  E_rec=0.211
+  ridge      lam=4.89e-06  corr=0.277  AUC_E=0.681  E_rec=0.183
+  lasso      lam=4.89e-06  corr=0.280  AUC_E=0.682  E_rec=0.184
+  en         lam=4.89e-06  corr=0.279  AUC_E=0.681  E_rec=0.183
+  lassodale  lam=4.89e-06  corr=0.258  AUC_E=0.666  E_rec=0.214
+  endale     lam=4.89e-06  corr=0.257  AUC_E=0.666  E_rec=0.212
+  ridge      lam=1.95e-05  corr=0.277  AUC_E=0.681  E_rec=0.183
+  lasso      lam=1.95e-05  corr=0.290  AUC_E=0.683  E_rec=0.186
+  en         lam=1.95e-05  corr=0.284  AUC_E=0.682  E_rec=0.184
+  lassodale  lam=1.95e-05  corr=0.249  AUC_E=0.659  E_rec=0.221
+  endale     lam=1.95e-05  corr=0.258  AUC_E=0.664  E_rec=0.216
+  ridge      lam=7.75e-05  corr=0.277  AUC_E=0.681  E_rec=0.183
+  lasso      lam=7.75e-05  corr=0.318  AUC_E=0.672  E_rec=0.190
+  en         lam=7.75e-05  corr=0.302  AUC_E=0.682  E_rec=0.188
+  lassodale  lam=7.75e-05  corr=0.221  AUC_E=0.633  E_rec=0.240
+  endale     lam=7.75e-05  corr=0.240  AUC_E=0.651  E_rec=0.228
+  ridge      lam=3.08e-04  corr=0.278  AUC_E=0.682  E_rec=0.184
+  lasso      lam=3.08e-04  corr=0.063  AUC_E=0.537  E_rec=0.090
+  en         lam=3.08e-04  corr=0.288  AUC_E=0.621  E_rec=0.199
+  lassodale  lam=3.08e-04  corr=0.046  AUC_E=0.535  E_rec=0.087
+  endale     lam=3.08e-04  corr=0.139  AUC_E=0.596  E_rec=0.256
+  ridge      lam=1.23e-03  corr=0.280  AUC_E=0.683  E_rec=0.186
+  lasso      lam=1.23e-03  corr=0.001  AUC_E=0.500  E_rec=0.000
+  en         lam=1.23e-03  corr=0.008  AUC_E=0.501  E_rec=0.002
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=1.23e-03  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=1.23e-03  corr=0.008  AUC_E=0.501  E_rec=0.002
+
+=== wrapup_n1250r4_T25k  N=1250  T/N=200  lam_max=9.907e-04 ===
+  ols        lam=  --    corr=0.351  AUC_E=0.728  E_rec=0.224
+  ridge      lam=9.91e-07  corr=0.351  AUC_E=0.728  E_rec=0.224
+  lasso      lam=9.91e-07  corr=0.352  AUC_E=0.728  E_rec=0.225
+  en         lam=9.91e-07  corr=0.351  AUC_E=0.728  E_rec=0.225
+  lassodale  lam=9.91e-07  corr=0.454  AUC_E=0.739  E_rec=0.246
+  endale     lam=9.91e-07  corr=0.453  AUC_E=0.739  E_rec=0.246
+  ridge      lam=3.94e-06  corr=0.351  AUC_E=0.728  E_rec=0.224
+  lasso      lam=3.94e-06  corr=0.355  AUC_E=0.728  E_rec=0.225
+  en         lam=3.94e-06  corr=0.353  AUC_E=0.728  E_rec=0.225
+  lassodale  lam=3.94e-06  corr=0.455  AUC_E=0.737  E_rec=0.248
+  endale     lam=3.94e-06  corr=0.453  AUC_E=0.738  E_rec=0.247
+  ridge      lam=1.57e-05  corr=0.351  AUC_E=0.728  E_rec=0.224
+  lasso      lam=1.57e-05  corr=0.370  AUC_E=0.728  E_rec=0.227
+  en         lam=1.57e-05  corr=0.360  AUC_E=0.728  E_rec=0.226
+  lassodale  lam=1.57e-05  corr=0.452  AUC_E=0.730  E_rec=0.256
+  endale     lam=1.57e-05  corr=0.454  AUC_E=0.735  E_rec=0.251
+  ridge      lam=6.25e-05  corr=0.351  AUC_E=0.728  E_rec=0.225
+  lasso      lam=6.25e-05  corr=0.421  AUC_E=0.714  E_rec=0.233
+  en         lam=6.25e-05  corr=0.389  AUC_E=0.727  E_rec=0.229
+  lassodale  lam=6.25e-05  corr=0.420  AUC_E=0.692  E_rec=0.281
+  endale     lam=6.25e-05  corr=0.447  AUC_E=0.718  E_rec=0.265
+  ridge      lam=2.49e-04  corr=0.351  AUC_E=0.728  E_rec=0.225
+  lasso      lam=2.49e-04  corr=0.121  AUC_E=0.556  E_rec=0.127
+  en         lam=2.49e-04  corr=0.418  AUC_E=0.656  E_rec=0.247
+  lassodale  lam=2.49e-04  corr=0.072  AUC_E=0.553  E_rec=0.122
+  endale     lam=2.49e-04  corr=0.326  AUC_E=0.642  E_rec=0.301
+  ridge      lam=9.91e-04  corr=0.352  AUC_E=0.728  E_rec=0.226
+  lasso      lam=9.91e-04  corr=0.001  AUC_E=0.500  E_rec=0.000
+  en         lam=9.91e-04  corr=0.010  AUC_E=0.502  E_rec=0.003
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=9.91e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=9.91e-04  corr=0.010  AUC_E=0.502  E_rec=0.003
+
+=== wrapup_n1250r4_T50k  N=1250  T/N=400  lam_max=7.105e-04 ===
+  ols        lam=  --    corr=0.456  AUC_E=0.794  E_rec=0.304
+  ridge      lam=7.10e-07  corr=0.456  AUC_E=0.794  E_rec=0.304
+  lasso      lam=7.10e-07  corr=0.457  AUC_E=0.794  E_rec=0.304
+  en         lam=7.10e-07  corr=0.457  AUC_E=0.794  E_rec=0.304
+  lassodale  lam=7.10e-07  corr=0.616  AUC_E=0.813  E_rec=0.332
+  endale     lam=7.10e-07  corr=0.616  AUC_E=0.813  E_rec=0.332
+  ridge      lam=2.83e-06  corr=0.456  AUC_E=0.794  E_rec=0.304
+  lasso      lam=2.83e-06  corr=0.462  AUC_E=0.794  E_rec=0.305
+  en         lam=2.83e-06  corr=0.459  AUC_E=0.794  E_rec=0.304
+  lassodale  lam=2.83e-06  corr=0.619  AUC_E=0.812  E_rec=0.334
+  endale     lam=2.83e-06  corr=0.617  AUC_E=0.813  E_rec=0.332
+  ridge      lam=1.13e-05  corr=0.456  AUC_E=0.794  E_rec=0.304
+  lasso      lam=1.13e-05  corr=0.481  AUC_E=0.794  E_rec=0.306
+  en         lam=1.13e-05  corr=0.468  AUC_E=0.794  E_rec=0.305
+  lassodale  lam=1.13e-05  corr=0.627  AUC_E=0.806  E_rec=0.341
+  endale     lam=1.13e-05  corr=0.622  AUC_E=0.810  E_rec=0.336
+  ridge      lam=4.48e-05  corr=0.456  AUC_E=0.794  E_rec=0.304
+  lasso      lam=4.48e-05  corr=0.550  AUC_E=0.779  E_rec=0.314
+  en         lam=4.48e-05  corr=0.505  AUC_E=0.792  E_rec=0.309
+  lassodale  lam=4.48e-05  corr=0.644  AUC_E=0.776  E_rec=0.363
+  endale     lam=4.48e-05  corr=0.636  AUC_E=0.797  E_rec=0.349
+  ridge      lam=1.78e-04  corr=0.456  AUC_E=0.794  E_rec=0.304
+  lasso      lam=1.78e-04  corr=0.326  AUC_E=0.608  E_rec=0.232
+  en         lam=1.78e-04  corr=0.583  AUC_E=0.723  E_rec=0.329
+  lassodale  lam=1.78e-04  corr=0.274  AUC_E=0.605  E_rec=0.225
+  endale     lam=1.78e-04  corr=0.602  AUC_E=0.724  E_rec=0.379
+  ridge      lam=7.10e-04  corr=0.456  AUC_E=0.794  E_rec=0.305
+  lasso      lam=7.10e-04  corr=0.001  AUC_E=0.500  E_rec=0.000
+  en         lam=7.10e-04  corr=0.024  AUC_E=0.506  E_rec=0.012
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=7.10e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=7.10e-04  corr=0.023  AUC_E=0.505  E_rec=0.011
+
+=== wrapup_n1250r4_T100k  N=1250  T/N=800  lam_max=8.345e-04 ===
+  ols        lam=  --    corr=0.562  AUC_E=0.860  E_rec=0.417
+  ridge      lam=8.35e-07  corr=0.562  AUC_E=0.860  E_rec=0.417
+  lasso      lam=8.35e-07  corr=0.564  AUC_E=0.860  E_rec=0.417
+  en         lam=8.35e-07  corr=0.563  AUC_E=0.860  E_rec=0.417
+  lassodale  lam=8.35e-07  corr=0.708  AUC_E=0.873  E_rec=0.443
+  endale     lam=8.35e-07  corr=0.707  AUC_E=0.874  E_rec=0.442
+  ridge      lam=3.32e-06  corr=0.562  AUC_E=0.860  E_rec=0.417
+  lasso      lam=3.32e-06  corr=0.572  AUC_E=0.860  E_rec=0.417
+  en         lam=3.32e-06  corr=0.567  AUC_E=0.860  E_rec=0.417
+  lassodale  lam=3.32e-06  corr=0.711  AUC_E=0.872  E_rec=0.446
+  endale     lam=3.32e-06  corr=0.709  AUC_E=0.873  E_rec=0.444
+  ridge      lam=1.32e-05  corr=0.562  AUC_E=0.860  E_rec=0.417
+  lasso      lam=1.32e-05  corr=0.604  AUC_E=0.858  E_rec=0.418
+  en         lam=1.32e-05  corr=0.583  AUC_E=0.859  E_rec=0.417
+  lassodale  lam=1.32e-05  corr=0.726  AUC_E=0.865  E_rec=0.455
+  endale     lam=1.32e-05  corr=0.716  AUC_E=0.870  E_rec=0.449
+  ridge      lam=5.27e-05  corr=0.562  AUC_E=0.860  E_rec=0.417
+  lasso      lam=5.27e-05  corr=0.692  AUC_E=0.818  E_rec=0.426
+  en         lam=5.27e-05  corr=0.642  AUC_E=0.851  E_rec=0.421
+  lassodale  lam=5.27e-05  corr=0.739  AUC_E=0.823  E_rec=0.477
+  endale     lam=5.27e-05  corr=0.739  AUC_E=0.853  E_rec=0.465
+  ridge      lam=2.10e-04  corr=0.562  AUC_E=0.860  E_rec=0.417
+  lasso      lam=2.10e-04  corr=0.239  AUC_E=0.562  E_rec=0.124
+  en         lam=2.10e-04  corr=0.648  AUC_E=0.735  E_rec=0.434
+  lassodale  lam=2.10e-04  corr=0.244  AUC_E=0.560  E_rec=0.117
+  endale     lam=2.10e-04  corr=0.659  AUC_E=0.743  E_rec=0.477
+  ridge      lam=8.35e-04  corr=0.562  AUC_E=0.860  E_rec=0.417
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=8.35e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=8.35e-04  corr=0.008  AUC_E=0.501  E_rec=0.001
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=8.35e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=8.35e-04  corr=0.007  AUC_E=0.501  E_rec=0.001
+
+=== wrapup_n1250r4_T200k  N=1250  T/N=1600  lam_max=7.109e-04 ===
+  ols        lam=  --    corr=0.645  AUC_E=0.912  E_rec=0.535
+  ridge      lam=7.11e-07  corr=0.645  AUC_E=0.912  E_rec=0.535
+  lasso      lam=7.11e-07  corr=0.648  AUC_E=0.912  E_rec=0.535
+  en         lam=7.11e-07  corr=0.646  AUC_E=0.912  E_rec=0.535
+  lassodale  lam=7.11e-07  corr=0.763  AUC_E=0.921  E_rec=0.555
+  endale     lam=7.11e-07  corr=0.762  AUC_E=0.921  E_rec=0.554
+  ridge      lam=2.83e-06  corr=0.645  AUC_E=0.912  E_rec=0.535
+  lasso      lam=2.83e-06  corr=0.656  AUC_E=0.912  E_rec=0.534
+  en         lam=2.83e-06  corr=0.650  AUC_E=0.912  E_rec=0.535
+  lassodale  lam=2.83e-06  corr=0.767  AUC_E=0.919  E_rec=0.557
+  endale     lam=2.83e-06  corr=0.764  AUC_E=0.920  E_rec=0.555
+  ridge      lam=1.13e-05  corr=0.645  AUC_E=0.912  E_rec=0.535
+  lasso      lam=1.13e-05  corr=0.687  AUC_E=0.909  E_rec=0.532
+  en         lam=1.13e-05  corr=0.667  AUC_E=0.911  E_rec=0.534
+  lassodale  lam=1.13e-05  corr=0.779  AUC_E=0.914  E_rec=0.564
+  endale     lam=1.13e-05  corr=0.771  AUC_E=0.918  E_rec=0.560
+  ridge      lam=4.49e-05  corr=0.645  AUC_E=0.912  E_rec=0.535
+  lasso      lam=4.49e-05  corr=0.758  AUC_E=0.873  E_rec=0.528
+  en         lam=4.49e-05  corr=0.722  AUC_E=0.901  E_rec=0.530
+  lassodale  lam=4.49e-05  corr=0.790  AUC_E=0.882  E_rec=0.575
+  endale     lam=4.49e-05  corr=0.790  AUC_E=0.906  E_rec=0.571
+  ridge      lam=1.79e-04  corr=0.645  AUC_E=0.912  E_rec=0.535
+  lasso      lam=1.79e-04  corr=0.390  AUC_E=0.598  E_rec=0.192
+  en         lam=1.79e-04  corr=0.717  AUC_E=0.798  E_rec=0.521
+  lassodale  lam=1.79e-04  corr=0.416  AUC_E=0.594  E_rec=0.182
+  endale     lam=1.79e-04  corr=0.732  AUC_E=0.808  E_rec=0.566
+  ridge      lam=7.11e-04  corr=0.644  AUC_E=0.912  E_rec=0.535
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=7.11e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=7.11e-04  corr=0.019  AUC_E=0.502  E_rec=0.003
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=7.11e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=7.11e-04  corr=0.018  AUC_E=0.501  E_rec=0.003
+
+=== wrapup_n1250r4_T500k  N=1250  T/N=4000  lam_max=7.763e-04 ===
+  ols        lam=  --    corr=0.715  AUC_E=0.954  E_rec=0.661
+  ridge      lam=7.76e-07  corr=0.715  AUC_E=0.954  E_rec=0.661
+  lasso      lam=7.76e-07  corr=0.718  AUC_E=0.953  E_rec=0.660
+  en         lam=7.76e-07  corr=0.717  AUC_E=0.953  E_rec=0.661
+  lassodale  lam=7.76e-07  corr=0.805  AUC_E=0.958  E_rec=0.675
+  endale     lam=7.76e-07  corr=0.805  AUC_E=0.958  E_rec=0.674
+  ridge      lam=3.09e-06  corr=0.715  AUC_E=0.954  E_rec=0.661
+  lasso      lam=3.09e-06  corr=0.728  AUC_E=0.952  E_rec=0.657
+  en         lam=3.09e-06  corr=0.722  AUC_E=0.953  E_rec=0.659
+  lassodale  lam=3.09e-06  corr=0.809  AUC_E=0.957  E_rec=0.676
+  endale     lam=3.09e-06  corr=0.807  AUC_E=0.958  E_rec=0.675
+  ridge      lam=1.23e-05  corr=0.715  AUC_E=0.954  E_rec=0.661
+  lasso      lam=1.23e-05  corr=0.761  AUC_E=0.947  E_rec=0.647
+  en         lam=1.23e-05  corr=0.740  AUC_E=0.951  E_rec=0.654
+  lassodale  lam=1.23e-05  corr=0.820  AUC_E=0.952  E_rec=0.680
+  endale     lam=1.23e-05  corr=0.813  AUC_E=0.956  E_rec=0.678
+  ridge      lam=4.90e-05  corr=0.715  AUC_E=0.954  E_rec=0.661
+  lasso      lam=4.90e-05  corr=0.796  AUC_E=0.906  E_rec=0.621
+  en         lam=4.90e-05  corr=0.789  AUC_E=0.937  E_rec=0.635
+  lassodale  lam=4.90e-05  corr=0.810  AUC_E=0.919  E_rec=0.672
+  endale     lam=4.90e-05  corr=0.826  AUC_E=0.944  E_rec=0.680
+  ridge      lam=1.95e-04  corr=0.715  AUC_E=0.953  E_rec=0.660
+  lasso      lam=1.95e-04  corr=0.311  AUC_E=0.563  E_rec=0.119
+  en         lam=1.95e-04  corr=0.720  AUC_E=0.810  E_rec=0.591
+  lassodale  lam=1.95e-04  corr=0.338  AUC_E=0.558  E_rec=0.110
+  endale     lam=1.95e-04  corr=0.737  AUC_E=0.817  E_rec=0.641
+  ridge      lam=7.76e-04  corr=0.714  AUC_E=0.953  E_rec=0.659
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=7.76e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=7.76e-04  corr=0.010  AUC_E=0.501  E_rec=0.001
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=7.76e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=7.76e-04  corr=0.010  AUC_E=0.501  E_rec=0.001
+
+=== wrapup_n1250r4_T1000k  N=1250  T/N=8000  lam_max=7.560e-04 ===
+  ols        lam=  --    corr=0.744  AUC_E=0.968  E_rec=0.719
+  ridge      lam=7.56e-07  corr=0.744  AUC_E=0.968  E_rec=0.719
+  lasso      lam=7.56e-07  corr=0.747  AUC_E=0.968  E_rec=0.718
+  en         lam=7.56e-07  corr=0.746  AUC_E=0.968  E_rec=0.718
+  lassodale  lam=7.56e-07  corr=0.821  AUC_E=0.970  E_rec=0.730
+  endale     lam=7.56e-07  corr=0.820  AUC_E=0.971  E_rec=0.730
+  ridge      lam=3.01e-06  corr=0.744  AUC_E=0.968  E_rec=0.719
+  lasso      lam=3.01e-06  corr=0.756  AUC_E=0.966  E_rec=0.714
+  en         lam=3.01e-06  corr=0.750  AUC_E=0.967  E_rec=0.716
+  lassodale  lam=3.01e-06  corr=0.824  AUC_E=0.970  E_rec=0.730
+  endale     lam=3.01e-06  corr=0.822  AUC_E=0.970  E_rec=0.730
+  ridge      lam=1.20e-05  corr=0.744  AUC_E=0.968  E_rec=0.719
+  lasso      lam=1.20e-05  corr=0.786  AUC_E=0.961  E_rec=0.698
+  en         lam=1.20e-05  corr=0.767  AUC_E=0.965  E_rec=0.708
+  lassodale  lam=1.20e-05  corr=0.834  AUC_E=0.966  E_rec=0.730
+  endale     lam=1.20e-05  corr=0.828  AUC_E=0.969  E_rec=0.731
+  ridge      lam=4.77e-05  corr=0.744  AUC_E=0.968  E_rec=0.719
+  lasso      lam=4.77e-05  corr=0.808  AUC_E=0.924  E_rec=0.661
+  en         lam=4.77e-05  corr=0.808  AUC_E=0.952  E_rec=0.682
+  lassodale  lam=4.77e-05  corr=0.819  AUC_E=0.937  E_rec=0.713
+  endale     lam=4.77e-05  corr=0.837  AUC_E=0.959  E_rec=0.726
+  ridge      lam=1.90e-04  corr=0.744  AUC_E=0.968  E_rec=0.718
+  lasso      lam=1.90e-04  corr=0.338  AUC_E=0.566  E_rec=0.125
+  en         lam=1.90e-04  corr=0.733  AUC_E=0.828  E_rec=0.624
+  lassodale  lam=1.90e-04  corr=0.367  AUC_E=0.561  E_rec=0.115
+  endale     lam=1.90e-04  corr=0.750  AUC_E=0.834  E_rec=0.676
+  ridge      lam=7.56e-04  corr=0.743  AUC_E=0.967  E_rec=0.717
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=7.56e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=7.56e-04  corr=0.011  AUC_E=0.501  E_rec=0.001
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=7.56e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=7.56e-04  corr=0.011  AUC_E=0.501  E_rec=0.001
+
+=== wrapup_n1250r4_T2000k  N=1250  T/N=16000  lam_max=7.592e-04 ===
+  ols        lam=  --    corr=0.760  AUC_E=0.975  E_rec=0.751
+  ridge      lam=7.59e-07  corr=0.760  AUC_E=0.975  E_rec=0.751
+  lasso      lam=7.59e-07  corr=0.763  AUC_E=0.974  E_rec=0.750
+  en         lam=7.59e-07  corr=0.761  AUC_E=0.975  E_rec=0.751
+  lassodale  lam=7.59e-07  corr=0.829  AUC_E=0.976  E_rec=0.762
+  endale     lam=7.59e-07  corr=0.828  AUC_E=0.977  E_rec=0.762
+  ridge      lam=3.02e-06  corr=0.760  AUC_E=0.975  E_rec=0.751
+  lasso      lam=3.02e-06  corr=0.772  AUC_E=0.973  E_rec=0.744
+  en         lam=3.02e-06  corr=0.766  AUC_E=0.974  E_rec=0.748
+  lassodale  lam=3.02e-06  corr=0.832  AUC_E=0.976  E_rec=0.761
+  endale     lam=3.02e-06  corr=0.830  AUC_E=0.976  E_rec=0.762
+  ridge      lam=1.20e-05  corr=0.760  AUC_E=0.975  E_rec=0.751
+  lasso      lam=1.20e-05  corr=0.799  AUC_E=0.968  E_rec=0.725
+  en         lam=1.20e-05  corr=0.782  AUC_E=0.972  E_rec=0.737
+  lassodale  lam=1.20e-05  corr=0.841  AUC_E=0.972  E_rec=0.758
+  endale     lam=1.20e-05  corr=0.836  AUC_E=0.975  E_rec=0.760
+  ridge      lam=4.79e-05  corr=0.760  AUC_E=0.975  E_rec=0.751
+  lasso      lam=4.79e-05  corr=0.812  AUC_E=0.933  E_rec=0.682
+  en         lam=4.79e-05  corr=0.818  AUC_E=0.959  E_rec=0.705
+  lassodale  lam=4.79e-05  corr=0.824  AUC_E=0.946  E_rec=0.735
+  endale     lam=4.79e-05  corr=0.842  AUC_E=0.966  E_rec=0.751
+  ridge      lam=1.91e-04  corr=0.759  AUC_E=0.975  E_rec=0.751
+  lasso      lam=1.91e-04  corr=0.333  AUC_E=0.562  E_rec=0.118
+  en         lam=1.91e-04  corr=0.736  AUC_E=0.833  E_rec=0.641
+  lassodale  lam=1.91e-04  corr=0.358  AUC_E=0.558  E_rec=0.108
+  endale     lam=1.91e-04  corr=0.752  AUC_E=0.839  E_rec=0.690
+  ridge      lam=7.59e-04  corr=0.758  AUC_E=0.974  E_rec=0.748
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=7.59e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=7.59e-04  corr=0.011  AUC_E=0.501  E_rec=0.001
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=7.59e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=7.59e-04  corr=0.011  AUC_E=0.501  E_rec=0.001
+
+=== wrapup_n1250r4_T5000k  N=1250  T/N=40000  lam_max=7.453e-04 ===
+  ols        lam=  --    corr=0.768  AUC_E=0.978  E_rec=0.766
+  ridge      lam=7.45e-07  corr=0.768  AUC_E=0.978  E_rec=0.766
+  lasso      lam=7.45e-07  corr=0.770  AUC_E=0.977  E_rec=0.764
+  en         lam=7.45e-07  corr=0.769  AUC_E=0.978  E_rec=0.765
+  lassodale  lam=7.45e-07  corr=0.832  AUC_E=0.979  E_rec=0.776
+  endale     lam=7.45e-07  corr=0.832  AUC_E=0.979  E_rec=0.776
+  ridge      lam=2.97e-06  corr=0.767  AUC_E=0.978  E_rec=0.766
+  lasso      lam=2.97e-06  corr=0.779  AUC_E=0.976  E_rec=0.758
+  en         lam=2.97e-06  corr=0.773  AUC_E=0.977  E_rec=0.762
+  lassodale  lam=2.97e-06  corr=0.835  AUC_E=0.978  E_rec=0.775
+  endale     lam=2.97e-06  corr=0.833  AUC_E=0.978  E_rec=0.776
+  ridge      lam=1.18e-05  corr=0.767  AUC_E=0.978  E_rec=0.766
+  lasso      lam=1.18e-05  corr=0.804  AUC_E=0.971  E_rec=0.736
+  en         lam=1.18e-05  corr=0.789  AUC_E=0.975  E_rec=0.751
+  lassodale  lam=1.18e-05  corr=0.843  AUC_E=0.975  E_rec=0.770
+  endale     lam=1.18e-05  corr=0.838  AUC_E=0.977  E_rec=0.774
+  ridge      lam=4.70e-05  corr=0.767  AUC_E=0.978  E_rec=0.766
+  lasso      lam=4.70e-05  corr=0.812  AUC_E=0.938  E_rec=0.691
+  en         lam=4.70e-05  corr=0.821  AUC_E=0.962  E_rec=0.715
+  lassodale  lam=4.70e-05  corr=0.822  AUC_E=0.951  E_rec=0.744
+  endale     lam=4.70e-05  corr=0.843  AUC_E=0.969  E_rec=0.762
+  ridge      lam=1.87e-04  corr=0.767  AUC_E=0.978  E_rec=0.765
+  lasso      lam=1.87e-04  corr=0.332  AUC_E=0.568  E_rec=0.129
+  en         lam=1.87e-04  corr=0.735  AUC_E=0.842  E_rec=0.648
+  lassodale  lam=1.87e-04  corr=0.357  AUC_E=0.562  E_rec=0.117
+  endale     lam=1.87e-04  corr=0.751  AUC_E=0.848  E_rec=0.702
+  ridge      lam=7.45e-04  corr=0.766  AUC_E=0.977  E_rec=0.763
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=7.45e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=7.45e-04  corr=0.012  AUC_E=0.501  E_rec=0.001
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=7.45e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=7.45e-04  corr=0.012  AUC_E=0.501  E_rec=0.001
+
+=== wrapup_n1250r4_T7500k  N=1250  T/N=60000  lam_max=7.431e-04 ===
+  ols        lam=  --    corr=0.773  AUC_E=0.980  E_rec=0.777
+  ridge      lam=7.43e-07  corr=0.773  AUC_E=0.980  E_rec=0.777
+  lasso      lam=7.43e-07  corr=0.775  AUC_E=0.980  E_rec=0.775
+  en         lam=7.43e-07  corr=0.774  AUC_E=0.980  E_rec=0.776
+  lassodale  lam=7.43e-07  corr=0.835  AUC_E=0.980  E_rec=0.787
+  endale     lam=7.43e-07  corr=0.835  AUC_E=0.981  E_rec=0.787
+  ridge      lam=2.96e-06  corr=0.773  AUC_E=0.980  E_rec=0.777
+  lasso      lam=2.96e-06  corr=0.784  AUC_E=0.978  E_rec=0.770
+  en         lam=2.96e-06  corr=0.778  AUC_E=0.979  E_rec=0.774
+  lassodale  lam=2.96e-06  corr=0.838  AUC_E=0.980  E_rec=0.786
+  endale     lam=2.96e-06  corr=0.836  AUC_E=0.980  E_rec=0.787
+  ridge      lam=1.18e-05  corr=0.773  AUC_E=0.980  E_rec=0.777
+  lasso      lam=1.18e-05  corr=0.809  AUC_E=0.973  E_rec=0.748
+  en         lam=1.18e-05  corr=0.793  AUC_E=0.977  E_rec=0.762
+  lassodale  lam=1.18e-05  corr=0.846  AUC_E=0.977  E_rec=0.781
+  endale     lam=1.18e-05  corr=0.841  AUC_E=0.979  E_rec=0.785
+  ridge      lam=4.69e-05  corr=0.772  AUC_E=0.980  E_rec=0.777
+  lasso      lam=4.69e-05  corr=0.817  AUC_E=0.942  E_rec=0.701
+  en         lam=4.69e-05  corr=0.825  AUC_E=0.965  E_rec=0.725
+  lassodale  lam=4.69e-05  corr=0.826  AUC_E=0.954  E_rec=0.755
+  endale     lam=4.69e-05  corr=0.846  AUC_E=0.972  E_rec=0.772
+  ridge      lam=1.87e-04  corr=0.772  AUC_E=0.980  E_rec=0.776
+  lasso      lam=1.87e-04  corr=0.358  AUC_E=0.568  E_rec=0.129
+  en         lam=1.87e-04  corr=0.744  AUC_E=0.844  E_rec=0.657
+  lassodale  lam=1.87e-04  corr=0.383  AUC_E=0.563  E_rec=0.117
+  endale     lam=1.87e-04  corr=0.760  AUC_E=0.851  E_rec=0.712
+  ridge      lam=7.43e-04  corr=0.771  AUC_E=0.979  E_rec=0.774
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=7.43e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=7.43e-04  corr=0.013  AUC_E=0.501  E_rec=0.001
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=7.43e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=7.43e-04  corr=0.013  AUC_E=0.501  E_rec=0.001
+
+=== wrapup_n1250r4_T10000k  N=1250  T/N=80000  lam_max=7.493e-04 ===
+  ols        lam=  --    corr=0.774  AUC_E=0.980  E_rec=0.780
+  ridge      lam=7.49e-07  corr=0.774  AUC_E=0.980  E_rec=0.780
+  lasso      lam=7.49e-07  corr=0.777  AUC_E=0.980  E_rec=0.778
+  en         lam=7.49e-07  corr=0.775  AUC_E=0.980  E_rec=0.779
+  lassodale  lam=7.49e-07  corr=0.836  AUC_E=0.981  E_rec=0.790
+  endale     lam=7.49e-07  corr=0.835  AUC_E=0.981  E_rec=0.790
+  ridge      lam=2.98e-06  corr=0.774  AUC_E=0.980  E_rec=0.780
+  lasso      lam=2.98e-06  corr=0.785  AUC_E=0.979  E_rec=0.772
+  en         lam=2.98e-06  corr=0.779  AUC_E=0.980  E_rec=0.776
+  lassodale  lam=2.98e-06  corr=0.839  AUC_E=0.980  E_rec=0.789
+  endale     lam=2.98e-06  corr=0.837  AUC_E=0.981  E_rec=0.789
+  ridge      lam=1.19e-05  corr=0.774  AUC_E=0.980  E_rec=0.780
+  lasso      lam=1.19e-05  corr=0.810  AUC_E=0.974  E_rec=0.749
+  en         lam=1.19e-05  corr=0.794  AUC_E=0.977  E_rec=0.764
+  lassodale  lam=1.19e-05  corr=0.846  AUC_E=0.977  E_rec=0.783
+  endale     lam=1.19e-05  corr=0.842  AUC_E=0.979  E_rec=0.787
+  ridge      lam=4.73e-05  corr=0.774  AUC_E=0.980  E_rec=0.780
+  lasso      lam=4.73e-05  corr=0.816  AUC_E=0.942  E_rec=0.702
+  en         lam=4.73e-05  corr=0.826  AUC_E=0.965  E_rec=0.727
+  lassodale  lam=4.73e-05  corr=0.826  AUC_E=0.954  E_rec=0.756
+  endale     lam=4.73e-05  corr=0.846  AUC_E=0.972  E_rec=0.774
+  ridge      lam=1.88e-04  corr=0.773  AUC_E=0.980  E_rec=0.779
+  lasso      lam=1.88e-04  corr=0.350  AUC_E=0.565  E_rec=0.124
+  en         lam=1.88e-04  corr=0.742  AUC_E=0.842  E_rec=0.657
+  lassodale  lam=1.88e-04  corr=0.375  AUC_E=0.560  E_rec=0.113
+  endale     lam=1.88e-04  corr=0.759  AUC_E=0.848  E_rec=0.708
+  ridge      lam=7.49e-04  corr=0.772  AUC_E=0.980  E_rec=0.776
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=7.49e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=7.49e-04  corr=0.013  AUC_E=0.501  E_rec=0.001
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=7.49e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=7.49e-04  corr=0.012  AUC_E=0.501  E_rec=0.001
+
+=== wrapup_n1250r4_T15000k  N=1250  T/N=120000  lam_max=7.552e-04 ===
+  ols        lam=  --    corr=0.775  AUC_E=0.981  E_rec=0.782
+  ridge      lam=7.55e-07  corr=0.775  AUC_E=0.981  E_rec=0.782
+  lasso      lam=7.55e-07  corr=0.778  AUC_E=0.980  E_rec=0.780
+  en         lam=7.55e-07  corr=0.776  AUC_E=0.981  E_rec=0.781
+  lassodale  lam=7.55e-07  corr=0.836  AUC_E=0.982  E_rec=0.792
+  endale     lam=7.55e-07  corr=0.836  AUC_E=0.982  E_rec=0.792
+  ridge      lam=3.01e-06  corr=0.775  AUC_E=0.981  E_rec=0.782
+  lasso      lam=3.01e-06  corr=0.786  AUC_E=0.979  E_rec=0.774
+  en         lam=3.01e-06  corr=0.781  AUC_E=0.980  E_rec=0.778
+  lassodale  lam=3.01e-06  corr=0.839  AUC_E=0.981  E_rec=0.791
+  endale     lam=3.01e-06  corr=0.838  AUC_E=0.981  E_rec=0.792
+  ridge      lam=1.20e-05  corr=0.775  AUC_E=0.981  E_rec=0.782
+  lasso      lam=1.20e-05  corr=0.811  AUC_E=0.974  E_rec=0.751
+  en         lam=1.20e-05  corr=0.796  AUC_E=0.978  E_rec=0.766
+  lassodale  lam=1.20e-05  corr=0.847  AUC_E=0.977  E_rec=0.785
+  endale     lam=1.20e-05  corr=0.843  AUC_E=0.980  E_rec=0.789
+  ridge      lam=4.76e-05  corr=0.775  AUC_E=0.981  E_rec=0.782
+  lasso      lam=4.76e-05  corr=0.816  AUC_E=0.942  E_rec=0.704
+  en         lam=4.76e-05  corr=0.826  AUC_E=0.965  E_rec=0.728
+  lassodale  lam=4.76e-05  corr=0.826  AUC_E=0.954  E_rec=0.757
+  endale     lam=4.76e-05  corr=0.847  AUC_E=0.972  E_rec=0.776
+  ridge      lam=1.90e-04  corr=0.774  AUC_E=0.981  E_rec=0.781
+  lasso      lam=1.90e-04  corr=0.343  AUC_E=0.563  E_rec=0.119
+  en         lam=1.90e-04  corr=0.741  AUC_E=0.841  E_rec=0.658
+  lassodale  lam=1.90e-04  corr=0.367  AUC_E=0.558  E_rec=0.108
+  endale     lam=1.90e-04  corr=0.758  AUC_E=0.847  E_rec=0.704
+  ridge      lam=7.55e-04  corr=0.773  AUC_E=0.980  E_rec=0.779
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=7.55e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=7.55e-04  corr=0.012  AUC_E=0.501  E_rec=0.001
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=7.55e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=7.55e-04  corr=0.011  AUC_E=0.501  E_rec=0.001
+
+=== wrapup_n1250r4_T20000k  N=1250  T/N=160000  lam_max=7.521e-04 ===
+  ols        lam=  --    corr=0.775  AUC_E=0.981  E_rec=0.783
+  ridge      lam=7.52e-07  corr=0.775  AUC_E=0.981  E_rec=0.783
+  lasso      lam=7.52e-07  corr=0.778  AUC_E=0.981  E_rec=0.781
+  en         lam=7.52e-07  corr=0.777  AUC_E=0.981  E_rec=0.782
+  lassodale  lam=7.52e-07  corr=0.836  AUC_E=0.981  E_rec=0.793
+  endale     lam=7.52e-07  corr=0.836  AUC_E=0.981  E_rec=0.793
+  ridge      lam=2.99e-06  corr=0.775  AUC_E=0.981  E_rec=0.783
+  lasso      lam=2.99e-06  corr=0.786  AUC_E=0.979  E_rec=0.775
+  en         lam=2.99e-06  corr=0.781  AUC_E=0.980  E_rec=0.779
+  lassodale  lam=2.99e-06  corr=0.839  AUC_E=0.981  E_rec=0.792
+  endale     lam=2.99e-06  corr=0.838  AUC_E=0.981  E_rec=0.793
+  ridge      lam=1.19e-05  corr=0.775  AUC_E=0.981  E_rec=0.783
+  lasso      lam=1.19e-05  corr=0.811  AUC_E=0.974  E_rec=0.752
+  en         lam=1.19e-05  corr=0.796  AUC_E=0.978  E_rec=0.767
+  lassodale  lam=1.19e-05  corr=0.847  AUC_E=0.978  E_rec=0.786
+  endale     lam=1.19e-05  corr=0.843  AUC_E=0.980  E_rec=0.790
+  ridge      lam=4.75e-05  corr=0.775  AUC_E=0.981  E_rec=0.783
+  lasso      lam=4.75e-05  corr=0.817  AUC_E=0.943  E_rec=0.704
+  en         lam=4.75e-05  corr=0.827  AUC_E=0.966  E_rec=0.729
+  lassodale  lam=4.75e-05  corr=0.826  AUC_E=0.955  E_rec=0.759
+  endale     lam=4.75e-05  corr=0.847  AUC_E=0.972  E_rec=0.777
+  ridge      lam=1.89e-04  corr=0.775  AUC_E=0.981  E_rec=0.782
+  lasso      lam=1.89e-04  corr=0.347  AUC_E=0.564  E_rec=0.122
+  en         lam=1.89e-04  corr=0.742  AUC_E=0.842  E_rec=0.660
+  lassodale  lam=1.89e-04  corr=0.372  AUC_E=0.559  E_rec=0.111
+  endale     lam=1.89e-04  corr=0.759  AUC_E=0.848  E_rec=0.707
+  ridge      lam=7.52e-04  corr=0.774  AUC_E=0.980  E_rec=0.780
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=7.52e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=7.52e-04  corr=0.012  AUC_E=0.501  E_rec=0.001
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=7.52e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=7.52e-04  corr=0.012  AUC_E=0.501  E_rec=0.001
+
+wrote /work/classic/fr_mj200-calcium_ar/results/r5/r5_n1250r4.csv  (403 rows)
+gpu: NVIDIA L40S
+
+=== wrapup_n12500r4_T100k  N=12500  T/N=80  lam_max=3.566e-04 ===
+  ols        lam=  --    corr=0.312  AUC_E=0.615  E_rec=0.103
+  ridge      lam=3.57e-07  corr=0.312  AUC_E=0.615  E_rec=0.103
+  lasso      lam=3.57e-07  corr=0.313  AUC_E=0.616  E_rec=0.104
+  en         lam=3.57e-07  corr=0.312  AUC_E=0.616  E_rec=0.104
+  lassodale  lam=3.57e-07  corr=0.496  AUC_E=0.651  E_rec=0.105
+  endale     lam=3.57e-07  corr=0.495  AUC_E=0.651  E_rec=0.105
+  ridge      lam=1.42e-06  corr=0.312  AUC_E=0.615  E_rec=0.103
+  lasso      lam=1.42e-06  corr=0.317  AUC_E=0.616  E_rec=0.104
+  en         lam=1.42e-06  corr=0.314  AUC_E=0.616  E_rec=0.104
+  lassodale  lam=1.42e-06  corr=0.499  AUC_E=0.649  E_rec=0.106
+  endale     lam=1.42e-06  corr=0.497  AUC_E=0.650  E_rec=0.106
+  ridge      lam=5.65e-06  corr=0.312  AUC_E=0.615  E_rec=0.103
+  lasso      lam=5.65e-06  corr=0.332  AUC_E=0.617  E_rec=0.105
+  en         lam=5.65e-06  corr=0.322  AUC_E=0.616  E_rec=0.104
+  lassodale  lam=5.65e-06  corr=0.515  AUC_E=0.645  E_rec=0.110
+  endale     lam=5.65e-06  corr=0.504  AUC_E=0.648  E_rec=0.108
+  ridge      lam=2.25e-05  corr=0.312  AUC_E=0.615  E_rec=0.103
+  lasso      lam=2.25e-05  corr=0.394  AUC_E=0.613  E_rec=0.107
+  en         lam=2.25e-05  corr=0.353  AUC_E=0.618  E_rec=0.106
+  lassodale  lam=2.25e-05  corr=0.569  AUC_E=0.618  E_rec=0.125
+  endale     lam=2.25e-05  corr=0.534  AUC_E=0.637  E_rec=0.116
+  ridge      lam=8.96e-05  corr=0.312  AUC_E=0.616  E_rec=0.104
+  lasso      lam=8.96e-05  corr=0.450  AUC_E=0.521  E_rec=0.039
+  en         lam=8.96e-05  corr=0.462  AUC_E=0.583  E_rec=0.108
+  lassodale  lam=8.96e-05  corr=0.498  AUC_E=0.519  E_rec=0.034
+  endale     lam=8.96e-05  corr=0.601  AUC_E=0.575  E_rec=0.141
+  ridge      lam=3.57e-04  corr=0.313  AUC_E=0.616  E_rec=0.104
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=3.57e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=3.57e-04  corr=0.090  AUC_E=0.500  E_rec=0.000
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=3.57e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=3.57e-04  corr=0.099  AUC_E=0.500  E_rec=0.000
+
+=== wrapup_n12500r4_T125k  N=12500  T/N=100  lam_max=3.521e-04 ===
+  ols        lam=  --    corr=0.348  AUC_E=0.629  E_rec=0.111
+  ridge      lam=3.52e-07  corr=0.348  AUC_E=0.629  E_rec=0.111
+  lasso      lam=3.52e-07  corr=0.349  AUC_E=0.629  E_rec=0.111
+  en         lam=3.52e-07  corr=0.349  AUC_E=0.629  E_rec=0.111
+  lassodale  lam=3.52e-07  corr=0.544  AUC_E=0.663  E_rec=0.114
+  endale     lam=3.52e-07  corr=0.543  AUC_E=0.664  E_rec=0.114
+  ridge      lam=1.40e-06  corr=0.348  AUC_E=0.629  E_rec=0.111
+  lasso      lam=1.40e-06  corr=0.354  AUC_E=0.630  E_rec=0.111
+  en         lam=1.40e-06  corr=0.351  AUC_E=0.630  E_rec=0.111
+  lassodale  lam=1.40e-06  corr=0.548  AUC_E=0.662  E_rec=0.116
+  endale     lam=1.40e-06  corr=0.545  AUC_E=0.663  E_rec=0.115
+  ridge      lam=5.58e-06  corr=0.348  AUC_E=0.629  E_rec=0.111
+  lasso      lam=5.58e-06  corr=0.373  AUC_E=0.631  E_rec=0.112
+  en         lam=5.58e-06  corr=0.360  AUC_E=0.630  E_rec=0.111
+  lassodale  lam=5.58e-06  corr=0.565  AUC_E=0.656  E_rec=0.120
+  endale     lam=5.58e-06  corr=0.553  AUC_E=0.660  E_rec=0.117
+  ridge      lam=2.22e-05  corr=0.348  AUC_E=0.629  E_rec=0.111
+  lasso      lam=2.22e-05  corr=0.451  AUC_E=0.623  E_rec=0.115
+  en         lam=2.22e-05  corr=0.399  AUC_E=0.631  E_rec=0.113
+  lassodale  lam=2.22e-05  corr=0.626  AUC_E=0.624  E_rec=0.138
+  endale     lam=2.22e-05  corr=0.587  AUC_E=0.647  E_rec=0.126
+  ridge      lam=8.84e-05  corr=0.348  AUC_E=0.629  E_rec=0.111
+  lasso      lam=8.84e-05  corr=0.494  AUC_E=0.518  E_rec=0.031
+  en         lam=8.84e-05  corr=0.535  AUC_E=0.584  E_rec=0.117
+  lassodale  lam=8.84e-05  corr=0.532  AUC_E=0.517  E_rec=0.028
+  endale     lam=8.84e-05  corr=0.663  AUC_E=0.577  E_rec=0.156
+  ridge      lam=3.52e-04  corr=0.349  AUC_E=0.630  E_rec=0.111
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=3.52e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=3.52e-04  corr=0.084  AUC_E=0.500  E_rec=0.000
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=3.52e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=3.52e-04  corr=0.093  AUC_E=0.500  E_rec=0.000
+
+=== wrapup_n12500r4_T200k  N=12500  T/N=160  lam_max=3.440e-04 ===
+  ols        lam=  --    corr=0.429  AUC_E=0.661  E_rec=0.131
+  ridge      lam=3.44e-07  corr=0.429  AUC_E=0.661  E_rec=0.131
+  lasso      lam=3.44e-07  corr=0.431  AUC_E=0.661  E_rec=0.131
+  en         lam=3.44e-07  corr=0.430  AUC_E=0.661  E_rec=0.131
+  lassodale  lam=3.44e-07  corr=0.622  AUC_E=0.687  E_rec=0.138
+  endale     lam=3.44e-07  corr=0.621  AUC_E=0.688  E_rec=0.138
+  ridge      lam=1.37e-06  corr=0.429  AUC_E=0.661  E_rec=0.131
+  lasso      lam=1.37e-06  corr=0.438  AUC_E=0.662  E_rec=0.131
+  en         lam=1.37e-06  corr=0.433  AUC_E=0.661  E_rec=0.131
+  lassodale  lam=1.37e-06  corr=0.628  AUC_E=0.686  E_rec=0.140
+  endale     lam=1.37e-06  corr=0.624  AUC_E=0.687  E_rec=0.138
+  ridge      lam=5.45e-06  corr=0.429  AUC_E=0.661  E_rec=0.131
+  lasso      lam=5.45e-06  corr=0.466  AUC_E=0.662  E_rec=0.133
+  en         lam=5.45e-06  corr=0.447  AUC_E=0.662  E_rec=0.132
+  lassodale  lam=5.45e-06  corr=0.651  AUC_E=0.678  E_rec=0.146
+  endale     lam=5.45e-06  corr=0.636  AUC_E=0.684  E_rec=0.142
+  ridge      lam=2.17e-05  corr=0.429  AUC_E=0.661  E_rec=0.131
+  lasso      lam=2.17e-05  corr=0.579  AUC_E=0.644  E_rec=0.138
+  en         lam=2.17e-05  corr=0.504  AUC_E=0.661  E_rec=0.135
+  lassodale  lam=2.17e-05  corr=0.728  AUC_E=0.636  E_rec=0.171
+  endale     lam=2.17e-05  corr=0.680  AUC_E=0.666  E_rec=0.155
+  ridge      lam=8.64e-05  corr=0.429  AUC_E=0.661  E_rec=0.131
+  lasso      lam=8.64e-05  corr=0.551  AUC_E=0.513  E_rec=0.017
+  en         lam=8.64e-05  corr=0.680  AUC_E=0.584  E_rec=0.148
+  lassodale  lam=8.64e-05  corr=0.578  AUC_E=0.513  E_rec=0.015
+  endale     lam=8.64e-05  corr=0.753  AUC_E=0.579  E_rec=0.182
+  ridge      lam=3.44e-04  corr=0.430  AUC_E=0.662  E_rec=0.131
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=3.44e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=3.44e-04  corr=0.075  AUC_E=0.500  E_rec=0.000
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=3.44e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=3.44e-04  corr=0.083  AUC_E=0.500  E_rec=0.000
+
+=== wrapup_n12500r4_T250k  N=12500  T/N=200  lam_max=3.470e-04 ===
+  ols        lam=  --    corr=0.469  AUC_E=0.678  E_rec=0.144
+  ridge      lam=3.47e-07  corr=0.469  AUC_E=0.678  E_rec=0.144
+  lasso      lam=3.47e-07  corr=0.471  AUC_E=0.678  E_rec=0.144
+  en         lam=3.47e-07  corr=0.470  AUC_E=0.678  E_rec=0.144
+  lassodale  lam=3.47e-07  corr=0.658  AUC_E=0.701  E_rec=0.152
+  endale     lam=3.47e-07  corr=0.657  AUC_E=0.701  E_rec=0.152
+  ridge      lam=1.38e-06  corr=0.469  AUC_E=0.678  E_rec=0.144
+  lasso      lam=1.38e-06  corr=0.480  AUC_E=0.678  E_rec=0.145
+  en         lam=1.38e-06  corr=0.474  AUC_E=0.678  E_rec=0.145
+  lassodale  lam=1.38e-06  corr=0.665  AUC_E=0.699  E_rec=0.154
+  endale     lam=1.38e-06  corr=0.660  AUC_E=0.700  E_rec=0.153
+  ridge      lam=5.50e-06  corr=0.469  AUC_E=0.678  E_rec=0.144
+  lasso      lam=5.50e-06  corr=0.513  AUC_E=0.679  E_rec=0.147
+  en         lam=5.50e-06  corr=0.490  AUC_E=0.679  E_rec=0.145
+  lassodale  lam=5.50e-06  corr=0.690  AUC_E=0.690  E_rec=0.162
+  endale     lam=5.50e-06  corr=0.674  AUC_E=0.696  E_rec=0.157
+  ridge      lam=2.19e-05  corr=0.469  AUC_E=0.678  E_rec=0.144
+  lasso      lam=2.19e-05  corr=0.643  AUC_E=0.653  E_rec=0.153
+  en         lam=2.19e-05  corr=0.558  AUC_E=0.675  E_rec=0.149
+  lassodale  lam=2.19e-05  corr=0.769  AUC_E=0.641  E_rec=0.191
+  endale     lam=2.19e-05  corr=0.721  AUC_E=0.676  E_rec=0.172
+  ridge      lam=8.72e-05  corr=0.469  AUC_E=0.678  E_rec=0.144
+  lasso      lam=8.72e-05  corr=0.557  AUC_E=0.510  E_rec=0.010
+  en         lam=8.72e-05  corr=0.733  AUC_E=0.582  E_rec=0.169
+  lassodale  lam=8.72e-05  corr=0.582  AUC_E=0.510  E_rec=0.009
+  endale     lam=8.72e-05  corr=0.779  AUC_E=0.580  E_rec=0.181
+  ridge      lam=3.47e-04  corr=0.469  AUC_E=0.678  E_rec=0.145
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=3.47e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=3.47e-04  corr=0.066  AUC_E=0.500  E_rec=0.000
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=3.47e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=3.47e-04  corr=0.072  AUC_E=0.500  E_rec=0.000
+
+=== wrapup_n12500r4_T500k  N=12500  T/N=400  lam_max=3.257e-04 ===
+  ols        lam=  --    corr=0.591  AUC_E=0.735  E_rec=0.199
+  ridge      lam=3.26e-07  corr=0.591  AUC_E=0.735  E_rec=0.199
+  lasso      lam=3.26e-07  corr=0.594  AUC_E=0.735  E_rec=0.199
+  en         lam=3.26e-07  corr=0.592  AUC_E=0.735  E_rec=0.199
+  lassodale  lam=3.26e-07  corr=0.761  AUC_E=0.750  E_rec=0.209
+  endale     lam=3.26e-07  corr=0.760  AUC_E=0.750  E_rec=0.208
+  ridge      lam=1.30e-06  corr=0.591  AUC_E=0.735  E_rec=0.199
+  lasso      lam=1.30e-06  corr=0.606  AUC_E=0.735  E_rec=0.199
+  en         lam=1.30e-06  corr=0.598  AUC_E=0.735  E_rec=0.199
+  lassodale  lam=1.30e-06  corr=0.768  AUC_E=0.747  E_rec=0.212
+  endale     lam=1.30e-06  corr=0.763  AUC_E=0.749  E_rec=0.210
+  ridge      lam=5.16e-06  corr=0.591  AUC_E=0.735  E_rec=0.199
+  lasso      lam=5.16e-06  corr=0.650  AUC_E=0.733  E_rec=0.201
+  en         lam=5.16e-06  corr=0.620  AUC_E=0.735  E_rec=0.200
+  lassodale  lam=5.16e-06  corr=0.794  AUC_E=0.735  E_rec=0.225
+  endale     lam=5.16e-06  corr=0.777  AUC_E=0.744  E_rec=0.217
+  ridge      lam=2.06e-05  corr=0.591  AUC_E=0.735  E_rec=0.199
+  lasso      lam=2.06e-05  corr=0.793  AUC_E=0.680  E_rec=0.214
+  en         lam=2.06e-05  corr=0.706  AUC_E=0.724  E_rec=0.204
+  lassodale  lam=2.06e-05  corr=0.857  AUC_E=0.670  E_rec=0.266
+  endale     lam=2.06e-05  corr=0.823  AUC_E=0.715  E_rec=0.240
+  ridge      lam=8.18e-05  corr=0.591  AUC_E=0.735  E_rec=0.199
+  lasso      lam=8.18e-05  corr=0.605  AUC_E=0.509  E_rec=0.005
+  en         lam=8.18e-05  corr=0.820  AUC_E=0.593  E_rec=0.213
+  lassodale  lam=8.18e-05  corr=0.632  AUC_E=0.509  E_rec=0.004
+  endale     lam=8.18e-05  corr=0.834  AUC_E=0.598  E_rec=0.217
+  ridge      lam=3.26e-04  corr=0.591  AUC_E=0.735  E_rec=0.199
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=3.26e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=3.26e-04  corr=0.080  AUC_E=0.500  E_rec=0.000
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=3.26e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=3.26e-04  corr=0.088  AUC_E=0.500  E_rec=0.000
+
+=== wrapup_n12500r4_T1000k  N=12500  T/N=800  lam_max=3.346e-04 ===
+  ols        lam=  --    corr=0.697  AUC_E=0.795  E_rec=0.274
+  ridge      lam=3.35e-07  corr=0.697  AUC_E=0.795  E_rec=0.274
+  lasso      lam=3.35e-07  corr=0.702  AUC_E=0.795  E_rec=0.275
+  en         lam=3.35e-07  corr=0.699  AUC_E=0.795  E_rec=0.274
+  lassodale  lam=3.35e-07  corr=0.832  AUC_E=0.804  E_rec=0.284
+  endale     lam=3.35e-07  corr=0.831  AUC_E=0.804  E_rec=0.283
+  ridge      lam=1.33e-06  corr=0.697  AUC_E=0.795  E_rec=0.274
+  lasso      lam=1.33e-06  corr=0.716  AUC_E=0.794  E_rec=0.275
+  en         lam=1.33e-06  corr=0.706  AUC_E=0.795  E_rec=0.275
+  lassodale  lam=1.33e-06  corr=0.839  AUC_E=0.800  E_rec=0.289
+  endale     lam=1.33e-06  corr=0.835  AUC_E=0.803  E_rec=0.286
+  ridge      lam=5.30e-06  corr=0.697  AUC_E=0.795  E_rec=0.274
+  lasso      lam=5.30e-06  corr=0.767  AUC_E=0.789  E_rec=0.276
+  en         lam=5.30e-06  corr=0.734  AUC_E=0.793  E_rec=0.275
+  lassodale  lam=5.30e-06  corr=0.864  AUC_E=0.783  E_rec=0.307
+  endale     lam=5.30e-06  corr=0.848  AUC_E=0.795  E_rec=0.295
+  ridge      lam=2.11e-05  corr=0.697  AUC_E=0.795  E_rec=0.274
+  lasso      lam=2.11e-05  corr=0.877  AUC_E=0.699  E_rec=0.297
+  en         lam=2.11e-05  corr=0.822  AUC_E=0.768  E_rec=0.279
+  lassodale  lam=2.11e-05  corr=0.899  AUC_E=0.703  E_rec=0.354
+  endale     lam=2.11e-05  corr=0.887  AUC_E=0.756  E_rec=0.327
+  ridge      lam=8.40e-05  corr=0.697  AUC_E=0.795  E_rec=0.274
+  lasso      lam=8.40e-05  corr=0.594  AUC_E=0.507  E_rec=0.001
+  en         lam=8.40e-05  corr=0.843  AUC_E=0.603  E_rec=0.220
+  lassodale  lam=8.40e-05  corr=0.625  AUC_E=0.508  E_rec=0.001
+  endale     lam=8.40e-05  corr=0.854  AUC_E=0.608  E_rec=0.224
+  ridge      lam=3.35e-04  corr=0.697  AUC_E=0.795  E_rec=0.274
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=3.35e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=3.35e-04  corr=0.063  AUC_E=0.500  E_rec=0.000
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=3.35e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=3.35e-04  corr=0.069  AUC_E=0.500  E_rec=0.000
+
+=== wrapup_n12500r4_T2000k  N=12500  T/N=1600  lam_max=3.309e-04 ===
+  ols        lam=  --    corr=0.775  AUC_E=0.850  E_rec=0.362
+  ridge      lam=3.31e-07  corr=0.775  AUC_E=0.850  E_rec=0.362
+  lasso      lam=3.31e-07  corr=0.780  AUC_E=0.849  E_rec=0.362
+  en         lam=3.31e-07  corr=0.777  AUC_E=0.850  E_rec=0.362
+  lassodale  lam=3.31e-07  corr=0.876  AUC_E=0.853  E_rec=0.367
+  endale     lam=3.31e-07  corr=0.875  AUC_E=0.854  E_rec=0.366
+  ridge      lam=1.32e-06  corr=0.775  AUC_E=0.850  E_rec=0.362
+  lasso      lam=1.32e-06  corr=0.794  AUC_E=0.848  E_rec=0.361
+  en         lam=1.32e-06  corr=0.785  AUC_E=0.849  E_rec=0.361
+  lassodale  lam=1.32e-06  corr=0.883  AUC_E=0.849  E_rec=0.373
+  endale     lam=1.32e-06  corr=0.878  AUC_E=0.852  E_rec=0.369
+  ridge      lam=5.24e-06  corr=0.775  AUC_E=0.850  E_rec=0.362
+  lasso      lam=5.24e-06  corr=0.842  AUC_E=0.837  E_rec=0.357
+  en         lam=5.24e-06  corr=0.811  AUC_E=0.846  E_rec=0.359
+  lassodale  lam=5.24e-06  corr=0.904  AUC_E=0.830  E_rec=0.394
+  endale     lam=5.24e-06  corr=0.891  AUC_E=0.843  E_rec=0.381
+  ridge      lam=2.09e-05  corr=0.775  AUC_E=0.850  E_rec=0.362
+  lasso      lam=2.09e-05  corr=0.905  AUC_E=0.729  E_rec=0.374
+  en         lam=2.09e-05  corr=0.883  AUC_E=0.804  E_rec=0.357
+  lassodale  lam=2.09e-05  corr=0.916  AUC_E=0.745  E_rec=0.431
+  endale     lam=2.09e-05  corr=0.918  AUC_E=0.799  E_rec=0.415
+  ridge      lam=8.31e-05  corr=0.775  AUC_E=0.850  E_rec=0.362
+  lasso      lam=8.31e-05  corr=0.604  AUC_E=0.508  E_rec=0.001
+  en         lam=8.31e-05  corr=0.857  AUC_E=0.615  E_rec=0.238
+  lassodale  lam=8.31e-05  corr=0.639  AUC_E=0.508  E_rec=0.001
+  endale     lam=8.31e-05  corr=0.869  AUC_E=0.619  E_rec=0.239
+  ridge      lam=3.31e-04  corr=0.774  AUC_E=0.850  E_rec=0.361
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=3.31e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=3.31e-04  corr=0.065  AUC_E=0.500  E_rec=0.000
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=3.31e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=3.31e-04  corr=0.071  AUC_E=0.500  E_rec=0.000
+
+=== wrapup_n12500r4_T5000k  N=12500  T/N=4000  lam_max=3.260e-04 ===
+  ols        lam=  --    corr=0.835  AUC_E=0.901  E_rec=0.466
+  ridge      lam=3.26e-07  corr=0.835  AUC_E=0.901  E_rec=0.466
+  lasso      lam=3.26e-07  corr=0.840  AUC_E=0.900  E_rec=0.465
+  en         lam=3.26e-07  corr=0.838  AUC_E=0.901  E_rec=0.466
+  lassodale  lam=3.26e-07  corr=0.907  AUC_E=0.900  E_rec=0.464
+  endale     lam=3.26e-07  corr=0.906  AUC_E=0.900  E_rec=0.463
+  ridge      lam=1.30e-06  corr=0.835  AUC_E=0.901  E_rec=0.466
+  lasso      lam=1.30e-06  corr=0.853  AUC_E=0.898  E_rec=0.460
+  en         lam=1.30e-06  corr=0.844  AUC_E=0.899  E_rec=0.463
+  lassodale  lam=1.30e-06  corr=0.913  AUC_E=0.896  E_rec=0.470
+  endale     lam=1.30e-06  corr=0.909  AUC_E=0.898  E_rec=0.466
+  ridge      lam=5.17e-06  corr=0.835  AUC_E=0.901  E_rec=0.466
+  lasso      lam=5.17e-06  corr=0.891  AUC_E=0.880  E_rec=0.445
+  en         lam=5.17e-06  corr=0.867  AUC_E=0.893  E_rec=0.454
+  lassodale  lam=5.17e-06  corr=0.929  AUC_E=0.875  E_rec=0.490
+  endale     lam=5.17e-06  corr=0.919  AUC_E=0.890  E_rec=0.478
+  ridge      lam=2.06e-05  corr=0.835  AUC_E=0.901  E_rec=0.466
+  lasso      lam=2.06e-05  corr=0.919  AUC_E=0.767  E_rec=0.443
+  en         lam=2.06e-05  corr=0.916  AUC_E=0.840  E_rec=0.437
+  lassodale  lam=2.06e-05  corr=0.927  AUC_E=0.790  E_rec=0.505
+  endale     lam=2.06e-05  corr=0.936  AUC_E=0.845  E_rec=0.505
+  ridge      lam=8.19e-05  corr=0.835  AUC_E=0.901  E_rec=0.466
+  lasso      lam=8.19e-05  corr=0.619  AUC_E=0.508  E_rec=0.001
+  en         lam=8.19e-05  corr=0.867  AUC_E=0.626  E_rec=0.256
+  lassodale  lam=8.19e-05  corr=0.656  AUC_E=0.509  E_rec=0.000
+  endale     lam=8.19e-05  corr=0.879  AUC_E=0.628  E_rec=0.253
+  ridge      lam=3.26e-04  corr=0.835  AUC_E=0.901  E_rec=0.465
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=3.26e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=3.26e-04  corr=0.069  AUC_E=0.500  E_rec=0.000
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=3.26e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=3.26e-04  corr=0.076  AUC_E=0.500  E_rec=0.000
+
+=== wrapup_n12500r4_T7500k  N=12500  T/N=6000  lam_max=3.238e-04 ===
+  ols        lam=  --    corr=0.851  AUC_E=0.915  E_rec=0.502
+  ridge      lam=3.24e-07  corr=0.851  AUC_E=0.915  E_rec=0.502
+  lasso      lam=3.24e-07  corr=0.855  AUC_E=0.914  E_rec=0.500
+  en         lam=3.24e-07  corr=0.853  AUC_E=0.915  E_rec=0.501
+  lassodale  lam=3.24e-07  corr=0.915  AUC_E=0.913  E_rec=0.497
+  endale     lam=3.24e-07  corr=0.914  AUC_E=0.913  E_rec=0.496
+  ridge      lam=1.29e-06  corr=0.851  AUC_E=0.915  E_rec=0.502
+  lasso      lam=1.29e-06  corr=0.867  AUC_E=0.911  E_rec=0.494
+  en         lam=1.29e-06  corr=0.859  AUC_E=0.913  E_rec=0.498
+  lassodale  lam=1.29e-06  corr=0.920  AUC_E=0.909  E_rec=0.503
+  endale     lam=1.29e-06  corr=0.917  AUC_E=0.911  E_rec=0.499
+  ridge      lam=5.13e-06  corr=0.851  AUC_E=0.915  E_rec=0.502
+  lasso      lam=5.13e-06  corr=0.902  AUC_E=0.892  E_rec=0.473
+  en         lam=5.13e-06  corr=0.881  AUC_E=0.906  E_rec=0.486
+  lassodale  lam=5.13e-06  corr=0.935  AUC_E=0.889  E_rec=0.520
+  endale     lam=5.13e-06  corr=0.926  AUC_E=0.903  E_rec=0.510
+  ridge      lam=2.04e-05  corr=0.851  AUC_E=0.915  E_rec=0.502
+  lasso      lam=2.04e-05  corr=0.922  AUC_E=0.779  E_rec=0.463
+  en         lam=2.04e-05  corr=0.923  AUC_E=0.850  E_rec=0.462
+  lassodale  lam=2.04e-05  corr=0.930  AUC_E=0.804  E_rec=0.529
+  endale     lam=2.04e-05  corr=0.940  AUC_E=0.858  E_rec=0.532
+  ridge      lam=8.13e-05  corr=0.851  AUC_E=0.915  E_rec=0.502
+  lasso      lam=8.13e-05  corr=0.625  AUC_E=0.508  E_rec=0.001
+  en         lam=8.13e-05  corr=0.870  AUC_E=0.630  E_rec=0.262
+  lassodale  lam=8.13e-05  corr=0.663  AUC_E=0.509  E_rec=0.000
+  endale     lam=8.13e-05  corr=0.881  AUC_E=0.631  E_rec=0.258
+  ridge      lam=3.24e-04  corr=0.850  AUC_E=0.915  E_rec=0.500
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=3.24e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=3.24e-04  corr=0.071  AUC_E=0.500  E_rec=0.000
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=3.24e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=3.24e-04  corr=0.079  AUC_E=0.500  E_rec=0.000
+
+=== wrapup_n12500r4_T10000k  N=12500  T/N=8000  lam_max=3.221e-04 ===
+  ols        lam=  --    corr=0.859  AUC_E=0.923  E_rec=0.522
+  ridge      lam=3.22e-07  corr=0.859  AUC_E=0.923  E_rec=0.522
+  lasso      lam=3.22e-07  corr=0.863  AUC_E=0.922  E_rec=0.520
+  en         lam=3.22e-07  corr=0.861  AUC_E=0.922  E_rec=0.521
+  lassodale  lam=3.22e-07  corr=0.919  AUC_E=0.919  E_rec=0.515
+  endale     lam=3.22e-07  corr=0.918  AUC_E=0.920  E_rec=0.514
+  ridge      lam=1.28e-06  corr=0.859  AUC_E=0.923  E_rec=0.522
+  lasso      lam=1.28e-06  corr=0.874  AUC_E=0.918  E_rec=0.512
+  en         lam=1.28e-06  corr=0.867  AUC_E=0.921  E_rec=0.517
+  lassodale  lam=1.28e-06  corr=0.924  AUC_E=0.915  E_rec=0.521
+  endale     lam=1.28e-06  corr=0.921  AUC_E=0.918  E_rec=0.517
+  ridge      lam=5.11e-06  corr=0.859  AUC_E=0.923  E_rec=0.522
+  lasso      lam=5.11e-06  corr=0.907  AUC_E=0.898  E_rec=0.487
+  en         lam=5.11e-06  corr=0.887  AUC_E=0.913  E_rec=0.503
+  lassodale  lam=5.11e-06  corr=0.937  AUC_E=0.896  E_rec=0.537
+  endale     lam=5.11e-06  corr=0.930  AUC_E=0.909  E_rec=0.527
+  ridge      lam=2.03e-05  corr=0.859  AUC_E=0.923  E_rec=0.522
+  lasso      lam=2.03e-05  corr=0.923  AUC_E=0.786  E_rec=0.474
+  en         lam=2.03e-05  corr=0.926  AUC_E=0.857  E_rec=0.475
+  lassodale  lam=2.03e-05  corr=0.931  AUC_E=0.812  E_rec=0.541
+  endale     lam=2.03e-05  corr=0.942  AUC_E=0.866  E_rec=0.547
+  ridge      lam=8.09e-05  corr=0.859  AUC_E=0.923  E_rec=0.522
+  lasso      lam=8.09e-05  corr=0.630  AUC_E=0.508  E_rec=0.001
+  en         lam=8.09e-05  corr=0.872  AUC_E=0.632  E_rec=0.268
+  lassodale  lam=8.09e-05  corr=0.668  AUC_E=0.509  E_rec=0.000
+  endale     lam=8.09e-05  corr=0.883  AUC_E=0.633  E_rec=0.263
+  ridge      lam=3.22e-04  corr=0.858  AUC_E=0.922  E_rec=0.520
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lasso      lam=3.22e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  en         lam=3.22e-04  corr=0.073  AUC_E=0.500  E_rec=0.000
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:2999: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/work/classic/fr_mj200-calcium_ar/env-gpu/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3000: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+  lassodale  lam=3.22e-04  corr=nan  AUC_E=0.500  E_rec=0.000
+  endale     lam=3.22e-04  corr=0.081  AUC_E=0.500  E_rec=0.000
+
+wrote /work/classic/fr_mj200-calcium_ar/results/r5/r5_n12500r4.csv  (310 rows)
+done: Tue Aug 25 12:13:28 CEST 2026
+--- copy home just these: ---
+-rw-r--r-- 1 fr_mj200 fr_fr 72K Aug 25 12:13 /work/classic/fr_mj200-calcium_ar/results/r5/r5_n12500r4.csv
+-rw-r--r-- 1 fr_mj200 fr_fr 94K Aug 25 06:03 /work/classic/fr_mj200-calcium_ar/results/r5/r5_n1250r4.csv
+
+rsync -avhz ${USER}@login1.nemo.uni-freiburg.de:/work/classic/fr_mj200-calcium_ar/results/r5/ ~/calcium_results/r5/

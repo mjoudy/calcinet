@@ -1,0 +1,14 @@
+host: n4108   git: 68c0e8888628ccf2fbb7f2694815fed4321ea7ef (dirty: no)   date: Fri Jul  3 20:23:41 CEST 2026
+[ladder] python: /work/classic/fr_mj200-calcium_ar/env/bin/python
+[SimulatedDataset] Loaded  N=1250  T=500000  ← /work/classic/fr_mj200-calcium_ar/data/N1250/s1_tau100_T50000
+[ladder_ols] done in 58.0s  pearson=0.758  auc=0.905
+[SimulatedDataset] Loaded  N=1250  T=500000  ← /work/classic/fr_mj200-calcium_ar/data/N1250/s1_tau100_T50000
+[ladder_ridge] done in 50.1s  pearson=0.758  auc=0.905
+[SimulatedDataset] Loaded  N=1250  T=500000  ← /work/classic/fr_mj200-calcium_ar/data/N1250/s1_tau100_T50000
+[ladder_en] done in 60.3s  pearson=0.846  auc=0.911
+[SimulatedDataset] Loaded  N=1250  T=500000  ← /work/classic/fr_mj200-calcium_ar/data/N1250/s1_tau100_T50000
+  OLS      auc_roc=0.905  f1=0.188  precision=0.104  recall=0.991  macro_f1=0.177  dale_type_accuracy=0.947
+  Ridge    auc_roc=0.905  f1=0.188  precision=0.104  recall=0.991  macro_f1=0.177  dale_type_accuracy=0.947
+  EN       auc_roc=0.911  f1=0.297  precision=0.176  recall=0.944  macro_f1=0.411  dale_type_accuracy=0.972
+  Dale-EN  auc_roc=0.932  f1=0.439  precision=0.287  recall=0.930  macro_f1=0.575  dale_type_accuracy=1.000
+[ladder] DONE -> /work/classic/fr_mj200-calcium_ar/results/n1250_ladder/ladder.png

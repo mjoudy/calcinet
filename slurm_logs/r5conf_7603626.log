@@ -1,0 +1,9 @@
+host: g3607   git: 32a1d75f0397d8e502672f9ff9550483d66cd011   date: Tue Jul 28 00:34:37 CEST 2026   PY=/work/classic/fr_mj200-calcium_ar/env-gpu/bin/python
+torch 2.6.0+cu124 cuda True
+Traceback (most recent call last):
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/fig_r5_confusion.py", line 188, in <module>
+    main()
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/fig_r5_confusion.py", line 126, in main
+    rows = list(csv.DictReader(open(args.csv)))
+                               ^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/work/classic/fr_mj200-calcium_ar/results/r5/r5_n1250r4.csv'

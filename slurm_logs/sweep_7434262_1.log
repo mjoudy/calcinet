@@ -1,0 +1,13 @@
+================== run info ==================
+host:    n3310
+date:    Fri Jun 26 21:42:49 CEST 2026
+git:     306bed543a2fc53fecbb396d0921895e1db0b315 (dirty: no)
+task:    1
+cpus:    8
+workdir: /work/classic/fr_mj200-calcium_ar
+=============================================
+[sweep] python : /work/classic/fr_mj200-calcium_ar/env/bin/python
+[sweep] task 1: ridge  solver=ridge lam=0.001 lam_l2=0.0
+[SimulatedDataset] Loaded  N=1250  T=500000  ← /work/classic/fr_mj200-calcium_ar/data/N1250
+[n1250_ridge] done in 124.5s  pearson=0.610  auc=0.876
+[sweep] DONE task 1 (ridge)  pearson=0.6101  auc=0.8758  -> /work/classic/fr_mj200-calcium_ar/results/n1250_sweep/n1250_ridge_20260626_214252_bd0fb5

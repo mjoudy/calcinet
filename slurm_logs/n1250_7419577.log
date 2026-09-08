@@ -1,0 +1,22 @@
+================== run info ==================
+host:    n3219
+date:    Thu Jun 25 23:51:58 CEST 2026
+git:     51348e36c1b0a55eb7c697807b725add7804cecc (dirty: no)
+python:  /opt/eb/milan/software/Miniforge3/24.11.3-0/bin/python
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'nest'
+nest:    
+cpus:    8
+workdir: /work/classic/fr_mj200-calcium_ar
+=============================================
+Traceback (most recent call last):
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/run_n1250.py", line 25, in <module>
+    from calcium_ar.experiments.config import ExperimentConfig
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/__init__.py", line 1, in <module>
+    from . import simulation, preprocessing, solvers, data, experiments
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/simulation/__init__.py", line 1, in <module>
+    from .brunel_network import BrunelNetwork
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/simulation/brunel_network.py", line 28, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

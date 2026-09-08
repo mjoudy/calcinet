@@ -1,0 +1,167 @@
+host: n3204   git: d12db8736e42f63fa8f952770fbe4a533b79b688 (dirty: no)   date: Thu Jul 16 11:07:02 CEST 2026
+net=n1250  N=1250  seeds=[1, 2, 3, 4, 5]  out=/work/classic/fr_mj200-calcium_ar/results/wrapup_n1250
+[seed 1] building network + feed ...
+[INFO] [2026.7.16 11:7:5 /home/conda/feedstock_root/build_artifacts/nest-simulator_1744013459969/work/nestkernel/vp_manager.cpp:74 @ VPManager::initialize()] : OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+For details, see the Guide to parallel computing in the NEST Documentation.
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.8.0
+ Built: Apr  7 2025 08:14:12
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Jul 16 11:07:05 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 16 11:07:05 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 16 11:07:05 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 16 11:07:05 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 50000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 16 11:07:10 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 4.2s
+[seed 1] estimating (OLS, EN, Lasso, Lasso+Dale, EN+Dale) ...
+[seed 1] done. true density=0.095  nz(lasso)=0
+[seed 2] building network + feed ...
+
+Jul 16 11:12:26 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 16 11:12:26 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 16 11:12:26 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 16 11:12:26 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 50000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 16 11:12:30 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 4.1s
+[seed 2] estimating (OLS, EN, Lasso, Lasso+Dale, EN+Dale) ...
+[seed 2] done. true density=0.095  nz(lasso)=0
+[seed 3] building network + feed ...
+
+Jul 16 11:18:06 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 16 11:18:06 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 16 11:18:06 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 16 11:18:06 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 50000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 16 11:18:10 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 4.2s
+[seed 3] estimating (OLS, EN, Lasso, Lasso+Dale, EN+Dale) ...
+[seed 3] done. true density=0.095  nz(lasso)=0
+[seed 4] building network + feed ...
+
+Jul 16 11:23:27 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 16 11:23:27 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 16 11:23:27 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 16 11:23:27 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 50000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 16 11:23:31 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 4.0s
+[seed 4] estimating (OLS, EN, Lasso, Lasso+Dale, EN+Dale) ...
+[seed 4] done. true density=0.095  nz(lasso)=0
+[seed 5] building network + feed ...
+
+Jul 16 11:28:27 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 16 11:28:27 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 16 11:28:27 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 16 11:28:27 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 50000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 16 11:28:31 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 4.0s
+[seed 5] estimating (OLS, EN, Lasso, Lasso+Dale, EN+Dale) ...
+[seed 5] done. true density=0.095  nz(lasso)=0
+
+All seeds written under /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250
+/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/wrapup_figures.py:192: RuntimeWarning: Mean of empty slice
+  agg[k] = (float(np.nanmean(vals)), float(np.nanstd(vals)))
+/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:2053: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/wrapup_figures.py:192: RuntimeWarning: Mean of empty slice
+  agg[k] = (float(np.nanmean(vals)), float(np.nanstd(vals)))
+/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:2053: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/wrapup_figures.py:192: RuntimeWarning: Mean of empty slice
+  agg[k] = (float(np.nanmean(vals)), float(np.nanstd(vals)))
+/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:2053: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/wrapup_figures.py:192: RuntimeWarning: Mean of empty slice
+  agg[k] = (float(np.nanmean(vals)), float(np.nanstd(vals)))
+/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/numpy/lib/_nanfunctions_impl.py:2053: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+Traceback (most recent call last):
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/wrapup_figures.py", line 339, in <module>
+    main()
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/wrapup_figures.py", line 330, in main
+    f1 = figure1(data, n_seeds)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/wrapup_figures.py", line 203, in figure1
+    draw_ecdf(ax_e, data[key], DENSITY)
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/wrapup_figures.py", line 135, in draw_ecdf
+    thr_vals.append(a_abs[m].min())     # smallest |w| still called connected
+                    ^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/numpy/_core/_methods.py", line 49, in _amin
+    return umr_minimum(a, axis, None, out, keepdims, initial, where)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: zero-size array to reduction operation minimum which has no identity

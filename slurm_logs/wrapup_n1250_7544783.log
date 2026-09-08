@@ -1,0 +1,139 @@
+host: n3201   git: 5b2401221d80a20043138c059c80372a306ca308 (dirty: no)   date: Thu Jul 16 12:18:11 CEST 2026
+net=n1250  N=1250  seeds=[1, 2, 3, 4, 5]  out=/work/classic/fr_mj200-calcium_ar/results/wrapup_n1250
+[seed 1] building network + feed ...
+[INFO] [2026.7.16 12:18:14 /home/conda/feedstock_root/build_artifacts/nest-simulator_1744013459969/work/nestkernel/vp_manager.cpp:74 @ VPManager::initialize()] : OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+For details, see the Guide to parallel computing in the NEST Documentation.
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.8.0
+ Built: Apr  7 2025 08:14:12
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Jul 16 12:18:14 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 16 12:18:14 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 16 12:18:14 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 16 12:18:14 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 50000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 16 12:18:18 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 4.1s
+[seed 1] estimating (OLS, EN, Lasso, Lasso+Dale, EN+Dale) ...
+[seed 1] done. true density=0.095  nz(lasso)=906819
+[seed 2] building network + feed ...
+
+Jul 16 12:22:20 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 16 12:22:20 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 16 12:22:20 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 16 12:22:20 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 50000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 16 12:22:24 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 4.0s
+[seed 2] estimating (OLS, EN, Lasso, Lasso+Dale, EN+Dale) ...
+[seed 2] done. true density=0.095  nz(lasso)=910591
+[seed 3] building network + feed ...
+
+Jul 16 12:26:26 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 16 12:26:26 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 16 12:26:26 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 16 12:26:26 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 50000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 16 12:26:30 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 4.0s
+[seed 3] estimating (OLS, EN, Lasso, Lasso+Dale, EN+Dale) ...
+[seed 3] done. true density=0.095  nz(lasso)=902254
+[seed 4] building network + feed ...
+
+Jul 16 12:30:31 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 16 12:30:31 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 16 12:30:31 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 16 12:30:31 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 50000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 16 12:30:35 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 4.1s
+[seed 4] estimating (OLS, EN, Lasso, Lasso+Dale, EN+Dale) ...
+[seed 4] done. true density=0.095  nz(lasso)=912269
+[seed 5] building network + feed ...
+
+Jul 16 12:34:26 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 16 12:34:26 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 16 12:34:26 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 16 12:34:26 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 50000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 16 12:34:31 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 4.0s
+[seed 5] estimating (OLS, EN, Lasso, Lasso+Dale, EN+Dale) ...
+[seed 5] done. true density=0.095  nz(lasso)=913052
+
+All seeds written under /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250/method_panel.png
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n1250/decision_endale.png
+done: Thu Jul 16 12:39:23 CEST 2026

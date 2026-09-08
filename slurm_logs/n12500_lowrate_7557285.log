@@ -1,0 +1,91 @@
+host: g3610   git: 6785ce15664e29d3e6b6b07b73f62d0b8c3ff1a0   date: Sat Jul 18 17:17:15 CEST 2026   PY=/work/classic/fr_mj200-calcium_ar/env-gpu/bin/python
+torch 2.6.0+cu124 cuda_available True
+gpu: NVIDIA L40S
+=== regime preflight: canonical Brunel at N=12500 ===
+[INFO] [2026.7.18 17:17:22 /home/conda/feedstock_root/build_artifacts/nest-simulator_1744013459969/work/nestkernel/vp_manager.cpp:74 @ VPManager::initialize()] : OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+For details, see the Guide to parallel computing in the NEST Documentation.
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.8.0
+ Built: Apr  7 2025 08:14:12
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Jul 18 17:17:22 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 18 17:17:22 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 18 17:17:22 NodeManager::prepare_nodes [Info]: 
+    Preparing 12532 nodes for simulation.
+
+Jul 18 17:17:22 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 12532
+    Simulation time (ms): 5000
+    Number of OpenMP threads: 16
+    Not using MPI
+
+Jul 18 17:17:25 SimulationManager::run [Info]: 
+    Simulation finished.
+scale=n12500  N=12500  (C_E=1000)  sim_time=5000 ms
+
+config                      J    g   eta   V_r |   rate  rateE  rateI    CV   sync silent
+------------------------------------------------------------------------------------------------
+Simulation finished in 3.4s
+brunel_AI_lowrate        0.10    6   1.5  10.0 |   13.7   13.7   13.8  0.62  0.008   0.00
+
+AI target: rate ~5-15 Hz, CV ~0.8-1.0, sync ~0
+wrote /work/classic/fr_mj200-calcium_ar/results/network_state/n12500_AI_lowrate.png
+net=n12500_lowrate g=6.0 eta=1.5  sweep(ms)=[1000000.0, 2000000.0, 5000000.0]  seeds=[1]  chunk_ms=5000.0
+[seed 1] simulating 5000000 ms (densify=False) ...
+[INFO] [2026.7.18 17:18:56 /home/conda/feedstock_root/build_artifacts/nest-simulator_1744013459969/work/nestkernel/vp_manager.cpp:74 @ VPManager::initialize()] : OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+For details, see the Guide to parallel computing in the NEST Documentation.
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.8.0
+ Built: Apr  7 2025 08:14:12
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Jul 18 17:18:56 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 18 17:18:56 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 18 17:18:57 NodeManager::prepare_nodes [Info]: 
+    Preparing 12532 nodes for simulation.
+
+Jul 18 17:18:57 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 12532
+    Simulation time (ms): 5e+06
+    Number of OpenMP threads: 16
+    Not using MPI
+
+Jul 18 17:58:39 SimulationManager::run [Info]: 
+    Simulation finished.
+Simulation finished in 2382.6s
+[seed 1] streaming moments + checkpoints ...
+[seed 1] T=1000000ms SAVED -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n12500lr_T1000k/seed1  |ols|max=1.86e-02
+[2026-07-18T19:43:21.063] error: *** JOB 7557285 ON g3610 CANCELLED AT 2026-07-18T19:43:21 DUE to SIGNAL Terminated ***

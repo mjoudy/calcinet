@@ -1,0 +1,101 @@
+host: g3606   git: 6df44cb01f1dadc41b4ba7c4ad111e6010ae7fda   date: Tue Aug 25 04:42:05 CEST 2026   PY=/work/classic/fr_mj200-calcium_ar/env-gpu/bin/python
+torch 2.6.0+cu124 cuda True
+net=n2500_r4 g=8.0 eta=1.5  sweep(ms)=[100000.0, 200000.0, 500000.0, 1000000.0, 2000000.0, 5000000.0, 7500000.0, 10000000.0, 15000000.0, 20000000.0]  seeds=[5]  chunk_ms=5000.0
+[seed 5] loading cached ground truth n2500_r4_seed5_T20000k_8c1080d6ba.npz (skipping NEST; config verified)
+[seed 5] streaming moments + checkpoints ...
+[seed 5] T=100000ms SAVED -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T100k/seed5  |ols|max=2.97e-02
+[seed 5] T=200000ms SAVED -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T200k/seed5  |ols|max=2.74e-02
+[seed 5] T=500000ms SAVED -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T500k/seed5  |ols|max=2.63e-02
+[seed 5] T=1000000ms SAVED -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T1000k/seed5  |ols|max=2.57e-02
+[seed 5] T=2000000ms SAVED -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T2000k/seed5  |ols|max=2.63e-02
+[seed 5] T=5000000ms SAVED -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T5000k/seed5  |ols|max=2.68e-02
+[seed 5] T=7500000ms SAVED -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T7500k/seed5  |ols|max=2.65e-02
+[seed 5] T=10000000ms SAVED -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T10000k/seed5  |ols|max=2.57e-02
+[seed 5] T=15000000ms SAVED -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T15000k/seed5  |ols|max=2.47e-02
+[seed 5] T=20000000ms SAVED -> /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T20000k/seed5  |ols|max=2.43e-02
+[seed 5] mean rate 14.1 Hz  (all checkpoints saved)
+
+sweep complete
+[seed1] ols       AUC=0.731 AUC_E=0.773 AUC_I=1.000 E_rec=0.263 I_rec=0.998 corr=0.515
+[seed2] ols       AUC=0.730 AUC_E=0.772 AUC_I=1.000 E_rec=0.261 I_rec=0.998 corr=0.513
+[seed3] ols       AUC=0.731 AUC_E=0.774 AUC_I=1.000 E_rec=0.264 I_rec=0.999 corr=0.519
+[seed4] ols       AUC=0.728 AUC_E=0.771 AUC_I=1.000 E_rec=0.260 I_rec=0.998 corr=0.508
+[seed5] ols       AUC=0.730 AUC_E=0.773 AUC_I=1.000 E_rec=0.261 I_rec=0.998 corr=0.513
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T100k/metrics.csv  (5 rows)
+[seed1] ols       AUC=0.795 AUC_E=0.837 AUC_I=1.000 E_rec=0.363 I_rec=1.000 corr=0.623
+[seed2] ols       AUC=0.793 AUC_E=0.836 AUC_I=1.000 E_rec=0.359 I_rec=1.000 corr=0.620
+[seed3] ols       AUC=0.796 AUC_E=0.839 AUC_I=1.000 E_rec=0.364 I_rec=1.000 corr=0.626
+[seed4] ols       AUC=0.792 AUC_E=0.835 AUC_I=1.000 E_rec=0.357 I_rec=1.000 corr=0.616
+[seed5] ols       AUC=0.795 AUC_E=0.837 AUC_I=1.000 E_rec=0.361 I_rec=1.000 corr=0.622
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T200k/metrics.csv  (5 rows)
+[seed1] ols       AUC=0.877 AUC_E=0.906 AUC_I=1.000 E_rec=0.506 I_rec=1.000 corr=0.728
+[seed2] ols       AUC=0.875 AUC_E=0.905 AUC_I=1.000 E_rec=0.503 I_rec=1.000 corr=0.726
+[seed3] ols       AUC=0.878 AUC_E=0.907 AUC_I=1.000 E_rec=0.507 I_rec=1.000 corr=0.731
+[seed4] ols       AUC=0.874 AUC_E=0.903 AUC_I=1.000 E_rec=0.500 I_rec=1.000 corr=0.722
+[seed5] ols       AUC=0.876 AUC_E=0.906 AUC_I=1.000 E_rec=0.504 I_rec=1.000 corr=0.727
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T500k/metrics.csv  (5 rows)
+[seed1] ols       AUC=0.919 AUC_E=0.938 AUC_I=1.000 E_rec=0.597 I_rec=1.000 corr=0.777
+[seed2] ols       AUC=0.918 AUC_E=0.937 AUC_I=1.000 E_rec=0.591 I_rec=1.000 corr=0.774
+[seed3] ols       AUC=0.920 AUC_E=0.938 AUC_I=1.000 E_rec=0.597 I_rec=1.000 corr=0.778
+[seed4] ols       AUC=0.917 AUC_E=0.936 AUC_I=1.000 E_rec=0.589 I_rec=1.000 corr=0.771
+[seed5] ols       AUC=0.919 AUC_E=0.937 AUC_I=1.000 E_rec=0.593 I_rec=1.000 corr=0.775
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T1000k/metrics.csv  (5 rows)
+[seed1] ols       AUC=0.944 AUC_E=0.955 AUC_I=1.000 E_rec=0.657 I_rec=1.000 corr=0.805
+[seed2] ols       AUC=0.942 AUC_E=0.954 AUC_I=1.000 E_rec=0.651 I_rec=1.000 corr=0.802
+[seed3] ols       AUC=0.944 AUC_E=0.956 AUC_I=1.000 E_rec=0.656 I_rec=1.000 corr=0.806
+[seed4] ols       AUC=0.942 AUC_E=0.954 AUC_I=1.000 E_rec=0.650 I_rec=1.000 corr=0.800
+[seed5] ols       AUC=0.943 AUC_E=0.955 AUC_I=1.000 E_rec=0.653 I_rec=1.000 corr=0.803
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T2000k/metrics.csv  (5 rows)
+[seed1] ols       AUC=0.959 AUC_E=0.966 AUC_I=1.000 E_rec=0.700 I_rec=1.000 corr=0.823
+[seed2] ols       AUC=0.957 AUC_E=0.965 AUC_I=1.000 E_rec=0.694 I_rec=1.000 corr=0.820
+[seed3] ols       AUC=0.959 AUC_E=0.966 AUC_I=1.000 E_rec=0.698 I_rec=1.000 corr=0.824
+[seed4] ols       AUC=0.957 AUC_E=0.965 AUC_I=1.000 E_rec=0.692 I_rec=1.000 corr=0.818
+[seed5] ols       AUC=0.956 AUC_E=0.964 AUC_I=1.000 E_rec=0.688 I_rec=1.000 corr=0.818
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T5000k/metrics.csv  (5 rows)
+[seed1] ols       AUC=0.962 AUC_E=0.968 AUC_I=1.000 E_rec=0.710 I_rec=1.000 corr=0.827
+[seed2] ols       AUC=0.961 AUC_E=0.967 AUC_I=1.000 E_rec=0.704 I_rec=1.000 corr=0.825
+[seed3] ols       AUC=0.962 AUC_E=0.968 AUC_I=1.000 E_rec=0.708 I_rec=1.000 corr=0.828
+[seed4] ols       AUC=0.960 AUC_E=0.967 AUC_I=1.000 E_rec=0.702 I_rec=1.000 corr=0.823
+[seed5] ols       AUC=0.957 AUC_E=0.965 AUC_I=1.000 E_rec=0.691 I_rec=1.000 corr=0.819
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T7500k/metrics.csv  (5 rows)
+[seed1] ols       AUC=0.963 AUC_E=0.969 AUC_I=1.000 E_rec=0.715 I_rec=1.000 corr=0.829
+[seed2] ols       AUC=0.962 AUC_E=0.969 AUC_I=1.000 E_rec=0.709 I_rec=1.000 corr=0.827
+[seed3] ols       AUC=0.964 AUC_E=0.969 AUC_I=1.000 E_rec=0.713 I_rec=1.000 corr=0.830
+[seed4] ols       AUC=0.962 AUC_E=0.968 AUC_I=1.000 E_rec=0.708 I_rec=1.000 corr=0.825
+[seed5] ols       AUC=0.954 AUC_E=0.963 AUC_I=1.000 E_rec=0.679 I_rec=1.000 corr=0.815
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T10000k/metrics.csv  (5 rows)
+[seed1] ols       AUC=0.965 AUC_E=0.970 AUC_I=1.000 E_rec=0.720 I_rec=1.000 corr=0.831
+[seed2] ols       AUC=0.964 AUC_E=0.970 AUC_I=1.000 E_rec=0.715 I_rec=1.000 corr=0.829
+[seed3] ols       AUC=0.965 AUC_E=0.971 AUC_I=1.000 E_rec=0.718 I_rec=1.000 corr=0.832
+[seed4] ols       AUC=0.963 AUC_E=0.969 AUC_I=1.000 E_rec=0.713 I_rec=1.000 corr=0.827
+[seed5] ols       AUC=0.946 AUC_E=0.958 AUC_I=1.000 E_rec=0.649 I_rec=1.000 corr=0.805
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T15000k/metrics.csv  (5 rows)
+[seed1] ols       AUC=0.966 AUC_E=0.971 AUC_I=1.000 E_rec=0.723 I_rec=1.000 corr=0.832
+[seed2] ols       AUC=0.965 AUC_E=0.970 AUC_I=1.000 E_rec=0.717 I_rec=1.000 corr=0.830
+[seed3] ols       AUC=0.966 AUC_E=0.971 AUC_I=1.000 E_rec=0.721 I_rec=1.000 corr=0.833
+[seed4] ols       AUC=0.964 AUC_E=0.970 AUC_I=1.000 E_rec=0.716 I_rec=1.000 corr=0.828
+[seed5] ols       AUC=0.939 AUC_E=0.954 AUC_I=1.000 E_rec=0.627 I_rec=1.000 corr=0.798
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T20000k/metrics.csv  (5 rows)
+done: Tue Aug 25 07:33:24 CEST 2026
+--- copy home just these: ---
+-rw-r--r-- 1 fr_mj200 fr_fr 1.3K Aug 25 07:32 /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T10000k/metrics.csv
+-rw-r--r-- 1 fr_mj200 fr_fr 1.3K Aug 25 07:30 /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T1000k/metrics.csv
+-rw-r--r-- 1 fr_mj200 fr_fr 1.3K Aug 25 07:28 /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T100k/metrics.csv
+-rw-r--r-- 1 fr_mj200 fr_fr 1.3K Aug 25 07:32 /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T15000k/metrics.csv
+-rw-r--r-- 1 fr_mj200 fr_fr 1.3K Aug 25 07:33 /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T20000k/metrics.csv
+-rw-r--r-- 1 fr_mj200 fr_fr 1.3K Aug 25 07:30 /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T2000k/metrics.csv
+-rw-r--r-- 1 fr_mj200 fr_fr 1.3K Aug 25 07:29 /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T200k/metrics.csv
+-rw-r--r-- 1 fr_mj200 fr_fr  354 Jul 23 22:55 /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T400k/metrics.csv
+-rw-r--r-- 1 fr_mj200 fr_fr 1.3K Aug 25 07:31 /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T5000k/metrics.csv
+-rw-r--r-- 1 fr_mj200 fr_fr 1.3K Aug 25 07:29 /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T500k/metrics.csv
+-rw-r--r-- 1 fr_mj200 fr_fr 1.3K Aug 25 07:31 /work/classic/fr_mj200-calcium_ar/results/wrapup_n2500r4_T7500k/metrics.csv

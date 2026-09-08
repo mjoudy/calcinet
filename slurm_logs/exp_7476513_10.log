@@ -1,0 +1,85 @@
+================== run info ==================
+host:    n3119
+date:    Thu Jul  2 22:50:51 CEST 2026
+git:     9b39b05ee0f584076e653cd3a26c61091dd681b6 (dirty: no)
+sweep:   lag   task: 10
+cpus:    8
+workdir: /work/classic/fr_mj200-calcium_ar
+=============================================
+[INFO] [2026.7.2 22:50:53 /home/conda/feedstock_root/build_artifacts/nest-simulator_1744013459969/work/nestkernel/vp_manager.cpp:74 @ VPManager::initialize()] : OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+For details, see the Guide to parallel computing in the NEST Documentation.
+
+              -- N E S T --
+  Copyright (C) 2004 The NEST Initiative
+
+ Version: 3.8.0
+ Built: Apr  7 2025 08:14:12
+
+ This program is provided AS IS and comes with
+ NO WARRANTY. See the file LICENSE for details.
+
+ Problems or suggestions?
+   Visit https://www.nest-simulator.org
+
+ Type 'nest.help()' to find out more about NEST.
+
+
+Jul 02 22:50:53 VPManager::initialize() [Info]: 
+    OMP_NUM_THREADS is set in your environment, but NEST ignores it.
+    For details, see the Guide to parallel computing in the NEST Documentation.
+
+Jul 02 22:50:53 SimulationManager::set_status [Info]: 
+    Temporal resolution changed from 0.1 to 0.1 ms.
+
+Jul 02 22:50:53 NodeManager::prepare_nodes [Info]: 
+    Preparing 1266 nodes for simulation.
+
+Jul 02 22:50:53 SimulationManager::start_updating_ [Info]: 
+    Number of local nodes: 1266
+    Simulation time (ms): 50000
+    Number of OpenMP threads: 8
+    Not using MPI
+
+Jul 02 22:50:57 SimulationManager::run [Info]: 
+    Simulation finished.
+[exp] python: /work/classic/fr_mj200-calcium_ar/env/bin/python  SWEEP=lag TASK=10
+[exp] lag: lag_ms=1.5 seed=1
+[SimulatedDataset] Simulating Brunel network → s1_tau100_T50000
+Simulation finished in 3.7s
+[SimulatedDataset] Generating calcium signal …
+Traceback (most recent call last):
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/run_n1250_experiments.py", line 206, in <module>
+    run_sweep_point(sweep, value, seed)
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/scripts/run_n1250_experiments.py", line 150, in run_sweep_point
+    result = run_single(cfg)                 # EN: saves feed + adj_inferred + per-task ledger
+             ^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/experiments/runner.py", line 196, in run_single
+    ds = SimulatedDataset.load_or_generate(config, config.data_path)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/data/dataset.py", line 215, in load_or_generate
+    return cls.generate(config, path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/data/dataset.py", line 176, in generate
+    ds._write(spikes, calcium, adj_true, config.__dict__)
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/data/dataset.py", line 282, in _write
+    _save_zarr(spikes,  self.path / self._SPIKES_DIR)
+  File "/work/classic/fr_mj200-calcium_ar/Calcium---AR/calcium_ar/data/dataset.py", line 54, in _save_zarr
+    z = zarr.open_array(
+        ^^^^^^^^^^^^^^^^
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/zarr/creation.py", line 629, in open_array
+    init_array(
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/zarr/storage.py", line 455, in init_array
+    _init_array_metadata(
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/zarr/storage.py", line 497, in _init_array_metadata
+    rmdir(store, path)
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/zarr/storage.py", line 212, in rmdir
+    store.rmdir(path)
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/site-packages/zarr/storage.py", line 1266, in rmdir
+    shutil.rmtree(dir_path)
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/shutil.py", line 759, in rmtree
+    _rmtree_safe_fd(stack, onexc)
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/shutil.py", line 703, in _rmtree_safe_fd
+    onexc(func, path, err)
+  File "/work/classic/fr_mj200-calcium_ar/env/lib/python3.12/shutil.py", line 662, in _rmtree_safe_fd
+    os.rmdir(name, dir_fd=dirfd)
+OSError: [Errno 39] Directory not empty: '/work/classic/fr_mj200-calcium_ar/data/N1250/arxiv/s1_tau100_T50000/spikes.zarr'

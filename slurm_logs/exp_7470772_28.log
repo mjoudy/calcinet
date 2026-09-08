@@ -1,0 +1,17 @@
+================== run info ==================
+host:    n4219
+date:    Thu Jul  2 00:01:51 CEST 2026
+git:     54b6442d9f7ad7e4cc4ad75722e3844dc8bee747 (dirty: no)
+sweep:   tau   task: 28
+cpus:    8
+workdir: /work/classic/fr_mj200-calcium_ar
+=============================================
+[exp] python: /work/classic/fr_mj200-calcium_ar/env/bin/python  SWEEP=tau TASK=28
+[exp] tau: tau=400.0 seed=4
+[SimulatedDataset] Loaded  N=1250  T=500000  ← /work/classic/fr_mj200-calcium_ar/data/N1250/s4_tau400_T50000
+[n1250_tau_400.0_s4] done in 65.3s  pearson=0.690  auc=0.880
+[SimulatedDataset] Loaded  N=1250  T=500000  ← /work/classic/fr_mj200-calcium_ar/data/N1250/s4_tau400_T50000
+  EN                 pearson=0.690 auc=0.880 type_acc=0.977 ei=2.61
+  EN+Dale            pearson=0.794 auc=0.912 type_acc=0.999 ei=3.12
+  EN+Dale+balance    pearson=0.895 auc=0.891 type_acc=0.999 ei=10.80
+[exp] DONE tau tau=400.0 seed=4 -> /work/classic/fr_mj200-calcium_ar/results/n1250_sweeps/tau/tau_400.0_s4/stages.csv

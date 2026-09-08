@@ -1,0 +1,41 @@
+host: g3606   git: 6df44cb01f1dadc41b4ba7c4ad111e6010ae7fda   date: Wed Aug 26 02:27:51 CEST 2026   PY=/work/classic/fr_mj200-calcium_ar/env-gpu/bin/python
+torch 2.6.0+cu124 cuda True
+
+=== wrapup_n1250r4_T12k  N=1250  T/N=96 ===
+  ols        lam=  --    recall E/none/I = 0.18/0.92/0.54
+  lasso      lam=7.75e-05  recall E/none/I = 0.19/0.92/0.59
+  lassodale  lam=7.75e-05  recall E/none/I = 0.24/0.92/0.26
+
+=== wrapup_n1250r4_T1000k  N=1250  T/N=8000 ===
+  ols        lam=  --    recall E/none/I = 0.72/0.97/1.00
+  lasso      lam=7.56e-07  recall E/none/I = 0.72/0.97/1.00
+  lassodale  lam=3.01e-06  recall E/none/I = 0.73/0.97/1.00
+
+=== wrapup_n1250r4_T20000k  N=1250  T/N=160000 ===
+  ols        lam=  --    recall E/none/I = 0.78/0.98/1.00
+  lasso      lam=7.52e-07  recall E/none/I = 0.78/0.98/1.00
+  lassodale  lam=7.52e-07  recall E/none/I = 0.79/0.98/1.00
+
+wrote /work/classic/fr_mj200-calcium_ar/results/r5/r5conf_n1250r4.npz
+
+=== wrapup_n12500r4_T100k  N=12500  T/N=80 ===
+  ols        lam=  --    recall E/none/I = 0.10/0.92/0.73
+  lasso      lam=2.25e-05  recall E/none/I = 0.11/0.92/0.78
+  lassodale  lam=2.25e-05  recall E/none/I = 0.13/0.92/0.91
+
+=== wrapup_n12500r4_T1000k  N=12500  T/N=800 ===
+  ols        lam=  --    recall E/none/I = 0.27/0.93/1.00
+  lasso      lam=2.11e-05  recall E/none/I = 0.30/0.94/1.00
+  lassodale  lam=2.11e-05  recall E/none/I = 0.35/0.94/1.00
+
+=== wrapup_n12500r4_T10000k  N=12500  T/N=8000 ===
+  ols        lam=  --    recall E/none/I = 0.52/0.95/1.00
+  lasso      lam=3.22e-07  recall E/none/I = 0.52/0.95/1.00
+  lassodale  lam=2.03e-05  recall E/none/I = 0.54/0.96/1.00
+
+wrote /work/classic/fr_mj200-calcium_ar/results/r5/r5conf_n12500r4.npz
+done: Wed Aug 26 02:40:58 CEST 2026
+-rw-r--r-- 1 fr_mj200 fr_fr 2.1K Aug 26 02:40 /work/classic/fr_mj200-calcium_ar/results/r5/r5conf_n12500r4.npz
+-rw-r--r-- 1 fr_mj200 fr_fr 2.1K Aug 26 02:30 /work/classic/fr_mj200-calcium_ar/results/r5/r5conf_n1250r4.npz
+
+rsync -avhz fr_mj200@login1.nemo.uni-freiburg.de:/work/classic/fr_mj200-calcium_ar/results/r5/r5conf_*.npz ~/calcium_results/r5/

@@ -1,0 +1,29 @@
+pooling chunks under: /work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T12000k
+/work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T12000k/seed201
+/work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T12000k/seed202
+/work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T12000k/seed203
+/work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T12000k/seed204
+/work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T12000k/seed205
+/work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T12000k/seed206
+/work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T12000k/seed207
+pooling 7 chunks: ['seed201', 'seed202', 'seed203', 'seed204', 'seed205', 'seed206', 'seed207']
+{
+  "corr": 0.863948022606802,
+  "roc_auc": 0.9183251210002679,
+  "pr_ap": 0.7284360431860868,
+  "auc_E": 0.9426677975588627,
+  "auc_I": 0.9999974926337866,
+  "E_rec": 0.5793977492434432,
+  "E_prec": 0.6514790129181947,
+  "I_rec": 0.9999868563211894,
+  "I_prec": 0.5892021578956336,
+  "none_rec": 0.9592626384818624,
+  "n_chunks": 7,
+  "n_scored": 19998429,
+  "sampled": true
+}
+
+wrote /work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T12000k_pooled/metrics.json + A_ols.npy
+done: Sat Aug 29 15:01:46 CEST 2026
+--- copy home just this: ---
+rsync -avhz ${USER}@login1.nemo.uni-freiburg.de:/work/classic/fr_mj200-calcium_ar/results/wrapup_n12500r4_T12000k_pooled/ ~/calcium_results/n12500_kpool_pooled/

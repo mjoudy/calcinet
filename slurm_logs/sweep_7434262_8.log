@@ -1,0 +1,13 @@
+================== run info ==================
+host:    n3504
+date:    Fri Jun 26 21:42:49 CEST 2026
+git:     306bed543a2fc53fecbb396d0921895e1db0b315 (dirty: no)
+task:    8
+cpus:    8
+workdir: /work/classic/fr_mj200-calcium_ar
+=============================================
+[sweep] python : /work/classic/fr_mj200-calcium_ar/env/bin/python
+[sweep] task 8: en_3e-4  solver=fista lam=0.0003 lam_l2=0.001
+[SimulatedDataset] Loaded  N=1250  T=500000  ← /work/classic/fr_mj200-calcium_ar/data/N1250
+[n1250_en_3e-4] done in 170.8s  pearson=0.713  auc=0.867
+[sweep] DONE task 8 (en_3e-4)  pearson=0.7130  auc=0.8668  -> /work/classic/fr_mj200-calcium_ar/results/n1250_sweep/n1250_en_3e-4_20260626_214252_403673
