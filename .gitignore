@@ -15,15 +15,9 @@ envs/
 *.pickle
 *.npz
 
-# Experiment results: keep the big arrays OUT, but track the ledger.csv records
-# (tiny text files = the scientific record of what was run + the numbers + the
-# code commit). Big arrays stay out via the *.npy/*.zarr/etc rules above plus the
-# blanket results/** rule here. To also version per-run configs/metrics, add:
-#   !results/**/config.json
-#   !results/**/metrics.json
-results/**
-!results/**/
-!results/**/ledger.csv
+# Tool output: calcinet writes runs to results/ by default. Nothing there is
+# tracked -- the thesis's own ledgers and summary CSVs live in research/results/.
+results/
 scripts/sanity_n100_output/
 scripts/sanity_n1250_output/
 
@@ -54,8 +48,8 @@ _arxiv/
 
 # SLURM job logs ARE tracked: they are the evidence of what was actually run
 # on the cluster (small text files). Only oversized ones are excluded.
-slurm_logs/**/*.zarr
-slurm_logs/**/*.npy
+research/slurm_logs/**/*.zarr
+research/slurm_logs/**/*.npy
 
 # Python build artifacts
 build/
@@ -70,3 +64,8 @@ figures/
 
 # Quickstart example outputs (regenerate with: python examples/quickstart.py)
 examples/output/
+
+# Theory drafts kept local-only (they were committed by mistake in f1c28996;
+# they remain in history and in the v0.1.0 archive, but are not tracked from here on)
+docs/theory/reproducible_framework_chapter.tex
+docs/presentations/fp_analysis_summary.tex

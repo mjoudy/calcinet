@@ -5,7 +5,7 @@ working-session Q&A on 2026-08-14 about why `fig_R4`'s headline numbers
 (correlation, excitatory recall/precision) and `fig_R5_conf`'s confusion
 matrices can look like they disagree, and what ROC-AUC vs PR-AUC each
 actually say about this project's results. See
-`docs/experiments/shared_input_findings.md` for the mechanism behind *why*
+`docs/lab_notebook/shared_input_findings.md` for the mechanism behind *why*
 excitatory recall stays low at large N — this doc is about how to *measure
 and report* that fact, not why it happens.
 

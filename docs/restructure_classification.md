@@ -9,10 +9,10 @@ happened (including four corrections found during verification).
 
 | Script | Was | Now | Why |
 |---|---|---|---|
-| `multilag_estimator.py` | core | `experiments/ch2_connectivity/` | imports `wrapup_run` (an experiment) — core may not depend on experiments |
-| `spectral_analysis.py` | core | `experiments/ch2_connectivity/` | loads a hardcoded thesis result path at module level |
-| `network_stats.py` | core | `experiments/shared/` | imports `make_panel`, which you kept out of the core |
-| `wrapup_run.py` | core | `experiments/shared/` | used by BOTH experiment groups — promoted to shared/ |
+| `multilag_estimator.py` | core | `research/experiments/ch2_connectivity/` | imports `wrapup_run` (an experiment) — core may not depend on experiments |
+| `spectral_analysis.py` | core | `research/experiments/ch2_connectivity/` | loads a hardcoded thesis result path at module level |
+| `network_stats.py` | core | `research/experiments/shared/` | imports `make_panel`, which you kept out of the core |
+| `wrapup_run.py` | core | `research/experiments/shared/` | used by BOTH experiment groups — promoted to shared/ |
 
 ## Core — the installable tool
 
@@ -31,7 +31,7 @@ happened (including four corrections found during verification).
 | `src/calcinet/simulation/ou_linear_ground_truth.py` | `calcinet.simulation.ou_linear_ground_truth` |
 | `src/calcinet/simulation/sanity_check.py` | `calcinet.simulation.sanity_check` |
 
-## experiments/shared/ (7)
+## research/experiments/shared/ (7)
 
 | Script | Docstring |
 |---|---|
@@ -43,7 +43,7 @@ happened (including four corrections found during verification).
 | `r2_metrics.py` | R.2 connectivity metric set — shared by fig_r2_compute.py (score at swee |
 | `wrapup_run.py` | Wrap-up: local run (small net) that produces the estimates the figures n |
 
-## experiments/ch1_proxy/ (11)
+## research/experiments/ch1_proxy/ (11)
 
 | Script | Docstring |
 |---|---|
@@ -59,7 +59,7 @@ happened (including four corrections found during verification).
 | `fig_r2_smooth_compute.py` | R.2 follow-up — does TUNING the deconvolution's own smoothing window let |
 | `fig_r2_smooth_plot.py` | R.2 follow-up — PLOT. Does tuning the deconvolution's own smoothing wind |
 
-## experiments/ch2_connectivity/ (80)
+## research/experiments/ch2_connectivity/ (80)
 
 | Script | Docstring |
 |---|---|

@@ -17,12 +17,12 @@ this list has been done yet.
 ## Bring down before the workspace disappears
 
 - [ ] **SLURM logs** — wanted in the repo as evidence of the long runs. The local
-      `slurm_logs/` is currently EMPTY; the logs only exist on the cluster.
+      `research/slurm_logs/` is currently EMPTY; the logs only exist on the cluster.
       ```bash
       rsync -avhz fr_mj200@login1.nemo.uni-freiburg.de:'$(ws_find calcium_ar)/Calcium---AR/slurm_logs/' \
-            slurm_logs/
+            research/slurm_logs/
       ```
-      Then un-ignore them: `.gitignore` currently has `slurm_logs/*`, which must
+      Then un-ignore them: `.gitignore` currently has `research/slurm_logs/*`, which must
       be relaxed so the logs are tracked.
 - [ ] **Ledger files** from `$WS/results/*/ledger.csv` (small text, the run record).
 - [ ] Anything else under `$WS/results` still needed for the thesis.

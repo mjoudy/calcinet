@@ -1,7 +1,7 @@
 # Theoretical grounding for the shared-input confound (Pernice et al.)
 
 Notes from a working session connecting the project's empirical shared-input
-findings (`docs/experiments/shared_input_findings.md`, i.e. R.7/R.8/Way2/Way3)
+findings (`docs/lab_notebook/shared_input_findings.md`, i.e. R.7/R.8/Way2/Way3)
 and the regression write-up (`docs/theory/connectivity_regression_chapter.tex`)
 to two ancestor papers from the professor's group:
 
@@ -202,7 +202,7 @@ kind of network bigger and see what happens").
 **Implication for this project:** citing "the professor's own papers use fixed
 probability" is accurate and defensible as precedent — but it's precedent for
 a *different question* than R.4/R.4b's. Worth presenting both conventions
-explicitly in the report (as already done — see `docs/experiments/notebook.md`
+explicitly in the report (as already done — see `docs/lab_notebook/notebook.md`
 2026-08-08/2026-08-10 entries) rather than picking one as unambiguously
 "correct," and worth asking Prof. Rotter directly why fixed probability became
 standard in the group's work — the mathematical-convenience explanation above
@@ -221,5 +221,5 @@ imperfect deconfounder; fakes track observed drivers almost as much as hidden
 ones) are independently predicted by this theory, not just consistent with
 it.
 
-See also: `docs/experiments/shared_input_findings.md` (empirical record),
+See also: `docs/lab_notebook/shared_input_findings.md` (empirical record),
 `docs/theory/connectivity_regression_chapter.tex` (regression derivation).

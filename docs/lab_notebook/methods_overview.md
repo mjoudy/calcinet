@@ -4,7 +4,7 @@ All methods at lag = 1.5 ms on the real preprocessed feed (N=100). **GT=Y**
 means the method used ground truth to *produce* the estimate (oracle ceilings
 only); all others are fully unsupervised. `daleianity` and `overlap` need NO
 ground truth to compute — they are the knobs tunable on real data.
-Regenerate: `python experiments/ch2_connectivity/methods_overview.py`.
+Regenerate: `python research/experiments/ch2_connectivity/methods_overview.py`.
 
 Directions: detection = f1/precision/recall/auc · type = type_acc ·
 magnitude = spearman/pearson/ei · unsupervised-quality = daleianity/overlap

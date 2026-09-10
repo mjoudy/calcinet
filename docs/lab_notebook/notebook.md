@@ -85,7 +85,7 @@ shared-input confound. He suggested testing this by splitting the violins by
 reverse-direction truth (the FF/FT split above) and comparing against a
 regularized (L1/Lasso) estimator.
 
-**Setup:** `experiments/ch2_connectivity/fig_r8_compute_regularized.py` (new) solves Lasso and
+**Setup:** `research/experiments/ch2_connectivity/fig_r8_compute_regularized.py` (new) solves Lasso and
 Lasso+Dale directly from the cached N=1250 moments
 (`results/best_moments/n1250r4/{Cxx,Cyx}.npy`, T=500,000 ms — the only
 checkpoint with cached moments + a tuned lambda) via
@@ -161,7 +161,7 @@ direction real — a genuine fake) vs `_FT` (this direction empty, reverse
 direction real — a mirrored true edge). No new simulation, reused the
 already-longest cached checkpoints (N=1250 @ 20M ms, N=12500 @ 10M ms, both
 since extended past the original R.8 500k/5M-ms runs by the R.4 work). New
-plot: `experiments/ch2_connectivity/fig_r8_violin_fpsplit.py` -> `fig_R8_violin_fpsplit_n{1250,12500}`.
+plot: `research/experiments/ch2_connectivity/fig_r8_violin_fpsplit.py` -> `fig_R8_violin_fpsplit_n{1250,12500}`.
 
 **Result:**
 
@@ -336,9 +336,9 @@ T=100k/200k/500k/1M/2M/5M ms. N=12500 was cheap to extend (cached ground truth,
 same max_T=5M already simulated — just added 3 more checkpoints). N=1250/2500/
 5000 each needed a fresh full resimulation up to the new 5M ms max (longer than
 their old max, so the ground-truth cache key changed). 4 separate SLURM jobs
-(`slurm/run_r4_n12500.slurm` + 3 new `run_r4_n{1250,2500,5000}_extend.slurm`),
+(`research/slurm/run_r4_n12500.slurm` + 3 new `run_r4_n{1250,2500,5000}_extend.slurm`),
 all completed same night (16min–2h each, well inside budget). Plot:
-`experiments/ch2_connectivity/fig_r4_plot.py` → `figures/fig_R4` (now single column, no collapse
+`research/experiments/ch2_connectivity/fig_r4_plot.py` → `figures/fig_R4` (now single column, no collapse
 panel).
 
 **Result:**
@@ -391,7 +391,7 @@ bias/variance split, worth keeping for the report write-up:
 - One-liner: *"More data fixes noise, not confounding."*
 
 **Addendum — matched-T/N confirms the split directly (2026-08-07):** built an
-appendix figure (`figures/fig_R4_TN`, `experiments/ch2_connectivity/fig_r4_plot.py --out-tn`, zero
+appendix figure (`figures/fig_R4_TN`, `research/experiments/ch2_connectivity/fig_r4_plot.py --out-tn`, zero
 new compute — same cached CSVs, just plotted vs T/N instead of raw T) to test
 the prediction. Confirmed exactly: **correlation collapses** onto one curve
 across all 4 N when plotted vs samples-per-neuron (T/N) — it really is a
@@ -425,8 +425,8 @@ knob fixed:
     infinite-speed camera), τ swept 0.5–1600ms.
 Both compare `raw` vs `deconvolved` (Savitzky-Golay smooth+derivative,
 `SMOOTH_MS=3.1`, `polyorder=3` fixed, window widens automatically once camera dt
-pushes the sample-count floor). Scripts: `experiments/ch1_proxy/fig_r2_compute.py` (compute,
-ran on cluster) → `experiments/ch1_proxy/fig_r2_plot.py` (plot, local). Output:
+pushes the sample-count floor). Scripts: `research/experiments/ch1_proxy/fig_r2_compute.py` (compute,
+ran on cluster) → `research/experiments/ch1_proxy/fig_r2_plot.py` (plot, local). Output:
 `figures/fig_R2` (primary, one-variable-at-a-time) + `figures/fig_R2_ratio`
 (secondary collapse view, kept for reference only).
 
@@ -494,7 +494,7 @@ min()-purity penalty beat the current champion C1 (hard in-solver Dale, stronges
 types)?
 
 **Setup:** N=100 feed, lag 1.5 ms, EN base (L1=3e-3, L2=1e-3). All reuse the FISTA core.
-Script: `experiments/ch2_connectivity/dale_candidates_test.py` → `results/dale_candidates_test/ledger.csv`.
+Script: `research/experiments/ch2_connectivity/dale_candidates_test.py` → `research/results/dale_candidates_test/ledger.csv`.
 
 **Result (detection F1 / type_acc / dale / spearman; magnitude unchanged, pearson ≈ 0.34):**
 | method | f1 | type_acc | dale | spearman |
@@ -529,7 +529,7 @@ regularization step. Proceed with the balance rescale + HPC scale-up.
 unsupervised pipeline — fix the median/zero bug.
 
 **Fix:** `rescale_balance_nz` estimates per-group magnitude from NON-ZERO entries only,
-so it survives Dale's zeros. Script: `experiments/ch2_connectivity/methods_overview.py`.
+so it survives Dale's zeros. Script: `research/experiments/ch2_connectivity/methods_overview.py`.
 
 **Result — one pipeline, all three directions:**
 | method | spearman | pearson | auc | f1 | type_acc | ei | dale |
@@ -561,7 +561,7 @@ Elastic Net) beat the post-hoc Dale cleanup?
 **Theory:** minimise EN cost subject to sign(A[i,j]) = t_j per column; solved by adding
 a per-column sign-projection to the FISTA prox: A_ij ← t_j·max(0, t_j·soft(A_ij)).
 Types t_j from initial EN (strongest-entry). Hard constraint = λ_Dale→∞ limit of the
-penalty Σ[−t_j·A_ij]₊. Script: `experiments/ch2_connectivity/dale_reg_test.py`; also in the master overview.
+penalty Σ[−t_j·A_ij]₊. Script: `research/experiments/ch2_connectivity/dale_reg_test.py`; also in the master overview.
 
 **Result:**
 | method | spearman | auc | f1 | precision | type_acc |
@@ -618,7 +618,7 @@ quality) to select a final pipeline; and test Dale + 3-class mixture as unsuperv
 post-processing. Finish the bottleneck (unsupervised strongest-entry rescale).
 
 **Setup:** All methods at lag 1.5 ms on the real feed. Script:
-`experiments/ch2_connectivity/methods_overview.py` → table in `docs/experiments/methods_overview.md`.
+`research/experiments/ch2_connectivity/methods_overview.py` → table in `docs/lab_notebook/methods_overview.md`.
 
 **Result (unsupervised unless noted GT):**
 | method | spearman | auc | f1 | precision | type_acc | ei | dale |
@@ -653,7 +653,7 @@ network-config direction the user set aside.
 replace the oracle?
 
 **Setup:** EN(L1=3e-3) matrix, infer types from the estimate (3 rules), rescale,
-compare to oracle. Script: `experiments/ch2_connectivity/unsup_rescale_test.py` (+ inline rule comparison).
+compare to oracle. Script: `research/experiments/ch2_connectivity/unsup_rescale_test.py` (+ inline rule comparison).
 
 **Result — type-inference accuracy (identifying INHIBITORY neurons):**
 | rule | overall | inhibitory-only |
@@ -689,7 +689,7 @@ see how close it gets to the oracle. Also: an unsupervised rescale can only equa
 break the detection-vs-magnitude trade-off?
 
 **Setup:** OLS feed at lag 1.5 ms → FISTA Elastic Net (L1 ∈ {1e-3,3e-3,1e-2}) →
-oracle / colnorm rescale. Script: `experiments/ch2_connectivity/combine_test.py`.
+oracle / colnorm rescale. Script: `research/experiments/ch2_connectivity/combine_test.py`.
 
 **Result — the combination wins on all three at once:**
 | method | F1 (detect) | Pearson (mag) | E/I (truth 5) | spearman |
@@ -720,7 +720,7 @@ regularized matrix.
 regularization can't)?
 
 **Setup:** OLS at lag 1.5 ms, then 4 post-processing methods. Headline = Spearman.
-Script: `experiments/ch2_connectivity/postprocess_test.py`.
+Script: `research/experiments/ch2_connectivity/postprocess_test.py`.
 
 **Result:**
 | method | spearman | pearson | auc | f1 | E/I |
@@ -754,7 +754,7 @@ data-size test (variance-limited) predicted? And does it hurt the E/I magnitude
 
 **Setup:** Real preprocessed feed, lag = 1.5 ms, FISTA Elastic Net. L1 swept
 0…3e-2, L2 ∈ {1e-3, 1e-1}. Baseline = plain OLS. Script:
-`experiments/ch2_connectivity/regularization_test.py`.
+`research/experiments/ch2_connectivity/regularization_test.py`.
 
 **Result (L2=1e-3):**
 | L1 | precision | recall | F1 | Pearson | E/I | %zeroed |
@@ -786,7 +786,7 @@ regularization vs post-processing.
 
 **Setup:** Same N=100 dataset, fixed lag = 1.5 ms (15 samples), recording truncated
 to 2.5k / 5k / 10k / 20k / 35k / 50k samples. Inputs: spikes and preprocessed feed.
-Script: `experiments/ch2_connectivity/data_size_test.py`.
+Script: `research/experiments/ch2_connectivity/data_size_test.py`.
 
 **Result:**
 - Precision (exact connections): feed 0.10 → 0.18, **still rising** at 50 k.
@@ -818,7 +818,7 @@ pipeline, or by the regression itself? And what is the effect of lag?
 NE=80/NI=20, g=5 → true weights +10/−50, τ=100 ms, T=50 k, σ_extra=0.05). No new
 simulation. Same centred-OLS estimator on three inputs — true spikes,
 clean-calcium→feed, noisy-calcium→feed — swept over lag. Smoothing window fixed at
-5 samples. Script: `experiments/ch2_connectivity/oracle_ladder.py`. Headline metric: Pearson.
+5 samples. Script: `research/experiments/ch2_connectivity/oracle_ladder.py`. Headline metric: Pearson.
 
 **Result (Pearson at best lag = 1.5 ms = 15 samples = synaptic delay):**
 - spikes **0.370**, clean-calcium **0.370–0.385**, noisy-calcium **0.353**
@@ -975,7 +975,7 @@ LIF nonlinearity and/or the single-lag/temporal-memory mismatch (see
 `docs/theory/shared_input_theoretical_grounding.md` §4-5, "confound is diffuse
 and multi-lag"), not to a fundamental inability of full-state regression to
 remove shared input. Directly supports testing the joint multi-lag estimator
-(`experiments/ch2_connectivity/multilag_estimator.py`, built 2026-08-04, never run) and/or a
+(`research/experiments/ch2_connectivity/multilag_estimator.py`, built 2026-08-04, never run) and/or a
 PIF/high-input-resistance spiking network as the next disambiguating step.
 
 Even at 50% observed, note the interesting asymmetry: OU's *observed*-driver
@@ -1027,7 +1027,7 @@ just rate) before trusting the number.
 ### 2026-08-14 — Multi-lag estimator results found (already run 2026-08-04) + linearity synthesis: what the method is good for
 
 **Correction first:** earlier today I told the user the joint multi-lag
-estimator (`experiments/ch2_connectivity/multilag_estimator.py`, built 2026-08-04) had "never been
+estimator (`research/experiments/ch2_connectivity/multilag_estimator.py`, built 2026-08-04) had "never been
 run." Wrong — checked local evidence only (no results dir, no notebook entry)
 and asserted absence without ever checking the cluster, which I have no
 direct access to. It was run twice, successfully, on 2026-08-04, the same day

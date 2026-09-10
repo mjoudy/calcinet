@@ -18,10 +18,10 @@ Three results already in hand shape everything below:
 
 1. **Regime matters.** A regime scan over (g, η, J) at N=1250 located a clean
    asynchronous-irregular state at **g=8, η=1.0, J=0.8** (~8 Hz, CV 0.80,
-   synchrony 0.027) — vs the old g=5/η=2 (~42 Hz, regular). `experiments/ch2_connectivity/regime_scan.py`
+   synchrony 0.027) — vs the old g=5/η=2 (~42 Hz, regular). `research/experiments/ch2_connectivity/regime_scan.py`
 2. **The AI regime is data-limited, not uninferable.** Recovery curve at N=1250
    (50k→2M ms): **OLS ROC-AUC 0.72 → 0.99**, excitatory recall 0.30 → 0.89 —
-   while EN/EN+Dale stay flat at ~0.60. `experiments/ch2_connectivity/recovery_curve.py`
+   while EN/EN+Dale stay flat at ~0.60. `research/experiments/ch2_connectivity/recovery_curve.py`
 3. **Bias vs variance explains it.** OLS is unbiased → more data removes its error.
    L1 adds bias (over-shrinks the weak AI-regime weights) → data cannot undo it.
    λ=1e-4 was tuned for the strong-signal g=5 regime and is far too strong here.

@@ -2,9 +2,9 @@
 Turn saved Hawkes spike events (src/calcinet/simulation/hawkes_ground_truth.py) into Cxx/Cyx
 moments via the SAME calcium -> deconvolution -> streaming-moments pipeline
 used for the LIF/PIF arms (calcinet.io.streaming.stream_moments,
-also used by experiments/ch2_connectivity/wrapup_run_stream.py) -- same tau/amplitude/noise/smooth-
+also used by research/experiments/ch2_connectivity/wrapup_run_stream.py) -- same tau/amplitude/noise/smooth-
 window/lag as the project's validated landscape (COMMON dict in
-experiments/shared/wrapup_run.py).
+research/experiments/shared/wrapup_run.py).
 
 This is the piece the OU arm skipped entirely (OU's Cxx/Cyx come straight from
 a closed-form Lyapunov solve, no spikes, no calcium, no deconvolution). Running
@@ -37,7 +37,7 @@ sys.path.insert(0, str(ROOT))
 from calcinet.io.streaming import stream_moments
 from calcinet.connectivity.solvers.from_moments import ols_from_moments
 
-# Matches COMMON in experiments/shared/wrapup_run.py -- keep in sync, this IS the
+# Matches COMMON in research/experiments/shared/wrapup_run.py -- keep in sync, this IS the
 # apples-to-apples point of the comparison.
 DEFAULTS = dict(tau=100.0, amplitude=1.0, sigma_intra=0.01, sigma_extra=0.05,
                 smooth_window_ms=3.1, tau_method="ransac", lag_ms=2.0, dt=0.1,

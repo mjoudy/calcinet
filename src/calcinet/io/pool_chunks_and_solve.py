@@ -23,7 +23,7 @@ from pathlib import Path
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[3]
-sys.path.insert(0, str(ROOT)); sys.path.insert(0, str(ROOT / "experiments" / "shared"))
+sys.path.insert(0, str(ROOT))
 
 from calcinet.connectivity.solvers.from_moments import ols_from_moments
 from calcinet.connectivity.analyze_run import edge_index, score

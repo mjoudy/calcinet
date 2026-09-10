@@ -95,22 +95,25 @@ src/calcinet/          the installable, reusable tool
   simulation/          Brunel (NEST), Hawkes and OU ground-truth generators
   framework/           experiment runner, config, metrics registry,
                        provenance, ledger
-experiments/           thesis-specific code — NOT installed
-  ch1_proxy/           figures and analyses for the spike-proxy chapter
-  ch2_connectivity/    figures and analyses for the connectivity chapter
-  shared/              plotting style and helpers used by both
 examples/quickstart.py runnable end-to-end demo
 tests/                 pytest suite
-slurm/                 SLURM job scripts (NEMO2)
-docs/lab_notebook/     dated research notebook
-results/               run outputs; git-ignored except ledger.csv
+docs/                  solver and ledger contracts, lab notebook, theory notes
+results/               default output directory for runs (git-ignored)
+research/              this thesis's own work — NOT part of the package
+  experiments/         analysis and figure scripts: ch1_proxy, ch2_connectivity, shared
+  research/slurm/               SLURM job scripts (NEMO2)
+  research/slurm_logs/          logs of every cluster run, kept as evidence
+  results/             ledgers and summary CSVs of the thesis runs
 ```
 
 **The split is the important part.** `src/calcinet/` is code that works on
-someone else's data — it is what you install and import. `experiments/` is the
-code that produced specific results in the thesis; it is not packaged, and it is
-full of hard-coded network names and paths. **Experiments import from the core;
-the core never imports from experiments.** A test enforces the direction.
+someone else's data — it is what you install and import. `research/` is the
+record of how this thesis's results were produced: the analysis scripts, the
+cluster job scripts and their logs, and the run ledgers. It is not packaged, it
+is full of hard-coded network names and paths, and you do not need it to use
+`calcinet` — it is kept as evidence and for reproducibility. **Research code
+imports from the core; the core never imports from research code** —
+`tests/test_layout.py` enforces this.
 
 ## Reproducibility
 

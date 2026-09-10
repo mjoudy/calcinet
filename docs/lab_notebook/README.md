@@ -62,7 +62,7 @@ instead of max Pearson.
 
 ## Where everything lives
 
-**Docs (`docs/experiments/`):**
+**Docs (`docs/lab_notebook/`):**
 - `README.md` — this file (entry point).
 - `landscape.md` — **parameter landscape overview**: every knob in one table (importance,
   best setting, status) + what to tune + what to re-validate before scaling N up / HPC.
@@ -99,5 +99,5 @@ config + metrics). Master query: `python -m calcinet.ledger_cli rebuild` then
 
 ## How to reproduce the headline result
 ```
-python experiments/ch2_connectivity/methods_overview.py     # regenerates methods_overview.md + the pipeline row
+python research/experiments/ch2_connectivity/methods_overview.py     # regenerates methods_overview.md + the pipeline row
 ```

@@ -2,7 +2,7 @@
 Experiment ledger — one CSV row per run, the queryable index of every experiment.
 
 This is Layer 1 of the experiment record (the *numbers*).  Layer 2 — the
-plain-language conclusions — lives in docs/experiments/notebook.md.
+plain-language conclusions — lives in docs/lab_notebook/notebook.md.
 
 Each row = one run: every ExperimentConfig field + every metric + run_dir +
 timestamp, flattened into a single CSV.  With it, any quantitative question

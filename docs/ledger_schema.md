@@ -89,7 +89,7 @@ Re-running is the only way to attach provenance to them.
 
 ```python
 import pandas as pd
-df = pd.read_csv("results/methods_overview/ledger.csv")
+df = pd.read_csv("research/results/methods_overview/ledger.csv")
 
 # concatenating several ledgers is safe on the config block;
 # metric columns align by name and fill NaN where absent

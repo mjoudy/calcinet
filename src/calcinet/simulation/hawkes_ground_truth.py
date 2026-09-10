@@ -35,7 +35,7 @@ n_events), not O(N*T), so it is safe to run locally.
 
 Saves spike EVENTS (idx.npy, times_ms.npy) rather than a dense (N,T) spike
 matrix -- feed straight into src/calcinet/io/hawkes_to_moments.py, which mirrors
-experiments/ch2_connectivity/wrapup_run_stream.py's spike_events -> calcium -> deconvolution ->
+research/experiments/ch2_connectivity/wrapup_run_stream.py's spike_events -> calcium -> deconvolution ->
 streaming-moments path so the Hawkes arm goes through the EXACT SAME
 observation pipeline as the LIF/PIF arms (unlike OU, which skips it).
 

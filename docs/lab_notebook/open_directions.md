@@ -35,7 +35,7 @@ Updated 2026-06-19.
 - **Multi-lag VAR** (use all lags 1…L, not a single lag) — archive has a stub
   (`torch_linear_layer`).
 - Alternative feed reconstructions / preprocessing variants (`compare_preprocessing.py`).
-- Spectral analysis angle (`experiments/ch2_connectivity/spectral_analysis.py`, currently unused).
+- Spectral analysis angle (`research/experiments/ch2_connectivity/spectral_analysis.py`, currently unused).
 
 ## E. Generalization (the "second-level" checks the user set aside)
 - Vary network config: N, density (epsilon), g, firing rates — does the pipeline hold?
