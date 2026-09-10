@@ -1,6 +1,6 @@
 # calcinet
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22666410.svg)](https://doi.org/10.5281/zenodo.22666410)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22666410.svg)](https://doi.org/10.5281/zenodo.22666410) [![tests](https://github.com/mjoudy/calcinet/actions/workflows/tests.yml/badge.svg)](https://github.com/mjoudy/calcinet/actions/workflows/tests.yml)
 
 **Linear VAR-based connectivity estimation from calcium imaging.**
 
@@ -10,10 +10,11 @@ estimates each neuron's decay time constant by robust regression in phase space,
 then deconvolves the trace into a continuous *spike proxy* — not discrete spike
 times, but a drive signal that preserves relative rate. Stage two fits a linear
 vector-autoregressive model to that proxy, so the estimated coefficient from
-neuron *j* to neuron *i* carries both a direction and a sign. The solvers are
-chunked and out-of-core, holding O(N²) accumulators rather than the full
-(N × T) design matrix, which is what lets the same code run on a laptop at
-N = 40 and on a GPU node at N = 12500.
+neuron *j* to neuron *i* carries both a direction and a sign. Most solvers
+stream the proxy in time chunks and keep only N × N statistics in memory, never
+the full N × T recording (see [How the solvers scale](#how-the-solvers-scale)),
+which is what lets the same code run on a laptop at N = 40 and on a GPU node at
+N = 12500.
 
 ```
    NEST simulation                  ┌──────────── stage 1 ────────────┐
@@ -115,6 +116,32 @@ is full of hard-coded network names and paths, and you do not need it to use
 imports from the core; the core never imports from research code** —
 `tests/test_layout.py` enforces this.
 
+## How the solvers scale
+
+A VAR fit needs only two lag-pair second moments of the spike proxy *x*:
+
+```
+Cxx = Σₜ x(t−lag) x(t−lag)ᵀ          Cyx = Σₜ x(t) x(t−lag)ᵀ
+```
+
+Both are N × N — all N neurons are regressed at once, so the cross-moment is a
+matrix, not a vector — plus two length-N sums used for mean-centring. None of
+them grows with the recording length T. The moment-based solvers therefore
+stream the proxy from zarr in time chunks, add each chunk's contribution, and
+solve once at the end: A = Cyx Cxx⁻¹ for OLS, with λI added to Cxx for ridge.
+Because moments from different chunks, recordings or cluster nodes simply add,
+a long recording can be split across nodes and pooled
+(`calcinet.io.pool_chunks_and_solve`), and a saved set of moments can be
+re-solved in seconds (`calcinet.connectivity.solve_from_cached`).
+
+| Solver | How it uses the data | Memory |
+|---|---|---|
+| `ols`, `ridge` | one streaming pass accumulating the moments; exact closed-form solve | O(N²) |
+| `torch_normal_eq` | the same, accumulated on the GPU | O(N²) |
+| `fista` (elastic net) | one streaming pass for the moments, then iterates on them | O(N²) |
+| `torch_gd`, `torch_minibatch`, `torch_linear_layer` | stream mini-batches over several epochs | O(N²) parameters, one chunk of data at a time |
+| `sklearn_ols`, `sklearn_lasso` | load the full N × T matrix — reference implementations for small N | O(N·T) |
+
 ## Reproducibility
 
 - **Provenance** — every run records the git commit and a `git_dirty` flag.
@@ -129,6 +156,24 @@ imports from the core; the core never imports from research code** —
   automatically in every result and as a new ledger column.
 
 Extending the solvers: [`docs/adding_a_solver.md`](docs/adding_a_solver.md).
+
+## Development
+
+```bash
+pip install -e ".[dev]"
+pytest
+```
+
+The test suite runs in a few seconds on a laptop. It checks that every module
+imports, that every solver in the dispatch table returns a finite N × N matrix,
+that the closed-form solvers recover a known VAR matrix (a check that fails on a
+transposed result), that provenance is recorded, that chunked and single-pass
+moment accumulation agree, and that the core package never imports research code.
+
+Continuous integration ([`.github/workflows/tests.yml`](.github/workflows/tests.yml))
+runs the same suite on every push and pull request: it builds the environment
+from `environment.yml`, installs the CPU build of PyTorch and the package, and
+runs `pytest`. It runs the tests only — there is no linting or type-checking step.
 
 ## Related repositories
 
